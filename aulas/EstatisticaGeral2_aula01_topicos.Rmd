@@ -1,0 +1,58 @@
+---
+title: "Plano Aula 01"
+author: "Markus Stein"
+date: "09 March 2020"
+output: pdf_document
+    # toc: yes
+header-includes:
+    - \usepackage{fancyhdr}
+always_allow_html: yes
+---
+\addtolength{\headheight}{1.0cm} 
+\pagestyle{fancyplain} 
+\lhead{\includegraphics[height=1.5cm]{LogoIME.png}}
+\rhead{\includegraphics[height=1.5cm]{images.jpeg}}
+\chead{UNIVERSIDADE FEDERAL DO RIO GRANDE DO SUL \\
+INSTITUTO DE MATEMÁTICA E ESTATÍSTICA \\
+DEPARTAMENTO DE ESTATÍSTICA \\
+\vspace{0.3cm}
+MAT02215 - Estatística Geral 2 - 2020/1
+}
+\renewcommand{\headrulewidth}{0pt} 
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Introdução  
+
+## Apresentação do professor  
+
+\vspace{0.5cm}
+
+
+## O que sabemos de Estatística e Probabilidade até agora?  
+
+\vspace{0.5cm}
+
+## O que é Estatística Geral 2?  
+* Estatística Geral 2 = Inferência Estatística (Paramétrica) (Clássica)  
+	+ População $\times$ amostra  
+	+ Inferência Estatística - indução $\times$ dedução  
+	+ (Paramétrica)?  
+	+ (Clássica)?  
+
+\vspace{0.5cm}
+
+## Apresentação da disciplina  
+* Ler o plano de ensino!!!  
+
+
+\vspace{1.0cm}
+
+***
+## Rever: Variáveis aleatórias (uni. e bidimensionais), distribuições de prob. e parâmetros.
+
+## Ler slides Aula 1 e Aula 2.
+***

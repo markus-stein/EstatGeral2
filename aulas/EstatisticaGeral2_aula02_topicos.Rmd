@@ -1,0 +1,74 @@
+---
+title: "Plano Aula 02"
+author: "Markus Stein"
+date: "11 March 2020"
+output: pdf_document
+    # toc: yes
+header-includes:
+    - \usepackage{fancyhdr}
+always_allow_html: yes
+---
+\addtolength{\headheight}{0.0cm} 
+\pagestyle{fancyplain} 
+\lhead{\includegraphics[height=1.5cm]{LogoIME.png}}
+\rhead{\includegraphics[height=1.5cm]{images.jpeg}}
+\chead{UNIVERSIDADE FEDERAL DO RIO GRANDE DO SUL \\
+INSTITUTO DE MATEMÁTICA E ESTATÍSTICA \\
+DEPARTAMENTO DE ESTATÍSTICA \\
+\vspace{0.3cm}
+MAT02215 - Estatística Geral 2 - 2020/1
+}
+\renewcommand{\headrulewidth}{0pt} 
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Variáveis Aleatórias (v.a.)  (Bussab e Morettin - Capítulo 10)  
+Qual a população em estudo?  
+**Exemplo 1**: $X$ (PIB do Brasil), $X \in \mathbb{R}$, $X \sim Normal(\mu, \sigma^2)$. $E(X) = \mu$.  
+**Exemplo 2**: $X$ (avaliação do governo, positiva ou negativa), $X \in \{0, 1\}$, $X \sim Bernoulli(\pi)$. $E(X) = \pi$.  
+**Exemplo 3**: $Y$ (consumo) e $X$ (renda), $E(Y) = \alpha + \beta X$.  
+
+\vspace{0.5cm}
+
+* **População** -> parâmetros ($\mu$, $\sigma^2$, $\pi$, ...)  
+  + finita (censo) *versus* infinita (modelos = distribuições de probabilidade).
+  + $X$ é uma v.a. de interesse, e assumiremos $X \sim f(x; \theta)$.  
+  
+* **Amostra** -> estatísticas ($\overline X$, $S^2$, $p$, ...)  
+  + Toda a estatística é uma v.a.!!!  
+
+## Como obter amostras - Amostragem  
+### Principai tipos de amostragens 
+* probabilística *versus* não porbabilística  
+* com e sem **reposição**  
+
+### Amostra aleatória (simples) (a.a.s., ou a.a.)  $=$ v.a.s idependentes e identicamente distribuídas (i.i.d.)   
+* sorteio  (tabela de números aleatórios?) $\times$ geração de números aleatórios  
+
+* Seja $X_1, X_2, \ldots, X_n$ uma a.a. de tamanho $n$ de $X$ $=$ $X_1 \sim f(x; \theta)$, ..., $X_n \sim f(x; \theta)$ e $X_i$ e $X_j$ são independentes para todo $i \neq j$.
+
+### Qual o tamanho ideal de amostra?
+Veremos em breve critérios para calcular.
+
+<!-- \vspace{0.5cm} -->
+***
+### Ler slides da aula 2
+### Exercícios
+***
+
+<!-- ### Distribuição amostral   -->
+<!-- * **Exemplo 3**: Média amostral   -->
+<!-- * **Exemplo 4**: Porporção amostral   -->
+
+<!-- ### Teorema central do limite -->
+
+<!-- (Bussab e Morettin - Capítulo 11) -->
+
+<!-- ## Estmação (pontual) -->
+
+<!-- ### Estimador e Estimativa -->
+
+
