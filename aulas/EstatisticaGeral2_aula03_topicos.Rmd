@@ -1,0 +1,51 @@
+---
+title: "Plano Aula 03"
+author: "Markus Stein"
+date: "XX Month 2020"
+output: pdf_document
+    # toc: yes
+header-includes:
+    - \usepackage{fancyhdr}
+always_allow_html: yes
+---
+\addtolength{\headheight}{0.0cm} 
+\pagestyle{fancyplain} 
+\lhead{\includegraphics[height=1.5cm]{LogoIME.png}}
+\rhead{\includegraphics[height=1.5cm]{images.jpeg}}
+\chead{UNIVERSIDADE FEDERAL DO RIO GRANDE DO SUL \\
+INSTITUTO DE MATEMÁTICA E ESTATÍSTICA \\
+DEPARTAMENTO DE ESTATÍSTICA \\
+\vspace{0.3cm}
+MAT02215 - Estatística Geral 2 - 2020/1
+}
+\renewcommand{\headrulewidth}{0pt} 
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Distribuição amostral (Bussab e Morettin - Seção 10.7)
+
+* **Exemplo 3**: Média amostral
+
+* **Exemplo 4**: Porporção amostral
+
+### Teorema central do limite (Bussab e Morettin - Seção 10.8)
+
+* **Teorema 10.2** e **Corolário 10.1**
+
+
+## Estmação (pontual) (Bussab e Morettin - Capítulo 11)
+
+### Estimador e Estimativa
+
+\vspace{0.5cm}
+
+***
+### Ler slides da aula 3
+### Exercícios
+***
+
+
+
