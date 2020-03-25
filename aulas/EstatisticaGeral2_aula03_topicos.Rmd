@@ -29,7 +29,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 * **Exemplo 3**: Média amostral
 
-* **Exemplo 4**: Porporção amostral
+* **Exemplo 4**: Proporção amostral
 
 ### Teorema central do limite (Bussab e Morettin - Seção 10.8)
 
