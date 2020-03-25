@@ -38,14 +38,14 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Estmação (pontual) (Bussab e Morettin - Capítulo 11)
 
-### Estimador e Estimativa
+* Estimador e Estimativa
 
-\vspace{0.5cm}
+\vspace{1.0cm}
 
 ***
-### Ler slides da aula 3
+### Ler slides das aulas 3 a 5
 ### Exercícios
 ***
 
 
-
+<!-- propriedades dos estimadores -->
