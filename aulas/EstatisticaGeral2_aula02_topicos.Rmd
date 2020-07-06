@@ -25,7 +25,8 @@ MAT02215 - Estatística Geral 2 - 2020/1
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Variáveis Aleatórias (v.a.)  (Bussab e Morettin - Capítulo 10)  
+## Variáveis Aleatórias (v.a.) - (Capítulo 10, Livro Bussab e Morettin)  
+
 Qual a população em estudo?  
 **Exemplo 1**: $X$ (PIB do Brasil), $X \in \mathbb{R}$, $X \sim Normal(\mu, \sigma^2)$. $E(X) = \mu$.  
 **Exemplo 2**: $X$ (avaliação do governo, positiva ou negativa), $X \in \{0, 1\}$, $X \sim Bernoulli(\pi)$. $E(X) = \pi$.  
@@ -33,31 +34,38 @@ Qual a população em estudo?
 
 \vspace{0.5cm}
 
-* **População** -> parâmetros ($\mu$, $\sigma^2$, $\pi$, ...)  
+* **População** $\Rightarrow$ parâmetros ($\mu$, $\sigma^2$, $\pi$, ...)  
   + finita (censo) *versus* infinita (modelos = distribuições de probabilidade).
   + $X$ é uma v.a. de interesse, e assumiremos $X \sim f(x; \theta)$.  
   
-* **Amostra** -> estatísticas ($\overline X$, $S^2$, $p$, ...)  
+* **Amostra** $\rightarrow$ estatísticas ($\overline X$, $S^2$, $p$, ...)  
   + Toda a estatística é uma v.a.!!!  
 
-## Como obter amostras - Amostragem  
-### Principai tipos de amostragens 
-* probabilística *versus* não porbabilística  
-* com e sem **reposição**  
+## Amostragem - Como obter amostras?  
+### Principais tipos de amostragem
+* **Probabilística** *versus* **não porbabilística**;  
+* Com e sem **reposição**.
 
-### Amostra aleatória (simples) (a.a.s., ou a.a.)  $=$ v.a.s idependentes e identicamente distribuídas (i.i.d.)   
-* sorteio  (tabela de números aleatórios?) $\times$ geração de números aleatórios  
+### Amostra aleatória simples (a.a.s.)  $=$ v.a. idependentes e identicamente distribuídas (i.i.d.)   
 
-* Seja $X_1, X_2, \ldots, X_n$ uma a.a. de tamanho $n$ de $X$ $=$ $X_1 \sim f(x; \theta)$, ..., $X_n \sim f(x; \theta)$ e $X_i$ e $X_j$ são independentes para todo $i \neq j$.
+* **sorteio** aleatório $\times$ **geração** de números (pseudo) aleatórios;  
+    + tabela de números aleatórios(?)  
+
+* Importante!!! Daqui por diante supomos a.a.s. em todos os problemas(?).  
+
+\vspace{0.2cm}
+
+Definição **A.A.S**: Seja $X_1, X_2, \ldots, X_n$ uma a.a.s. de tamanho $n$ de $X \sim f(x; \theta)$, então $X_1 \sim f(x; \theta)$, ..., $X_n \sim f(x; \theta)$ e $X_i$ e $X_j$ são independentes para todo $i \neq j$.
+
 
 ### Qual o tamanho ideal de amostra?
-Veremos em breve critérios para calcular.
+Veremos critérios para calcular tamanhos de amostras ao longo da dsiciplina.
 
 <!-- \vspace{0.5cm} -->
 ***
 ### Ler slides da aula 2
 ### Exercícios
-***
+<!-- *** -->
 
 <!-- ### Distribuição amostral   -->
 <!-- * **Exemplo 3**: Média amostral   -->
