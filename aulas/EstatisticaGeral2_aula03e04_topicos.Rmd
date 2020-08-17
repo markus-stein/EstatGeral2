@@ -37,19 +37,34 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Estmação (pontual) (Bussab e Morettin - Capítulo 11)
 
+* Parâmetro $\times$ Estatísticas
+
 * Estimador e Estimativa
 
 Definição (**Estimador**): Um estimador $T$ do parâmetro $\theta$ é qualquer função das observações da amostra, $T=g(X_1, \ldots, X_n)$.  
 
-\vspace{1.0cm}
+Definição (**Estimativa**): Uma estimativa é um particular valor do estimador. Para uma amostra observada $x_1, \ldots, x_n$ uma estimativa $t$ do parâmetro $\theta$ é dada por $t=g(x_1, \ldots, x_n)$.  
+
+\vspace{0.5cm}
 
 * **Exemplo 3**: Simulação de distribuições de estimadores (*estatísticas*)
-  + Parâmetro $\times$ Estimativas
 
-\vspace{1.0cm}
+\vspace{0.5cm}
+
+## Propriedades dos estimadores (Bussab e Morettin - Seção 11.2)
+
+* **...cont. Exemplo 1**: média amostral $\overline X$
+
+### **Viés** e o Erro Quadrático Médio ($EQM$)
+
+### **Constistência** 
+<!-- * **...cont. Exemplo 1**:  -->
+
+### **Eficiência**
+<!-- * **...cont. Exemplo 1**:  -->
 
 ***
-### Ler slides das aulas 3 a 5
+### Ler slides das aulas 3 a 4
 ### Exercícios
 ***
 
