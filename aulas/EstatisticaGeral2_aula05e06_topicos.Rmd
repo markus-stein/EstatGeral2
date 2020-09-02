@@ -37,12 +37,29 @@ c. Como usar $Var(\overline X)$ para darmos um grau de certeza sobre usarmos $\o
 
 * **Exemplo 3**: E para a proporção amostral $\hat p = \frac{1}{n} \sum_{i=1}^n X_i$?  
 
+\vspace{1.0cm}
 
 
-### **Intervalos de Confiança** (Bussab e Morettin - Seção 11.6)  
+### **Intervalos de Confiança (IC)** (Bussab e Morettin - Seção 11.6)  
+Definição (**Intervalo de confiança (IC)**): Seja $T$ um estimador para o parâmetro $\theta$, o IC ao nível $(1-\alpha) \times 100\%$ para $\theta$ será denotado pelo intervalo 
+$$IC(\theta; 1-\alpha) = \left( t_1(T) , t_2(T) \right),$$
+para dois valores $t_1(T)$ e $t_2(T)$ tais que $P [ t_1(T) < \theta < t_2(T) ] = 1 - \alpha$. (Se conhecida a distribuição amostral de $T$, será sempre possível achar $t_1(T)$ e $t_2(T)$). 
+
+\vspace{0.5cm}
 
 * Esse é um tipo de estimação intervalar (o mais popular em inferência paramétrica clássica)  
-* Veremos todas as situações de intervalos nos **slides dessa e das próximas semanas**.
+* Veremos todas as situações de intervalos nos **slides dessa e das próximas semanas**.  
+    + Essa semana iniciaremos com o IC para uma média populacional $\mu$;  
+* Resultado importante na construção de IC para uma média populacional:  
+    + No **Exemplo 1**, supondo $\sigma^2$ conhecido (ou $n>30$), então
+$$ \overline X \sim Normal(\mu, \sigma^2 / n)$$
+se $X \sim Normal(\mu, \sigma^2)$. Também
+$$ Z = \frac{\overline X - \mu}{\sigma/\sqrt{n}} \sim Normal(0,1).$$
+
+
+\vspace{0.5cm}
+
+\clearpage
 
 ### Erro padrão de um Estimador (Bussab e Morettin - Seção 11.7)
 
@@ -60,6 +77,8 @@ Definição (**Erro padrão estimado**): $ep(T) = \widehat{EP}(T) = \sqrt{\wideh
 
 * **...cont. Exemplo 1**: Média amostral $\overline X$. $ep(\overline X)$?  
 * **...cont. Exemplo 3**: Proporção amostral $\hat p$. $ep(\hat p)$?
+
+\vspace{0.5cm}
 
 ***
 ### Ler slides das aulas 5 e 6
