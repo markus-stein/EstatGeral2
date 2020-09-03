@@ -70,7 +70,7 @@ $$EP(T) = \sqrt{Var(T)}.$$
 * **...cont. Exemplo 3**: Proporção amostral $\hat p$. $EP(\hat p)$?
 
 \vspace{0.5cm}
-
+ 
 Definição (**Erro padrão estimado**): $ep(T) = \widehat{EP}(T) = \sqrt{\widehat{Var}(T)}$. 
 
 \vspace{0.2cm}

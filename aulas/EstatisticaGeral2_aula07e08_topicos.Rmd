@@ -25,50 +25,50 @@ MAT02215 - Estatística Geral 2 - 2020/1
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## ...continuação Intervalos de Confiança
+## (...continuação) Intervalos de Confiança para uma média (populacional)
 
 * Semana passada vimos IC para $\mu$, supondo $\sigma^2$ conhecido (ou $n>30$).
 
-Essa semana
+* **...continuação (semana passada) Exemplo 2**: Para a média amostral $\overline X = \frac{1}{n} \sum_{i=1}^n X_i$ se $\sigma^2$ desconhecido (e $n \leq 30$), como construir um IC para $\mu$?
 
-Mas se 
-* (...continuação semana passada) **Exemplo 2**: Para a média amostral $\overline X = \frac{1}{n} \sum_{i=1}^n X_i$ se $\sigma^2$ desconhecido (e $n \leq 30$), como construir um IC para $\mu$?
-
+\vspace{0.5cm}
 
 ### Estimação de $\sigma^2$  
 
 * Se desconhecemos a variância populacional, podemos estimá-la usando o estimador $S^2 = \frac{\sum_{i=1}^n (X_i - \overline X)^2}{n-1}$ (porquê?)
 
-* Nesse caso $S^2$ é uma variável aleatória (v.a.). (Sabemos qual a distribuição amostral de $S^2$:)
+* Nesse caso $S^2$ é uma variável aleatória (v.a.). (Sabemos qual a distribuição amostral de $S^2$?)
 
 * Qual a distribuição amostral da transformação $T = \frac{\overline X - \mu}{S/\sqrt{n}}$?
 $$ T = \frac{\overline X - \mu}{S/\sqrt{n}} \sim ?$$
 
+\vspace{0.5cm}
 
-### Distribuição (de probabilidade) $t$-Student (Bussab e Morettin - Seção 7.7.3)
+### Distribuição (de probabilidade) $t$ de Student (Bussab e Morettin - Seção 7.7.3)
 
-Teorema (**Distribuição $t$-student, versão 1**): Seja $Z$ uma v.a. tal que $Z \sim Normal(0,1)$,  então (dadas algumas suposições para $S$ que veremos semana que vem) 
+Teorema (**Distribuição $t$-Student, versão 1**): Seja $Z$ uma v.a. tal que $Z \sim Normal(0,1)$,  então (dadas algumas suposições para $S$ que veremos semana que vem) 
 $$ \frac{\overline X - \mu}{S/\sqrt{n}} \sim t_{(n-1)}.$$
-em que $t_{(n-1)}$ significa....
+em que $t_{(n-1)}$ significa a distribuição de probabilidade $t$-Student com $n-1$ garaus de liberdade (g.l.).
 
-* Mais a frente veremos
+* A distribuição $t$ de Student também possui **valores tabelados**, como a distribuição **normal padrão**. Qual a relação entra essas distribuições?
 
-* **...cont. Exemplo 1**: Média amostral $\overline X$. $EP(\overline X)$?  
-* **...cont. Exemplo 3**: Proporção amostral $\hat p$. $EP(\hat p)$?
+* Como usar a distribuição $t$ de Student para construir um IC para $\mu$? Quais as suposições necessárias? Como interpretar os resultados?
 
 \vspace{0.5cm}
 
-Definição (**Erro padrão estimado**): $ep(T) = \widehat{EP}(T) = \sqrt{\widehat{Var}(T)}$. 
+\clearpage
+## Intervalo para a comparação de duas médias (populacionais)
 
-\vspace{0.2cm}
+* Agora se quisermos comparar médias de dois grupos?  
+* Exemplo: Estimar a diferença no salário médio entre tabalhadoras mulheres ($\mu_1$) e dos homens ($\mu_2$).  
+    + Qual o estimador pontual "natural" para esse problema?  
+    + Como calcular um IC para $\mu_1 - \mu_2$?  
+* Quais as suposições necessárias?
+* Como interpretar os resultados?
 
-* **...cont. Exemplo 1**: Média amostral $\overline X$. $ep(\overline X)$?  
-* **...cont. Exemplo 3**: Proporção amostral $\hat p$. $ep(\hat p)$?
+\vspace{0.5cm}
 
 ***
-### Ler slides das aulas 5 e 6
+### Ler slides das aulas 7 e 8
 ### Fazer exercícios lista 1-3
 ***
-
-
-<!-- propriedades dos estimadores -->

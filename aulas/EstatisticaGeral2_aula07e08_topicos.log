@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2020.5.19)  2 SEP 2020 16:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2020.5.19)  3 SEP 2020 20:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -955,35 +955,25 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Try loading font information for TS1+lmr on input line 90.
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 89.
 (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 90.
+(Font)              <10> on input line 89.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 90.
+(Font)              <7> on input line 89.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 90.
-
-Underfull \hbox (badness 10000) in paragraph at lines 134--137
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 151--154
-
- []
-
+(Font)              <5> on input line 89.
 <LogoIME.png, id=4, 521.95pt x 226.8475pt>
 File: LogoIME.png Graphic file (type png)
 <use LogoIME.png>
-Package pdftex.def Info: LogoIME.png used on input line 168.
+Package pdftex.def Info: LogoIME.png used on input line 145.
 (pdftex.def)             Requested size: 98.19987pt x 42.67917pt.
 <images.jpeg, id=5, 330.23375pt x 153.57375pt>
 File: images.jpeg Graphic file (type jpg)
 <use images.jpeg>
-Package pdftex.def Info: images.jpeg used on input line 168.
+Package pdftex.def Info: images.jpeg used on input line 145.
 (pdftex.def)             Requested size: 91.77448pt x 42.6793pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -994,30 +984,46 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
  <./LogoIME.png> <./images.jpeg>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 170.
+Underfull \hbox (badness 10000) in paragraph at lines 154--156
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 162--164
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 164--165
+
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 186.
 File: LogoIME.png Graphic file (type png)
 <use LogoIME.png>
-Package pdftex.def Info: LogoIME.png used on input line 170.
+Package pdftex.def Info: LogoIME.png used on input line 186.
 (pdftex.def)             Requested size: 98.19987pt x 42.67917pt.
 File: images.jpeg Graphic file (type jpg)
 <use images.jpeg>
-Package pdftex.def Info: images.jpeg used on input line 170.
+Package pdftex.def Info: images.jpeg used on input line 186.
 (pdftex.def)             Requested size: 91.77448pt x 42.6793pt.
-[2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 170.
+[2
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 186.
 (./EstatisticaGeral2_aula07e08_topicos.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 170.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 170.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 170.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 186.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 186.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 186.
  ) 
 Here is how much of TeX's memory you used:
- 13011 strings out of 494944
- 186856 string characters out of 6180677
- 289575 words of memory out of 5000000
- 16080 multiletter control sequences out of 15000+600000
- 45072 words of font info for 64 fonts, out of 8000000 for 9000
+ 13019 strings out of 494944
+ 187113 string characters out of 6180677
+ 288698 words of memory out of 5000000
+ 16082 multiletter control sequences out of 15000+600000
+ 45238 words of font info for 66 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 35i,15n,43p,1003b,413s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 35i,15n,43p,1045b,360s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/en
 c/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/s
 hare/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/l
@@ -1031,11 +1037,11 @@ e/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm
 /lmr5.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fo
 nts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy7.pf
 b>
-Output written on EstatisticaGeral2_aula07e08_topicos.pdf (2 pages, 225814 byte
+Output written on EstatisticaGeral2_aula07e08_topicos.pdf (2 pages, 226107 byte
 s).
 PDF statistics:
- 111 PDF objects out of 1000 (max. 8388607)
- 90 compressed objects within 1 object stream
- 13 named destinations out of 1000 (max. 500000)
- 10291 words of extra memory for PDF output out of 12000 (max. 10000000)
+ 116 PDF objects out of 1000 (max. 8388607)
+ 95 compressed objects within 1 object stream
+ 15 named destinations out of 1000 (max. 500000)
+ 10299 words of extra memory for PDF output out of 12000 (max. 10000000)
 
