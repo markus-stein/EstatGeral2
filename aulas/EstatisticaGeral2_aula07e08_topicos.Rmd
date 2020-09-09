@@ -46,9 +46,9 @@ $$ T = \frac{\overline X - \mu}{S/\sqrt{n}} \sim ?$$
 
 ### Distribuição (de probabilidade) $t$ de Student (Bussab e Morettin - Seção 7.7.3)
 
-Teorema (**Distribuição $t$-Student, versão 1**): Seja $Z$ uma v.a. tal que $Z \sim Normal(0,1)$,  então (dadas algumas suposições para $S$ que veremos semana que vem) 
-$$ \frac{\overline X - \mu}{S/\sqrt{n}} \sim t_{(n-1)}.$$
-em que $t_{(n-1)}$ significa a distribuição de probabilidade $t$-Student com $n-1$ garaus de liberdade (g.l.).
+Teorema (**Distribuição $t$-Student, nossa versão**): Seja $X_1, \ldots, X_n$ uma amostra aleatória da v.a. $X \sim Normal(\mu,\sigma^2)$, então (dadas algumas outras suposições para $S$ que omitimos aqui) 
+$$ T = \frac{\overline X - \mu}{S/\sqrt{n}} \sim t_{(n-1)}.$$
+em que $t_{(n-1)}$ denota a distribuição de probabilidade $t$-Student com $n-1$ graus de liberdade (g.l.).
 
 * A distribuição $t$ de Student também possui **valores tabelados**, como a distribuição **normal padrão**. Qual a relação entra essas distribuições?
 
@@ -71,4 +71,5 @@ em que $t_{(n-1)}$ significa a distribuição de probabilidade $t$-Student com $
 ***
 ### Ler slides das aulas 7 e 8
 ### Fazer exercícios lista 1-3
+### Fazer avaliação pontual 2 da área 1 - vale nota!!!
 ***
