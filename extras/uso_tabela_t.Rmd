@@ -1,0 +1,92 @@
+---
+title: "Sobre o Uso da tabela da distribuição **t**"
+author: "Markus Stein"
+date: "8 September 2020"
+output:
+  pdf_document: default
+  html_document:
+    df_print: paged
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Tabelas, tabelas, tabelas...
+* Para que servem?  
+("Hoje em dia usamos computadores para encontrar esses números...")  
+
+## Qual a diferença entre a tabela da distribuição **t  (Student)** e da distribuição **Normal padrão**?
+
+* Na tabela da distribuição **Normal padrão** precisamos somente definir o nível de significância $\alpha$, ou nível de confiança $1-\alpha$, para o problema....encontrar um valor tal que a probabilidade abaixo ou acima seja de interesse.  
+    + Na tabela da **Normal padrão** definimos a probabilidade de interesse no corpo da tabela e olhamos o valor correspondente na linha e coluna.  
+
+* Já na distribuição **t de Student** também precisamos calcular os graus de liberdade $\nu$, que é um parâmetro que depende do tamanho da amostra $n$, ou amostras $n_1$ e $n_2$ no caso de duas populações.  
+(*existe uma tabela igual a da normal padrão para cada grau de liberdade*)
+
+* Então, para facilitar o uso da distribuição **t** foi criada uma tabela que apresenta valores , para específicos valores de $\nu$ e $\alpha$.
+    + Na tabela da **t**, os valores associados a probabilidades estão no corpo da tabela, basta definirmos os graus de liberdade do problema $\nu$ e $\alpha$.  
+
+
+### Usando softwares para encontrar valores
+* Cada número em uma tabela de probabilidade é resultado de inúmeros cálculos (hoje em dia não temos tanto problema com isso).  
+
+* No software *R* podemos encontrar valores de $y$ tal que $P(Y < y) = \alpha$ usando as funções   
+    + 'qnorm($\alpha$)' para distribuição **Normal Padrão**,  
+    + 'qt($\alpha, \nu$)' para distribuição **t de Student**,    
+    + 'qchisq($\alpha, \nu$)' para a distribuição **Qui-QUadrado**.  
+em que $\nu$ são os graus de liberdade da distribuição.  
+
+\clearpage
+Exemplos para se calcular $P(Y < y) = 0,975$, (assuma $\nu = 15$ para **t** e **Qui-Quadrado**)
+
+* Para a distribuição *normal padrão** temos
+
+```{r}
+qnorm(0.975)
+```
+
+que corresponde na figura abaixo a $y=`r qnorm(0.975)`$  
+
+```{r pressure, echo=FALSE}
+library(ggplot2)
+set.seed(1)
+m <- 0#178
+s <- 1#8.38
+X <- m + s * seq(-4, 4, 0.01)
+Y <- dnorm(X, m, s)
+
+gg   <- data.frame(X,Y)
+
+ggplot(data = gg, mapping = aes(x = X, y = Y)) + 
+  geom_linerange(data = gg[gg$X < qnorm(p = 0.975, mean = m, sd = s),], 
+                 aes(X, ymin = 0, ymax = Y), colour="#E6205F") + 
+  geom_path(size = 1) +
+  labs(x = NULL, y = NULL) + 
+  theme(axis.text.y = element_blank(), axis.ticks.y = element_blank(), 
+        axis.line.y = element_blank()) + 
+  geom_vline(xintercept = qnorm(p = 0.975, mean = m, sd = s), 
+             linetype = "dashed") + 
+  geom_hline(yintercept = 0) + 
+  annotate("text", x = m - 2*s, 
+           y = max(Y)/2,    #Y[which(grepl(m - s, X))], 
+           label = "0.975 (97.5%)") + 
+    annotate("text", x = m + 2*s, 
+           y = max(Y)/2,    #Y[which(grepl(m - s, X))], 
+           label = "0.125 (12.5%)") + 
+  scale_x_continuous(breaks = seq(m - 3*s, m + 3*s, s*1.5)) +
+  theme(panel.border = element_rect(colour = "black", fill=NA, size=1))
+```
+
+
+* Tente para a distribuição **t** e **qui-quadrado***...
+
+
+
+## Referência
+
+Livro online da plataforma ['Probabilidade e Estatística (EAD)'](https://www.ufrgs.br/probabilidade-estatistica/livro/index.html)  
+
+* No 'Capítulo 3 - Distribuições de Variáveis Aleatórias' ver Seções   
+    + 1.1.3 Tabela de probabilidade normal   
+    + 1.1.4 Exemplos de probabilidade  
