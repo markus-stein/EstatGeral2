@@ -3,9 +3,9 @@ title: "Sobre o Uso da tabela da distribuição **t**"
 author: "Markus Stein"
 date: "8 September 2020"
 output:
-  pdf_document: default
   html_document:
     df_print: paged
+  pdf_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -13,7 +13,9 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 # Tabelas, tabelas, tabelas...
-* Para que servem?  
+* Para que servem as tabelas?  
+
+* Cada número em uma tabela de probabilidade é resultado de inúmeros cálculos  
 ("Hoje em dia usamos computadores para encontrar esses números...")  
 
 ## Qual a diferença entre a tabela da distribuição **t  (Student)** e da distribuição **Normal padrão**?
@@ -29,8 +31,6 @@ knitr::opts_chunk$set(echo = TRUE)
 
 
 ### Usando softwares para encontrar valores
-* Cada número em uma tabela de probabilidade é resultado de inúmeros cálculos (hoje em dia não temos tanto problema com isso).  
-
 * No software *R* podemos encontrar valores de $y$ tal que $P(Y < y) = \alpha$ usando as funções   
     + 'qnorm($\alpha$)' para distribuição **Normal Padrão**,  
     + 'qt($\alpha, \nu$)' para distribuição **t de Student**,    

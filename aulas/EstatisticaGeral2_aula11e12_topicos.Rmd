@@ -1,0 +1,92 @@
+---
+title: "Plano Aula 11 e 12"
+author: "Markus Stein"
+# date: "XX Month 2020"
+output: pdf_document
+    # toc: yes
+header-includes:
+    - \usepackage{fancyhdr}
+always_allow_html: yes
+---
+\addtolength{\headheight}{0.0cm} 
+\pagestyle{fancyplain} 
+\lhead{\includegraphics[height=1.5cm]{LogoIME.png}}
+\rhead{\includegraphics[height=1.5cm]{images.jpeg}}
+\chead{UNIVERSIDADE FEDERAL DO RIO GRANDE DO SUL \\
+INSTITUTO DE MATEMÁTICA E ESTATÍSTICA \\
+DEPARTAMENTO DE ESTATÍSTICA \\
+\vspace{0.3cm}
+MAT02215 - Estatística Geral 2 - 2020/1
+}
+\renewcommand{\headrulewidth}{0pt} 
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Testes de Hipóteses (Bussab e Morettin - capítulo 12)
+* Podemos utilizar **intervalos de confiança** para **tomar decisões**? Sim.  
+    + Decisões acerca de valores possíveis para parâmetros: médias, variâncias e proporções, ...
+
+* O **Teste de hipóteses** é uma "máquina" de decisões, um mecanismo para se construir hipóteses e decidir sobre afirmações sobre possíveis valores para um parâmetro (usando uma regra probabilística e dados amostrais).
+
+\vspace{0.5cm}
+
+* Exemplo: Devo manter ou não uma operação financeira com base no retorno médio dos útlimos meses?
+    + Qual o estimador pontual "natural" para o problema? E como construir um IC?
+    + Como criar uma regra para tomar essa decisão?
+
+    
+\vspace{0.5cm}
+
+## Hipóteses estatísticas
+* São afirmações acerca de parâmetros.
+        + Exemplos: o salário médio, $\mu$ na empresa A é superior a 2 salários mínimos (s.m.),  
+        
+* Hipótese **nula** versus hipótese **alternativa**
+        + $H_0: \mu \leq 2 s.m.$ contra $H_1: \mu>2s.m.$ 
+
+
+\vspace{0.5cm}
+
+## Erros de decisão e procedimento do Teste de hipóteses (Bussab e Morettin - seção 12.3)
+* Erro tipo I: rejeitar $H_0$ quando $H_0$ for verdadeira. 
+* Erro tipo II: "aceitar" $H_0$ quando $H_0$ for falsa.
+
+
+### Probabilidade de Erro 
+* $\alpha = P(Erro \: I) = P( \left.``rejeitar \: H_0" \right| ``H_0 \: verdadeiro")$.  
+    + $\alpha$ é também chamada de **nível de significância**.  
+* $\beta = P(Erro \: II) = P( \left.``não \: rejeitar \: H_0" \right| ``H_0 \: falsa")$.  
+    + $\alpha$ é também chamada de **nível de significância**.$
+
+
+### Região crítica (Região de rejeição)
+Conjunto de valores para a estatística de teste em que rejeitaremos a hipótese nula.  
+* $RC = { z_{calc} > z_{tab}}$ por exemplo.
+
+
+\vspace{0.5cm}
+
+## Passo a passo para a construção de um Teste de hipóteses (Bussab e Morettin - seção 12.4)
+1. **Definir hipóteses** acerca do parâmetro de interesse.  
+2. Escolher qual a **estatística de teste** adequada.   
+3. Fixar $\alpha$ e construir a **região crítica**.  
+4. **Calcular a estatística de teste** usando os valores da amostra observada.  
+5. Tomar **decisão e conclusão** sobre o problema.
+
+\vspace{0.5cm}
+
+## Testes para a média de uma população (com variância conhecida) (Bussab e Morettin - seção 12.5)
+Sob $H_0$, supomos que $X_1, \ldots, X_n$ são uma amostra aleatória de $X \sim Normal(\mu_0, \sigma^2)$$ então
+$$Z_{calc} =  \frac{\overline X - \mu_0}{\sqrt{\frac{\sigma^2}{n}}} \sim Normal(0,1)$$
+
+\vspace{0.5cm}
+
+***
+### Ler slides das aulas 11 e 12
+### Fazer exercícios lista 2-1
+<!-- ### Fazer avaliação parcial da área 1 - vale nota!!! -->
+***
+
