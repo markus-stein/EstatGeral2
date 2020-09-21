@@ -3,9 +3,9 @@ title: "Sobre o Uso da tabela da distribuição **t**"
 author: "Markus Stein"
 date: "8 September 2020"
 output:
+  pdf_document: default
   html_document:
     df_print: paged
-  pdf_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -27,7 +27,7 @@ knitr::opts_chunk$set(echo = TRUE)
 (*existe uma tabela igual a da normal padrão para cada grau de liberdade*)
 
 * Então, para facilitar o uso da distribuição **t** foi criada uma tabela que apresenta valores , para específicos valores de $\nu$ e $\alpha$.
-    + Na tabela da **t**, os valores associados a probabilidades estão no corpo da tabela, basta definirmos os graus de liberdade do problema $\nu$ e $\alpha$.  
+    + Na tabela da **t**, os valores associados a probabilidades estão no corpo da tabela, basta definirmos os graus de liberdade do problema $\nu$ e a probabilidade $\alpha$.  
 
 
 ### Usando softwares para encontrar valores
@@ -38,7 +38,7 @@ knitr::opts_chunk$set(echo = TRUE)
 em que $\nu$ são os graus de liberdade da distribuição.  
 
 \clearpage
-Exemplos para se calcular $P(Y < y) = 0,975$, (assuma $\nu = 15$ para **t** e **Qui-Quadrado**)
+Exemplos para se calcular $P(Y < y) = 0,975$:
 
 * Para a distribuição *normal padrão** temos
 
@@ -71,7 +71,7 @@ ggplot(data = gg, mapping = aes(x = X, y = Y)) +
   annotate("text", x = m - 2*s, 
            y = max(Y)/2,    #Y[which(grepl(m - s, X))], 
            label = "0.975 (97.5%)") + 
-    annotate("text", x = m + 2*s, 
+    annotate("text", x = m + 3*s, 
            y = max(Y)/2,    #Y[which(grepl(m - s, X))], 
            label = "0.125 (12.5%)") + 
   scale_x_continuous(breaks = seq(m - 3*s, m + 3*s, s*1.5)) +
@@ -79,7 +79,7 @@ ggplot(data = gg, mapping = aes(x = X, y = Y)) +
 ```
 
 
-* Tente para a distribuição **t** e **qui-quadrado***...
+* Tente para a distribuição **t** e **qui-quadrado**,... . *(assuma $\nu = 15$ para **t** e **Qui-Quadrado**)*
 
 
 

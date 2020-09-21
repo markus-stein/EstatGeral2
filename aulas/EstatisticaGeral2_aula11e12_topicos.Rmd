@@ -37,43 +37,50 @@ knitr::opts_chunk$set(echo = TRUE)
     + Qual o estimador pontual "natural" para o problema? E como construir um IC?
     + Como criar uma regra para tomar essa decisão?
 
-    
-\vspace{0.5cm}
+<!-- \vspace{0.5cm} -->
 
 ## Hipóteses estatísticas
-* São afirmações acerca de parâmetros.
-        + Exemplos: o salário médio, $\mu$ na empresa A é superior a 2 salários mínimos (s.m.),  
+* São **afirmações acerca de parâmetros**.
+    + Exemplo: o salário médio, $\mu$, na empresa A é superior a 2 salários mínimos (s.m.), ou seja, 
+    + em termos do parêmetro, $\mu \leq 2 s.m.$ ou $\mu > 2s.m.$. 
         
-* Hipótese **nula** versus hipótese **alternativa**
-        + $H_0: \mu \leq 2 s.m.$ contra $H_1: \mu>2s.m.$ 
+* Hipótese **nula** ($H_0$) *versus* hipótese **alternativa** ($H_1$ ou $H_A$).
+    + Hipoteses são subconjuntos dos possíveis valores para um parâmetro de interesse $\theta$.
+    + Devem ser complementares. *($H_0: \theta \leq \theta_0$ contra $H_1: \theta > \theta_0$, ou $H_0: \theta \geq \theta_0$ contra $H_1: \theta < \theta_0$ ou $H_0: \theta = \theta_0$ contra $H_1: \theta \neq \theta_0$)*.
 
+* Teste **unilateral** (quando $H_1: \theta < \theta_0$ ou $H_1: \theta > \theta_0$) *versus* **bilateral** ($H_1: \theta \neq \theta_0$).
 
-\vspace{0.5cm}
+<!-- \vspace{0.5cm} -->
 
-## Erros de decisão e procedimento do Teste de hipóteses (Bussab e Morettin - seção 12.3)
+## Erros de decisão e procedimento do Teste (Bussab e Morettin - seção 12.3)
 * Erro tipo I: rejeitar $H_0$ quando $H_0$ for verdadeira. 
+    + Exemplo: seria afirmar que o salário na empresa A é maior do que $2 s.m.$ com base na amostra, quando na realidade o salário médio é menor. 
+*(nesse caso tivemos o "azar" de ter coletado uma amostra extrema mesmo $H_0$ sendo verdade)*
+    + É o erro que priorizamos.
 * Erro tipo II: "aceitar" $H_0$ quando $H_0$ for falsa.
 
 
 ### Probabilidade de Erro 
 * $\alpha = P(Erro \: I) = P( \left.``rejeitar \: H_0" \right| ``H_0 \: verdadeiro")$.  
-    + $\alpha$ é também chamada de **nível de significância**.  
+    + $\alpha$ é também denominado **nível de significância**.  
 * $\beta = P(Erro \: II) = P( \left.``não \: rejeitar \: H_0" \right| ``H_0 \: falsa")$.  
-    + $\alpha$ é também chamada de **nível de significância**.$
+    + $1 - \beta$ é também denominado **poder do teste**.
 
 
 ### Região crítica (Região de rejeição)
-Conjunto de valores para a estatística de teste em que rejeitaremos a hipótese nula.  
-* $RC = { z_{calc} > z_{tab}}$ por exemplo.
+É o conjunto de valores para a estatística de teste em que rejeitaremos a hipótese nula.  
 
+* Por exemplo, $RC = \left\{ \overline X > \overline x_{crítico} \right\}$ se $H_0: \mu \leq 2s.m.$.  
+* Depende das hipóteses e "vai na mesma direção" da hipótese alternativa.
 
 \vspace{0.5cm}
 
 ## Passo a passo para a construção de um Teste de hipóteses (Bussab e Morettin - seção 12.4)
 1. **Definir hipóteses** acerca do parâmetro de interesse.  
-2. Escolher qual a **estatística de teste** adequada.   
-3. Fixar $\alpha$ e construir a **região crítica**.  
-4. **Calcular a estatística de teste** usando os valores da amostra observada.  
+*($H_0: \theta = \theta_0$, $H_0: \theta \geq \theta_0$, ou $H_0: \theta \leq \theta_0$ )*
+2. Escolher qual a **estatística de teste** adequada. *($z_{calc}$, $t_{calc}$, ...)*
+3. Fixar $\alpha$ e construir a **região crítica**.
+4. **Calcular a estatística de teste** usando os valores da amostra observada.
 5. Tomar **decisão e conclusão** sobre o problema.
 
 \vspace{0.5cm}
@@ -81,6 +88,14 @@ Conjunto de valores para a estatística de teste em que rejeitaremos a hipótese
 ## Testes para a média de uma população (com variância conhecida) (Bussab e Morettin - seção 12.5)
 Sob $H_0$, supomos que $X_1, \ldots, X_n$ são uma amostra aleatória de $X \sim Normal(\mu_0, \sigma^2)$$ então
 $$Z_{calc} =  \frac{\overline X - \mu_0}{\sqrt{\frac{\sigma^2}{n}}} \sim Normal(0,1)$$
+
+* Como construir a região crítica $RC$?  
+*(Depende das hipóteses, $H_1: \mu < \mu_0$, $H_1: \mu > \mu_0$ ou $H_1: \mu \neq \mu_0$)*
+
+* Para quais valores de $Z_{calc}$ rejeitamos $H_0$?  
+*(Respectivamente $RC = \left\{ z_{calc} < -z_{tab} \right\}$, ou $RC = \left\{ z_{calc} > z_{tab} \right\}$ ou $RC = \left\{ \left| z_{calc} \right| > z_{tab} \right\}$)*
+
+* Como encontrar $z_{tab}$ para $\alpha$ fixado? 
 
 \vspace{0.5cm}
 
