@@ -97,6 +97,10 @@ $$Z_{calc} =  \frac{\overline X - \mu_0}{\sqrt{\frac{\sigma^2}{n}}} \sim Normal(
 
 * Como encontrar $z_{tab}$ para $\alpha$ fixado? 
 
+### Testes para a média de uma população, com variância desconhecida
+Sob $H_0$, supomos que $X_1, \ldots, X_n$ são uma amostra aleatória de $X \sim Normal(\mu_0, \sigma^2)$ com $\sigma^2$ desconhecida, então
+$$T_{calc} =  \frac{\overline X - \mu_0}{\sqrt{\frac{S^2}{n}}} \sim t(n-1)$$
+
 \vspace{0.5cm}
 
 ***
