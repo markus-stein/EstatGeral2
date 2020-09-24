@@ -26,52 +26,81 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ## (...cont.) Testes de Hipóteses para média(s) (Bussab e Morettin - seção 12.5)
-<!-- * Podemos utilizar **intervalos de confiança** para **tomar decisões**? Sim.   -->
-<!--     + Decisões acerca de valores possíveis para parâmetros: médias, variâncias e proporções, ... -->
-
-<!-- * O **Teste de hipóteses** é uma "máquina" de decisões, um mecanismo para se construir hipóteses e decidir sobre afirmações sobre possíveis valores para um parâmetro (usando uma regra probabilística e dados amostrais). -->
-
 <!-- \vspace{0.5cm} -->
+* Na semana passada vimos testes para a média de uma população
+    + com variância conhecida
+    + com variância desconhecida
 
-<!-- * Exemplo: Devo manter ou não uma operação financeira com base no retorno médio dos útlimos meses? -->
-<!--     + Qual o estimador pontual "natural" para o problema? E como construir um IC? -->
-<!--     + Como criar uma regra para tomar essa decisão? -->
+* **Exemplo**: o salário médio, $\mu$, na empresa A é superior a 2 salários mínimos (s.m.), teste essas hipóteses ao nível de confiança 5%. *(Assuma que $X$ seja o salário de cada trabalhador e observamos uma amostra aleatória $X_1, \ldots, X_n$ de $X \sim Normal(\mu, 1)$, variância conhecida.)* 
+  + Nesse caso, $H_0: \mu \leq 2 s.m.$ contra $H_1: \mu > 2s.m.$.
+  + A região crítica é dada por
+  
+$RC = \left\{ \overline X > \overline x_{crítico} \right\},$ para $\overline x_{crítico} = \overline x + z_{tab} \cdot \frac{1}{\sqrt n}$, 
 
-<!-- <!-- \vspace{0.5cm} --> -->
+```{r pressure, echo=FALSE, out.width = '50%', fig.align='center'}
+# library(ggplot2)
+# set.seed(1)
+# m <- 2
+# s <- 1
+# Z <- seq(-4, 4, 0.01)
+# X <- m + s * Z
+# Y <- dnorm(X, m, s)
+# 
+# # test and sample
+# n <- 25
+# x <- rnorm(n, m+1, s)
+# zcalc <- (mean(x) - m) / (s / sqrt(n))
+# 
+# alpha <- 0.05
+# ztab <- qnorm(p = 1-alpha, mean = m, sd = s)
+# xtab <- m + ztab * s / sqrt(n)
+# 
+# gg   <- data.frame(Z,X,Y)
+# ggplot(data = gg, mapping = aes(x = X, y = Y)) + 
+#   geom_linerange(data = gg[gg$X > xtab,], 
+#                  aes(X, ymin = 0, ymax = Y), colour="#E6205F") + 
+#   # geom_linerange(data = gg[gg$X > mean(x),], 
+#   #                aes(X, ymin = 0, ymax = Y), colour="yellow") + 
+#   geom_path(size = 1) +
+#   labs(x = NULL, y = NULL) + 
+#   theme(axis.text.y = element_blank(), axis.ticks.y = element_blank(), 
+#         axis.line.y = element_blank()) + 
+#   geom_vline(xintercept = xtab, linetype = "dashed") + 
+#   # geom_vline(xintercept = mean(x), linetype = "solid", colour = "red") + 
+#   geom_hline(yintercept = 0) + 
+#   annotate("text", x = m - 3*s, 
+#            y = max(Y)/2,    #Y[which(grepl(m - s, X))], 
+#            label = paste(1-alpha, " (", (1-alpha)*100, "%) \n Área de 'aceitação'", sep="")) + 
+#     annotate("text", x = m + 3*s, 
+#            y = max(Y)/2,    #Y[which(grepl(m - s, X))], 
+#            label = paste(alpha, " (", alpha*100, "%) \n Área de rejeição", sep="")) + 
+#   scale_x_continuous(breaks = seq(m - 3*s, m + 3*s, s*1.5)) +
+#   theme(panel.border = element_rect(colour = "black", fill=NA, size=1))
+```
 
-<!-- ## Hipóteses estatísticas -->
-<!-- * São **afirmações acerca de parâmetros**. -->
-<!--     + Exemplo: o salário médio, $\mu$, na empresa A é superior a 2 salários mínimos (s.m.), ou seja,  -->
-<!--     + em termos do parêmetro, $\mu \leq 2 s.m.$ ou $\mu > 2s.m.$.  -->
+ou 
 
-<!-- * Hipótese **nula** ($H_0$) *versus* hipótese **alternativa** ($H_1$ ou $H_A$). -->
-<!--     + Hipoteses são subconjuntos dos possíveis valores para um parâmetro de interesse $\theta$. -->
-<!--     + Devem ser complementares. *($H_0: \theta \leq \theta_0$ contra $H_1: \theta > \theta_0$, ou $H_0: \theta \geq \theta_0$ contra $H_1: \theta < \theta_0$ ou $H_0: \theta = \theta_0$ contra $H_1: \theta \neq \theta_0$)*. -->
+$RC = \left\{ Z_{calc} > z_{tab} \right\}$, para $Z_{calc} = \frac{\overline X - 2}{\frac{1}{\sqrt n}}$.
 
-<!-- * Teste **unilateral** (quando $H_1: \theta < \theta_0$ ou $H_1: \theta > \theta_0$) *versus* **bilateral** ($H_1: \theta \neq \theta_0$). -->
-
-<!-- <!-- \vspace{0.5cm} --> -->
-
-<!-- ## Erros de decisão e procedimento do Teste (Bussab e Morettin - seção 12.3) -->
-<!-- * Erro tipo I: rejeitar $H_0$ quando $H_0$ for verdadeira.  -->
-<!--     + Exemplo: seria afirmar que o salário na empresa A é maior do que $2 s.m.$ com base na amostra, quando na realidade o salário médio é menor.  -->
-<!-- *(nesse caso tivemos o "azar" de ter coletado uma amostra extrema mesmo $H_0$ sendo verdade)* -->
-<!--     + É o erro que priorizamos. -->
-<!-- * Erro tipo II: "aceitar" $H_0$ quando $H_0$ for falsa. -->
-
-
-<!-- ### Probabilidade de Erro  -->
-<!-- * $\alpha = P(Erro \: I) = P( \left.``rejeitar \: H_0" \right| ``H_0 \: verdadeiro")$.   -->
-<!--     + $\alpha$ é também denominado **nível de significância**.   -->
-<!-- * $\beta = P(Erro \: II) = P( \left.``não \: rejeitar \: H_0" \right| ``H_0 \: falsa")$.   -->
-<!--     + $1 - \beta$ é também denominado **poder do teste**. -->
-
-
-<!-- ### Região crítica (Região de rejeição) -->
-<!-- É o conjunto de valores para a estatística de teste em que rejeitaremos a hipótese nula.   -->
-
-<!-- * Por exemplo, $RC = \left\{ \overline X > \overline x_{crítico} \right\}$ se $H_0: \mu \leq 2s.m.$.   -->
-<!-- * Depende das hipóteses e "vai na mesma direção" da hipótese alternativa. -->
+```{r pressure2, echo=FALSE, out.width = '50%', fig.align='center'}
+# ggplot(data = gg, mapping = aes(x = Z, y = Y)) + 
+#   geom_linerange(data = gg[gg$Z > ztab,], 
+#                  aes(Z, ymin = 0, ymax = Y), colour="#E6205F") + 
+#   geom_path(size = 1) +
+#   labs(x = NULL, y = NULL) + 
+#   theme(axis.text.y = element_blank(), axis.ticks.y = element_blank(), 
+#         axis.line.y = element_blank()) + 
+#   geom_vline(xintercept = ztab, linetype = "dashed") + 
+#   geom_hline(yintercept = 0) + 
+#   annotate("text", x = m - 3*s, 
+#            y = max(Y)/2,    #Y[which(grepl(m - s, X))], 
+#            label = paste(1-alpha, " (", (1-alpha)*100, "%) \n Área de 'aceitação'", sep="")) + 
+#     annotate("text", x = m + 3*s, 
+#            y = max(Y)/2,    #Y[which(grepl(m - s, X))], 
+#            label = paste(alpha, " (", alpha*100, "%) \n Área de rejeição", sep="")) + 
+#   scale_x_continuous(breaks = seq(m - 3*s, m + 3*s, s*1.5)) +
+#   theme(panel.border = element_rect(colour = "black", fill=NA, size=1))
+```
 
 <!-- \vspace{0.5cm} -->
 
@@ -85,9 +114,6 @@ knitr::opts_chunk$set(echo = TRUE)
 
 <!-- \vspace{0.5cm} -->
 
-* Na semana passada vimos testes para a média de uma população
-    + com variância conhecida
-    + com variância desconhecida
 
 <!-- Sob $H_0$, supomos que $X_1, \ldots, X_n$ são uma amostra aleatória de $X \sim Normal(\mu_0, \sigma^2)$$ então -->
 <!-- $$Z_{calc} =  \frac{\overline X - \mu_0}{\sqrt{\frac{\sigma^2}{n}}} \sim Normal(0,1)$$ -->
@@ -101,6 +127,21 @@ knitr::opts_chunk$set(echo = TRUE)
 <!-- * Como encontrar $z_{tab}$ para $\alpha$ fixado?  -->
 
 <!-- \vspace{0.5cm} -->
+
+
+## Valor *p* (ou *p* valor) (Bussab e Morettin - seção 12.8)
+"É a probabilidade de observarmos um valor de estatística de teste mais extremo do que o observado na amostra coletada *(conforme as hipóteses definidas)*."
+
+* Região crítica $\times$ valor *p*
+
+
+## Testes para (comparação de) **duas médias** populacionais 
+
+### Amostras independentes (Bussab e Morettin - seção 13.3.1)
+
+
+### Amostras dependentes (Bussab e Morettin - seção 13.4.1)
+
 
 ***
 ### Ler slides das aulas 14 e 13

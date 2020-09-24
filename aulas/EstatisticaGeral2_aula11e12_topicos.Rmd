@@ -26,54 +26,48 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 # Testes de Hipóteses (Bussab e Morettin - capítulo 12)
-* Podemos utilizar **intervalos de confiança** para **tomar decisões**? Sim.  
+* Podemos utilizar **intervalos de confiança** para **tomar decisões**? Sim.
     + Decisões acerca de valores possíveis para parâmetros: médias, variâncias e proporções, ...
 
 * O **Teste de hipóteses** é uma "máquina" de decisões, um mecanismo para se construir hipóteses e decidir sobre afirmações sobre possíveis valores para um parâmetro (usando uma regra probabilística e dados amostrais).
 
-\vspace{0.5cm}
-
-* Exemplo: Devo manter ou não uma operação financeira com base no retorno médio dos útlimos meses?
+* **Exemplo**: Devo manter ou não uma operação financeira com base no retorno médio dos útlimos meses?
     + Qual o estimador pontual "natural" para o problema? E como construir um IC?
     + Como criar uma regra para tomar essa decisão?
 
-<!-- \vspace{0.5cm} -->
-
 ## Hipóteses estatísticas
 * São **afirmações acerca de parâmetros**.
-    + Exemplo: o salário médio, $\mu$, na empresa A é superior a 2 salários mínimos (s.m.), ou seja, 
-    + em termos do parêmetro, $\mu \leq 2 s.m.$ ou $\mu > 2s.m.$. 
+    + Exemplo: o salário médio, $\mu$, na empresa A é superior a 2 salários mínimos (s.m.), ou seja, em termos do parêmetro, $\mu \leq 2 s.m.$ ou $\mu > 2s.m.$.
         
 * Hipótese **nula** ($H_0$) *versus* hipótese **alternativa** ($H_1$ ou $H_A$).
     + Hipoteses são subconjuntos dos possíveis valores para um parâmetro de interesse $\theta$.
     + Devem ser complementares. *($H_0: \theta \leq \theta_0$ contra $H_1: \theta > \theta_0$, ou $H_0: \theta \geq \theta_0$ contra $H_1: \theta < \theta_0$ ou $H_0: \theta = \theta_0$ contra $H_1: \theta \neq \theta_0$)*.
 
 * Teste **unilateral** (quando $H_1: \theta < \theta_0$ ou $H_1: \theta > \theta_0$) *versus* **bilateral** ($H_1: \theta \neq \theta_0$).
-
-<!-- \vspace{0.5cm} -->
+    + **Como definir hipóteses para cada problema?**
+1. A igualdade '=' vai sempre em $H_0$.
+2. A hipótese de pesquisa irá sempre em $H_1$.
 
 ## Erros de decisão e procedimento do Teste (Bussab e Morettin - seção 12.3)
-* Erro tipo I: rejeitar $H_0$ quando $H_0$ for verdadeira. 
+* **Erro tipo I**: rejeitar $H_0$ quando $H_0$ for verdadeira. 
     + Exemplo: seria afirmar que o salário na empresa A é maior do que $2 s.m.$ com base na amostra, quando na realidade o salário médio é menor. 
-*(nesse caso tivemos o "azar" de ter coletado uma amostra extrema mesmo $H_0$ sendo verdade)*
-    + É o erro que priorizamos.
-* Erro tipo II: "aceitar" $H_0$ quando $H_0$ for falsa.
-
+*(nesse caso tivemos o "azar" de ter coletado uma amostra extrema mesmo $H_0$ sendo verdade)* **É o erro que priorizamos**.
+* **Erro tipo II**: "aceitar" $H_0$ quando $H_0$ for falsa.
 
 ### Probabilidade de Erro 
-* $\alpha = P(Erro \: I) = P( \left.``rejeitar \: H_0" \right| ``H_0 \: verdadeiro")$.  
-    + $\alpha$ é também denominado **nível de significância**.  
-* $\beta = P(Erro \: II) = P( \left.``não \: rejeitar \: H_0" \right| ``H_0 \: falsa")$.  
-    + $1 - \beta$ é também denominado **poder do teste**.
-
+* $\alpha = P(Erro \: I) = P( \left.``rejeitar \: H_0" \right| ``H_0 \: verdadeiro")$, também denominado **nível de significância**;
+* $\beta = P(Erro \: II) = P( \left.``não \: rejeitar \: H_0" \right| ``H_0 \: falsa")$, também denominado **poder do teste**.
+    + Na prática fixamos  $\alpha$ e geralmente $\beta$ é ignorado. *(Precisamos saber calcular $\beta$)* Assim
+1. se não rejeitamos $H_0$, ou acertamos, ou erramos com probabilidade $\beta$ *(geralmente desconhecida)*. 
+2. se rejeitamos $H_0$, afirmamos $H_1$, então acertamos ou erramos com probabilidade $\alpha$ *(geralmente escolhemos um valor muito pequeno)*.
 
 ### Região crítica (Região de rejeição)
 É o conjunto de valores para a estatística de teste em que rejeitaremos a hipótese nula.  
 
-* Por exemplo, $RC = \left\{ \overline X > \overline x_{crítico} \right\}$ se $H_0: \mu \leq 2s.m.$.  
+* Por exemplo, $RC = \left\{ \overline X > \overline x_{crítico} \right\}$ se $H_0: \mu \leq 2s.m.$.
 * Depende das hipóteses e "vai na mesma direção" da hipótese alternativa.
 
-\vspace{0.5cm}
+<!-- \vspace{0.5cm} -->
 
 ## Passo a passo para a construção de um Teste de hipóteses (Bussab e Morettin - seção 12.4)
 1. **Definir hipóteses** acerca do parâmetro de interesse.  
@@ -83,7 +77,7 @@ knitr::opts_chunk$set(echo = TRUE)
 4. **Calcular a estatística de teste** usando os valores da amostra observada.
 5. Tomar **decisão e conclusão** sobre o problema.
 
-\vspace{0.5cm}
+<!-- \vspace{0.5cm} -->
 
 ## Testes para a média de uma população (com variância conhecida) (Bussab e Morettin - seção 12.5)
 Sob $H_0$, supomos que $X_1, \ldots, X_n$ são uma amostra aleatória de $X \sim Normal(\mu_0, \sigma^2)$$ então
