@@ -29,77 +29,80 @@ knitr::opts_chunk$set(echo = TRUE)
 <!-- \vspace{0.5cm} -->
 * Na semana passada vimos testes para a média de uma população
     + com variância conhecida
-    + com variância desconhecida
+    + com variância desconhecida  
 
 * **Exemplo**: o salário médio, $\mu$, na empresa A é superior a 2 salários mínimos (s.m.), teste essas hipóteses ao nível de confiança 5%. *(Assuma que $X$ seja o salário de cada trabalhador e observamos uma amostra aleatória $X_1, \ldots, X_n$ de $X \sim Normal(\mu, 1)$, variância conhecida.)* 
   + Nesse caso, $H_0: \mu \leq 2 s.m.$ contra $H_1: \mu > 2s.m.$.
-  + A região crítica é dada por
+  + A região crítica é dada por  
   
-$RC = \left\{ \overline X > \overline x_{crítico} \right\},$ para $\overline x_{crítico} = \overline x + z_{tab} \cdot \frac{1}{\sqrt n}$, 
+ Região crítica usando $\overline X$|  ou usando $Z_{calc}$
+-------------- |-----------  
+$RC = \left\{ \overline X > \overline x_{crítico} \right\}$,  | $RC = \left\{ Z_{calc} > z_{tab} \right\}$,   
+para $\overline x_{crítico} = 2 + z_{tab} \cdot \frac{1}{\sqrt n}$  | para $Z_{calc} = \frac{\overline X - 2}{\frac{1}{\sqrt n}}$ 
 
-```{r pressure, echo=FALSE, out.width = '50%', fig.align='center'}
-# library(ggplot2)
-# set.seed(1)
-# m <- 2
-# s <- 1
-# Z <- seq(-4, 4, 0.01)
-# X <- m + s * Z
-# Y <- dnorm(X, m, s)
-# 
-# # test and sample
-# n <- 25
-# x <- rnorm(n, m+1, s)
-# zcalc <- (mean(x) - m) / (s / sqrt(n))
-# 
-# alpha <- 0.05
-# ztab <- qnorm(p = 1-alpha, mean = m, sd = s)
-# xtab <- m + ztab * s / sqrt(n)
-# 
-# gg   <- data.frame(Z,X,Y)
-# ggplot(data = gg, mapping = aes(x = X, y = Y)) + 
-#   geom_linerange(data = gg[gg$X > xtab,], 
-#                  aes(X, ymin = 0, ymax = Y), colour="#E6205F") + 
-#   # geom_linerange(data = gg[gg$X > mean(x),], 
-#   #                aes(X, ymin = 0, ymax = Y), colour="yellow") + 
-#   geom_path(size = 1) +
-#   labs(x = NULL, y = NULL) + 
-#   theme(axis.text.y = element_blank(), axis.ticks.y = element_blank(), 
-#         axis.line.y = element_blank()) + 
-#   geom_vline(xintercept = xtab, linetype = "dashed") + 
-#   # geom_vline(xintercept = mean(x), linetype = "solid", colour = "red") + 
-#   geom_hline(yintercept = 0) + 
-#   annotate("text", x = m - 3*s, 
-#            y = max(Y)/2,    #Y[which(grepl(m - s, X))], 
-#            label = paste(1-alpha, " (", (1-alpha)*100, "%) \n Área de 'aceitação'", sep="")) + 
-#     annotate("text", x = m + 3*s, 
-#            y = max(Y)/2,    #Y[which(grepl(m - s, X))], 
-#            label = paste(alpha, " (", alpha*100, "%) \n Área de rejeição", sep="")) + 
-#   scale_x_continuous(breaks = seq(m - 3*s, m + 3*s, s*1.5)) +
-#   theme(panel.border = element_rect(colour = "black", fill=NA, size=1))
-```
 
-ou 
 
-$RC = \left\{ Z_{calc} > z_{tab} \right\}$, para $Z_{calc} = \frac{\overline X - 2}{\frac{1}{\sqrt n}}$.
+```{r rc, echo=FALSE, fig.show="hold", out.width = '49%', fig.align='center'}
+library(ggplot2)
+set.seed(1)
+m <- 2
+s <- 1
 
-```{r pressure2, echo=FALSE, out.width = '50%', fig.align='center'}
-# ggplot(data = gg, mapping = aes(x = Z, y = Y)) + 
-#   geom_linerange(data = gg[gg$Z > ztab,], 
-#                  aes(Z, ymin = 0, ymax = Y), colour="#E6205F") + 
-#   geom_path(size = 1) +
-#   labs(x = NULL, y = NULL) + 
-#   theme(axis.text.y = element_blank(), axis.ticks.y = element_blank(), 
-#         axis.line.y = element_blank()) + 
-#   geom_vline(xintercept = ztab, linetype = "dashed") + 
-#   geom_hline(yintercept = 0) + 
-#   annotate("text", x = m - 3*s, 
-#            y = max(Y)/2,    #Y[which(grepl(m - s, X))], 
-#            label = paste(1-alpha, " (", (1-alpha)*100, "%) \n Área de 'aceitação'", sep="")) + 
-#     annotate("text", x = m + 3*s, 
-#            y = max(Y)/2,    #Y[which(grepl(m - s, X))], 
-#            label = paste(alpha, " (", alpha*100, "%) \n Área de rejeição", sep="")) + 
-#   scale_x_continuous(breaks = seq(m - 3*s, m + 3*s, s*1.5)) +
-#   theme(panel.border = element_rect(colour = "black", fill=NA, size=1))
+# test and sample
+n <- 25
+x <- rnorm(n, m+1, s)
+sxbarra <- s / sqrt(n)
+zcalc <- (mean(x) - m) / sxbarra
+
+alpha <- 0.05
+ztab <- qnorm(p = 1-alpha)
+xtab <- round(qnorm(p = 1-alpha, mean = m, sd = sxbarra), digits = 2)
+
+Z <- seq(-4, 4, 0.01)
+YZ <- dnorm(Z)
+X <- m + sxbarra * Z
+YX <- dnorm(X, m, sxbarra)
+
+gg   <- data.frame(Z,X,YZ,YX)
+ggplot(data = gg, mapping = aes(x = X, y = YX)) +
+  geom_linerange(data = gg[gg$X > xtab,],
+                 aes(X, ymin = 0, ymax = YX), colour="#E6205F") +
+  # geom_linerange(data = gg[gg$X > mean(x),],
+  #                aes(X, ymin = 0, ymax = Y), colour="yellow") +
+  geom_path(size = 1) +
+  labs(x = NULL, y = NULL) +
+  theme(axis.text.y = element_blank(), axis.ticks.y = element_blank(),
+        axis.line.y = element_blank()) +
+  geom_vline(xintercept = xtab, linetype = "dashed") +
+  # geom_vline(xintercept = mean(x), linetype = "solid", colour = "red") +
+  geom_hline(yintercept = 0) +
+  annotate("text", x = m - 3*sxbarra,
+           y = max(YX)/2,    #Y[which(grepl(m - s, X))],
+           label = paste(1-alpha, " (", (1-alpha)*100, "%) \n Área de 'aceitação'", sep="")) +
+    # annotate("text", x = m , y = max(YX)/2, label = text(paste( 
+    #   expression(bar(x) [crítico]), "=", xtab)) +
+    annotate("text", x = m + 3*sxbarra,
+           y = max(YX)/2,    #Y[which(grepl(m - s, X))],
+           label = paste(alpha, " (", alpha*100, "%) \n Área de rejeição", sep="")) +
+  scale_x_continuous(breaks = seq(m - 3*sxbarra, m + 3*sxbarra, sxbarra*1.5)) +
+  theme(panel.border = element_rect(colour = "black", fill=NA, size=1))
+
+# figure 2
+ggplot(data = gg, mapping = aes(x = Z, y = YZ)) +
+  geom_linerange(data = gg[gg$Z > ztab,],
+                 aes(Z, ymin = 0, ymax = YZ), colour="#E6205F") +
+  geom_path(size = 1) +
+  labs(x = NULL, y = NULL) +
+  theme(axis.text.y = element_blank(), axis.ticks.y = element_blank(),
+        axis.line.y = element_blank()) +
+  geom_vline(xintercept = ztab, linetype = "dashed") +
+  geom_hline(yintercept = 0) +
+  annotate("text", x = -3, y = max(YZ)/2,    #Y[which(grepl(m - s, X))],
+           label = paste(1-alpha, " (", (1-alpha)*100, "%) \n Área de 'aceitação'", sep="")) +
+    annotate("text", x = 3, y = max(YZ)/2,    #Y[which(grepl(m - s, X))],
+           label = paste(alpha, " (", alpha*100, "%) \n Área de rejeição", sep="")) +
+  scale_x_continuous(breaks = seq(-3, 3, 1.5)) +
+  theme(panel.border = element_rect(colour = "black", fill=NA, size=1))
 ```
 
 <!-- \vspace{0.5cm} -->
@@ -126,7 +129,6 @@ $RC = \left\{ Z_{calc} > z_{tab} \right\}$, para $Z_{calc} = \frac{\overline X -
 
 <!-- * Como encontrar $z_{tab}$ para $\alpha$ fixado?  -->
 
-<!-- \vspace{0.5cm} -->
 
 
 ## Valor *p* (ou *p* valor) (Bussab e Morettin - seção 12.8)
@@ -142,10 +144,20 @@ $RC = \left\{ Z_{calc} > z_{tab} \right\}$, para $Z_{calc} = \frac{\overline X -
 
 ### Amostras dependentes (Bussab e Morettin - seção 13.4.1)
 
+\vspace{1cm}
+
+## REFERÊNCIAS EXTRAS
+* Página 'Probabilidade e Estatística (EaD)' da UFGRS
+  + [Capítulo 5 - Inferência para dados numéricos](https://www.ufrgs.br/probabilidade-estatistica/livro/cpt5/ch5_inf_num.html#diferen%C3%A7a-entre-duas-m%C3%A9dias)   
+
+* **Excelente página com teoria, exemplos e diversos recursos, exercícios resolvidos, atividades, sobre testes da UFMG**
+  + https://pmg-dest-ufmg-exatas.shinyapps.io/teste_de_hipoteses/
+
+\vspace{0.5cm}
 
 ***
 ### Ler slides das aulas 14 e 13
 ### Fazer exercícios lista 2-2
-<!-- ### Fazer avaliação parcial da área 1 - vale nota!!! -->
+### Fazer avaliação pontual 1 da área 2 - vale nota!!!
 ***
 
