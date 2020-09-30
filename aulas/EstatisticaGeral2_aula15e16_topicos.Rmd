@@ -1,0 +1,90 @@
+---
+title: "Plano Aula 15 e 16"
+author: "Markus Stein"
+# date: "XX Month 2020"
+output: pdf_document
+    # toc: yes
+header-includes:
+    - \usepackage{fancyhdr}
+always_allow_html: yes
+---
+\addtolength{\headheight}{0.0cm} 
+\pagestyle{fancyplain} 
+\lhead{\includegraphics[height=1.5cm]{LogoIME.png}}
+\rhead{\includegraphics[height=1.5cm]{images.jpeg}}
+\chead{UNIVERSIDADE FEDERAL DO RIO GRANDE DO SUL \\
+INSTITUTO DE MATEMÁTICA E ESTATÍSTICA \\
+DEPARTAMENTO DE ESTATÍSTICA \\
+\vspace{0.3cm}
+MAT02215 - Estatística Geral 2 - 2020/1
+}
+\renewcommand{\headrulewidth}{0pt} 
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Testes de Hipóteses para variância 
+
+* **Exemplo**: Estudar a variabilidade do retorno de uma ação durante um dia de operações. Será que a variância do retono foi muito alta?
+
+* **Exemplo 2**: E se quisermos comparar se um tipo de ação apresenta variabilidade do retorno maior ou menor do que outro tipo?
+
+
+### Uma população (Bussab e Morettin - seção 12.9)
+
+
+### Uma população (Bussab e Morettin - seção 13.2)
+
+<!-- * **Exemplo**: o salário médio, $\mu$, na empresa A é superior a 2 salários mínimos (s.m.), teste essas hipóteses ao nível de confiança 5%. *(Assuma que $X$ seja o salário de cada trabalhador e observamos uma amostra aleatória $X_1, \ldots, X_n$ de $X \sim Normal(\mu, 1)$, variância conhecida.)*  -->
+<!--   + Nesse caso, $H_0: \mu \leq 2 s.m.$ contra $H_1: \mu > 2s.m.$. -->
+<!--   + A região crítica é dada por   -->
+
+<!--  Região crítica usando $\overline X$|  ou usando $Z_{calc}$ -->
+<!-- -------------- |-----------   -->
+<!-- $RC = \left\{ \overline X > \overline x_{crítico} \right\}$,  | $RC = \left\{ Z_{calc} > z_{tab} \right\}$,    -->
+<!-- para $\overline x_{crítico} = 2 + z_{tab} \cdot \frac{1}{\sqrt n}$  | para $Z_{calc} = \frac{\overline X - 2}{\frac{1}{\sqrt n}}$   -->
+
+
+
+<!-- ## Valor *p* (ou *p* valor) (Bussab e Morettin - seção 12.8) -->
+<!-- "É a probabilidade de observarmos um valor de estatística de teste mais extremo do que o observado na amostra coletada *(conforme as hipóteses definidas)*." -->
+
+<!-- * Região crítica $\times$ valor *p* -->
+
+
+
+
+\vspace{1cm}
+
+
+## Testes de hipóteses para a proporção
+
+* **Exemplo 3**: O percentual de desempregados no Brasil era de 11,2% em janeiro, com o período de pandemia uma pesquisa com 100 pessoas em idade para o trabalho revelou que 13,8% estavam desempregados em julho. Podemos afirmar que a pandemia aumentou o percentual de desemprego significativamente?
+
+* **Exemplo 4**: Se conseguissemos uma amostra de outro país, poderíamos comparar o percentual no Brasil contra de outro país. Será que tivemos um aumento significativo em relação ao outro país?
+
+
+### Uma população (Bussab e Morettin - seção 12.6)
+
+
+### Duas populações (Bussab e Morettin - seção 13.5)
+
+\vspace{1cm}
+
+<!-- ## REFERÊNCIAS EXTRAS -->
+<!-- * Página 'Probabilidade e Estatística (EaD)' da UFRGS -->
+<!--   + [Capítulo 5 - Inferência para dados numéricos](https://www.ufrgs.br/probabilidade-estatistica/livro/cpt5/ch5_inf_num.html#diferen%C3%A7a-entre-duas-m%C3%A9dias)    -->
+
+<!-- * **Excelente página com teoria, exemplos e diversos recursos, exercícios resolvidos, atividades, sobre testes da UFMG** -->
+<!--   + https://pmg-dest-ufmg-exatas.shinyapps.io/teste_de_hipoteses/ -->
+
+<!-- \vspace{0.5cm} -->
+
+***
+### Ler slides das aulas 15 e 16
+### Fazer exercícios lista 2-3
+<!-- ### Fazer avaliação pontual 1 da área 2 - vale nota!!! -->
+***
+

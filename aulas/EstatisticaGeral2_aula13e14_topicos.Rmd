@@ -29,7 +29,8 @@ knitr::opts_chunk$set(echo = TRUE)
 <!-- \vspace{0.5cm} -->
 * Na semana passada vimos testes para a média de uma população
     + com variância conhecida
-    + com variância desconhecida  
+    + com variância desconhecida   
+
 
 * **Exemplo**: o salário médio, $\mu$, na empresa A é superior a 2 salários mínimos (s.m.), teste essas hipóteses ao nível de confiança 5%. *(Assuma que $X$ seja o salário de cada trabalhador e observamos uma amostra aleatória $X_1, \ldots, X_n$ de $X \sim Normal(\mu, 1)$, variância conhecida.)* 
   + Nesse caso, $H_0: \mu \leq 2 s.m.$ contra $H_1: \mu > 2s.m.$.
@@ -38,11 +39,10 @@ knitr::opts_chunk$set(echo = TRUE)
  Região crítica usando $\overline X$|  ou usando $Z_{calc}$
 -------------- |-----------  
 $RC = \left\{ \overline X > \overline x_{crítico} \right\}$,  | $RC = \left\{ Z_{calc} > z_{tab} \right\}$,   
-para $\overline x_{crítico} = 2 + z_{tab} \cdot \frac{1}{\sqrt n}$  | para $Z_{calc} = \frac{\overline X - 2}{\frac{1}{\sqrt n}}$ 
+para $\overline x_{crítico} = 2 + z_{tab} \cdot \frac{1}{\sqrt n}$  | para $Z_{calc} = \frac{\overline X - 2}{\frac{1}{\sqrt n}}$  
 
 
-
-```{r rc, echo=FALSE, fig.show="hold", out.width = '49%', fig.align='center'}
+```{r rc, echo=FALSE, fig.show="hold", out.width = '45%', fig.align='center'}
 library(ggplot2)
 set.seed(1)
 m <- 2
@@ -104,37 +104,59 @@ ggplot(data = gg, mapping = aes(x = Z, y = YZ)) +
   scale_x_continuous(breaks = seq(-3, 3, 1.5)) +
   theme(panel.border = element_rect(colour = "black", fill=NA, size=1))
 ```
+<!-- * **(cont.) Exemplo**: Suponha que $\overline x = 2,3$ para uma amostra de tamanho $n=15$, nesse caso não rejeitamos $H_0$, porque $\overline x < \overline x_{crítico}$, ou  -->
 
-<!-- \vspace{0.5cm} -->
+<!-- ```{r rc2, echo=FALSE, fig.show="hold", out.width = '40%', fig.align='center'} -->
+<!-- ggplot(data = gg, mapping = aes(x = X, y = YX)) + -->
+<!--   geom_linerange(data = gg[gg$X > xtab,], -->
+<!--                  aes(X, ymin = 0, ymax = YX), colour="#E6205F") + -->
+<!--   # geom_linerange(data = gg[gg$X > mean(x),], -->
+<!--   #                aes(X, ymin = 0, ymax = YX), colour="yellow") + -->
+<!--   geom_path(size = 1) + -->
+<!--   labs(x = NULL, y = NULL) + -->
+<!--   theme(axis.text.y = element_blank(), axis.ticks.y = element_blank(), -->
+<!--         axis.line.y = element_blank()) + -->
+<!--   geom_vline(xintercept = xtab, linetype = "dashed") + -->
+<!--   geom_vline(xintercept = 2.3, linetype = "solid", colour = "red") + -->
+<!--   geom_hline(yintercept = 0) + -->
+<!--   annotate("text", x = m - 3*sxbarra, -->
+<!--            y = max(YX)/2,    #Y[which(grepl(m - s, X))], -->
+<!--            label = paste(1-alpha, " (", (1-alpha)*100, "%) \n Área de 'aceitação'", sep="")) + -->
+<!--     annotate("text", x = 2.1 , y = max(YX)/2, label = expression(bar(x))) + -->
+<!--     annotate("text", x = m + 3*sxbarra, -->
+<!--            y = max(YX)/2,    #Y[which(grepl(m - s, X))], -->
+<!--            label = paste(alpha, " (", alpha*100, "%) \n Área de rejeição", sep="")) + -->
+<!--   scale_x_continuous(breaks = seq(m - 3*sxbarra, m + 3*sxbarra, sxbarra*1.5)) + -->
+<!--   theme(panel.border = element_rect(colour = "black", fill=NA, size=1)) -->
 
-<!-- ## Passo a passo para a construção de um Teste de hipóteses (Bussab e Morettin - seção 12.4) -->
-<!-- 1. **Definir hipóteses** acerca do parâmetro de interesse.   -->
-<!-- *($H_0: \theta = \theta_0$, $H_0: \theta \geq \theta_0$, ou $H_0: \theta \leq \theta_0$ )* -->
-<!-- 2. Escolher qual a **estatística de teste** adequada. *($z_{calc}$, $t_{calc}$, ...)* -->
-<!-- 3. Fixar $\alpha$ e construir a **região crítica**. -->
-<!-- 4. **Calcular a estatística de teste** usando os valores da amostra observada. -->
-<!-- 5. Tomar **decisão e conclusão** sobre o problema. -->
-
-<!-- \vspace{0.5cm} -->
-
-
-<!-- Sob $H_0$, supomos que $X_1, \ldots, X_n$ são uma amostra aleatória de $X \sim Normal(\mu_0, \sigma^2)$$ então -->
-<!-- $$Z_{calc} =  \frac{\overline X - \mu_0}{\sqrt{\frac{\sigma^2}{n}}} \sim Normal(0,1)$$ -->
-
-<!-- * Como construir a região crítica $RC$?   -->
-<!-- *(Depende das hipóteses, $H_1: \mu < \mu_0$, $H_1: \mu > \mu_0$ ou $H_1: \mu \neq \mu_0$)* -->
-
-<!-- * Para quais valores de $Z_{calc}$ rejeitamos $H_0$?   -->
-<!-- *(Respectivamente $RC = \left\{ z_{calc} < -z_{tab} \right\}$, ou $RC = \left\{ z_{calc} > z_{tab} \right\}$ ou $RC = \left\{ \left| z_{calc} \right| > z_{tab} \right\}$)* -->
-
-<!-- * Como encontrar $z_{tab}$ para $\alpha$ fixado?  -->
-
+<!-- # figure 2 -->
+<!-- ggplot(data = gg, mapping = aes(x = Z, y = YZ)) + -->
+<!--   geom_linerange(data = gg[gg$Z > ztab,], -->
+<!--                  aes(Z, ymin = 0, ymax = YZ), colour="#E6205F") + -->
+<!--   geom_path(size = 1) + -->
+<!--   labs(x = NULL, y = NULL) + -->
+<!--   theme(axis.text.y = element_blank(), axis.ticks.y = element_blank(), -->
+<!--         axis.line.y = element_blank()) + -->
+<!--   geom_vline(xintercept = ztab, linetype = "dashed") + -->
+<!--   geom_hline(yintercept = 0) + -->
+<!--   annotate("text", x = -3, y = max(YZ)/2,    #Y[which(grepl(m - s, X))], -->
+<!--            label = paste(1-alpha, " (", (1-alpha)*100, "%) \n Área de 'aceitação'", sep="")) + -->
+<!--     annotate("text", x = 3, y = max(YZ)/2,    #Y[which(grepl(m - s, X))], -->
+<!--            label = paste(alpha, " (", alpha*100, "%) \n Área de rejeição", sep="")) + -->
+<!--   scale_x_continuous(breaks = seq(-3, 3, 1.5)) + -->
+<!--   theme(panel.border = element_rect(colour = "black", fill=NA, size=1)) -->
+<!-- ``` -->
+<!-- * **(cont.) Exemplo**: Suponha que $\overline x = 2,3$ para uma amostra observada, nesse caso não rejeitamos $H_0$, porque $\overline x < \overline x_{crítico}$ -->
 
 
 ## Valor *p* (ou *p* valor) (Bussab e Morettin - seção 12.8)
 "É a probabilidade de observarmos um valor de estatística de teste mais extremo do que o observado na amostra coletada *(conforme as hipóteses definidas)*."
 
 * Região crítica $\times$ valor *p*
+
+
+
+
 
 
 ## Testes para (comparação de) **duas médias** populacionais 
@@ -147,7 +169,7 @@ ggplot(data = gg, mapping = aes(x = Z, y = YZ)) +
 \vspace{1cm}
 
 ## REFERÊNCIAS EXTRAS
-* Página 'Probabilidade e Estatística (EaD)' da UFGRS
+* Página 'Probabilidade e Estatística (EaD)' da UFRGS
   + [Capítulo 5 - Inferência para dados numéricos](https://www.ufrgs.br/probabilidade-estatistica/livro/cpt5/ch5_inf_num.html#diferen%C3%A7a-entre-duas-m%C3%A9dias)   
 
 * **Excelente página com teoria, exemplos e diversos recursos, exercícios resolvidos, atividades, sobre testes da UFMG**
