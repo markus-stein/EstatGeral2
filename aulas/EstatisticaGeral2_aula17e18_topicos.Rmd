@@ -1,0 +1,72 @@
+---
+title: "Plano Aula 17 e 18"
+author: "Markus Stein"
+# date: "XX Month 2020"
+output: pdf_document
+    # toc: yes
+header-includes:
+    - \usepackage{fancyhdr}
+always_allow_html: yes
+---
+\addtolength{\headheight}{0.0cm} 
+\pagestyle{fancyplain} 
+\lhead{\includegraphics[height=1.5cm]{LogoIME.png}}
+\rhead{\includegraphics[height=1.5cm]{images.jpeg}}
+\chead{UNIVERSIDADE FEDERAL DO RIO GRANDE DO SUL \\
+INSTITUTO DE MATEMÁTICA E ESTATÍSTICA \\
+DEPARTAMENTO DE ESTATÍSTICA \\
+\vspace{0.3cm}
+MAT02215 - Estatística Geral 2 - 2020/1
+}
+\renewcommand{\headrulewidth}{0pt} 
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Inferência para várias populações (Bussab e Morettin - seção 15.1)
+
+## Análise de Variância - ANOVA
+Pode ser vista como um teste para três ou mais médias.
+
+* **Exemplo**: Estudar o retorno de **três ou mais** ações durante um dia de operações. Será que existe diferença significativa entre os retornos médios das ações?
+
+* **Exemplo 2**: Gastos em campanha. Suponha que estamos interessados em comparar os gastos diárias na campanha para eleições municipais entre três candidatos diferentes. Podemos dizer que os gastos diários médios nas campanhas são iguais?
+
+\vspace{0.5cm}
+
+### ...aula passada... Distribuição $F$
+
+Teorema (**Distribuição *F*, nossa versão**): Seja $X_1, \ldots, X_{n_1}$ uma amostra aleatória da v.a. $X \sim Normal(\mu_1,\sigma_1^2)$ e $S_1^2 = \sum_{i=1}^{n_1} (X_i - \overline X)^2 / (n_1 - 1)$. Da mesma forma, suponha uma outra amostra $Y_1, \ldots, Y_{n_2}$ uma amostra aleatória da v.a. $Y \sim Normal(\mu_2,\sigma_2^2)$ e $S_2^2 = \sum_{i=1}^{n_2} (Y_i - \overline Y)^2 / (n_2 - 1)$. Então podemos escrever uma quantidade $F$ tal que (dadas algumas outras suposições que omitimos aqui) 
+$$ F = \frac{S_1^2}{S_2^2} \sim F{(n_1 - 1, n_2 - 1)}.$$
+
+* Como usar a distribuição de $F$ para testar médias de duas ou mais populações? **Quais as suposições necessárias**? **Como interpretar os resultados**?
+
+\vspace{0.5cm}
+
+### Tabela de análise de variância  (Bussab e Morettin - seção 15.2.4)
+
+
+<!-- ## Valor *p* (ou *p* valor) (Bussab e Morettin - seção 12.8) -->
+<!-- "É a probabilidade de observarmos um valor de estatística de teste mais extremo do que o observado na amostra coletada *(conforme as hipóteses definidas)*." -->
+
+<!-- * Região crítica $\times$ valor *p* -->
+
+
+\vspace{1cm}
+
+## REFERÊNCIA EXTRA
+Página 'Probabilidade e Estatística (EaD)' da UFRGS  
+
+* Capítulo 5 - Inferência para dados numéricos 
+    + [Seção - Comparando muitas médias com ANOVA](https://www.ufrgs.br/probabilidade-estatistica/livro/cpt5/ch5_inf_num.html#comparando-muitas-m%C3%A9dias-com-anova-t%C3%B3pico-especial)
+
+\vspace{1cm}
+
+***
+### Ler slides das aulas 15 e 16
+### Continuar exercícios lista 2-3
+### Fazer avaliação pontual 2 da área 2 - vale nota!!!
+***
+
