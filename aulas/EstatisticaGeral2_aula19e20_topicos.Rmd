@@ -1,0 +1,68 @@
+---
+title: "Plano Aula 19 e 20"
+author: "Markus Stein"
+# date: "XX Month 2020"
+output: pdf_document
+    # toc: yes
+header-includes:
+    - \usepackage{fancyhdr}
+always_allow_html: yes
+---
+\addtolength{\headheight}{0.0cm} 
+\pagestyle{fancyplain} 
+\lhead{\includegraphics[height=1.5cm]{LogoIME.png}}
+\rhead{\includegraphics[height=1.5cm]{images.jpeg}}
+\chead{UNIVERSIDADE FEDERAL DO RIO GRANDE DO SUL \\
+INSTITUTO DE MATEMÁTICA E ESTATÍSTICA \\
+DEPARTAMENTO DE ESTATÍSTICA \\
+\vspace{0.3cm}
+MAT02215 - Estatística Geral 2 - 2020/1
+}
+\renewcommand{\headrulewidth}{0pt} 
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## (...continuação) Análise de Variância - ANOVA
+Os slides da semana passada cobriram todo o conteúdo de ANOVA. 
+* Seguem aqui alguns pontos a serem pensados para a prova 2.
+
+
+### Teste de Homoscedasticidade de variâncias (Bussab e Morettin - seção 15.5)
+* Uma das suposições da ANOVA é de que as variâncias dentro de cada grupo sejam iguais;
+* Na prática podemos realizar um teste de hipoteses para igualdade de variâncias com 
+$$H_0: \sigma^2_1 = \sigma^2_1 = \ldots = \sigma^2_k$$
+    + Se as variâncias não são iguais (ou se rejeitamos $H_0$ acima) os erros podemos se muito maiores do que desejado.
+ 
+\vspace{0.5cm}
+
+
+
+
+## Para a prova 2
+* Ter o formulário em mãos.
+
+Importante lembrar
+
+* Suposições.
+* Interpretações.
+* Valor *p* para o teste *F*.
+
+\vspace{1cm}
+
+## REFERÊNCIA EXTRA
+Página 'Probabilidade e Estatística (EaD)' da UFRGS  
+
+* Capítulo 5 - Inferência para dados numéricos 
+    + [Seção - Comparando muitas médias com ANOVA](https://www.ufrgs.br/probabilidade-estatistica/livro/cpt5/ch5_inf_num.html#comparando-muitas-m%C3%A9dias-com-anova-t%C3%B3pico-especial)
+
+\vspace{1cm}
+
+***
+### Ler slides das aulas 15 e 16
+### Continuar exercícios lista 2-3
+### Fazer avaliação pontual 2 da área 2 - vale nota!!!
+***
+

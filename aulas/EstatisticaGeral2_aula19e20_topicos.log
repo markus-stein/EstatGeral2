@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.10.6)  14 OCT 2020 12:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.10.6)  14 OCT 2020 12:39
 entering extended mode
-**./EstatisticaGeral2_aula17e18_topicos.tex
-(EstatisticaGeral2_aula17e18_topicos.tex
+**./EstatisticaGeral2_aula19e20_topicos.tex
+(EstatisticaGeral2_aula19e20_topicos.tex
 LaTeX2e <2020-10-01>
 L3 programming layer <2020-09-24> xparse <2020-03-03> ("C:\Program Files\MiKTeX
  2.9\tex/latex/base\article.cls"
@@ -357,8 +357,8 @@ x.def
 File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
 \l__kernel_color_stack_int=\count277
 \l__pdf_internal_box=\box49
-) (EstatisticaGeral2_aula17e18_topicos.aux)
-\openout1 = `EstatisticaGeral2_aula17e18_topicos.aux'.
+) (EstatisticaGeral2_aula19e20_topicos.aux)
+\openout1 = `EstatisticaGeral2_aula19e20_topicos.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 73.
 LaTeX Font Info:    ... okay on input line 73.
@@ -408,10 +408,10 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 73.
 LaTeX Info: Redefining \pageref on input line 73.
 LaTeX Info: Redefining \nameref on input line 73.
-(EstatisticaGeral2_aula17e18_topicos.out) (EstatisticaGeral2_aula17e18_topicos.
+(EstatisticaGeral2_aula19e20_topicos.out) (EstatisticaGeral2_aula19e20_topicos.
 out)
 \@outlinefile=\write3
-\openout3 = `EstatisticaGeral2_aula17e18_topicos.out'.
+\openout3 = `EstatisticaGeral2_aula19e20_topicos.out'.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -509,25 +509,25 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 9
-6.
+9.
 ("C:\Program Files\MiKTeX 2.9\tex/latex/lm\ts1lmr.fd"
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 109.
+(Font)              <10> on input line 103.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 109.
+(Font)              <7> on input line 103.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 109.
-<LogoIME.png, id=51, 521.95pt x 226.8475pt>
+(Font)              <5> on input line 103.
+<LogoIME.png, id=32, 521.95pt x 226.8475pt>
 File: LogoIME.png Graphic file (type png)
 <use LogoIME.png>
-Package pdftex.def Info: LogoIME.png  used on input line 180.
+Package pdftex.def Info: LogoIME.png  used on input line 169.
 (pdftex.def)             Requested size: 98.19987pt x 42.67917pt.
-<images.jpeg, id=52, 330.23375pt x 153.57375pt>
+<images.jpeg, id=33, 330.23375pt x 153.57375pt>
 File: images.jpeg Graphic file (type jpg)
 <use images.jpeg>
-Package pdftex.def Info: images.jpeg  used on input line 180.
+Package pdftex.def Info: images.jpeg  used on input line 169.
 (pdftex.def)             Requested size: 91.77448pt x 42.6793pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -537,47 +537,34 @@ This may cause the page layout to be inconsistent, however.
 
 [1{C:/Users/Markus/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
- <./LogoIME.png> <./images.jpeg>]
-File: LogoIME.png Graphic file (type png)
-<use LogoIME.png>
-Package pdftex.def Info: LogoIME.png  used on input line 234.
-(pdftex.def)             Requested size: 98.19987pt x 42.67917pt.
-File: images.jpeg Graphic file (type jpg)
-<use images.jpeg>
-Package pdftex.def Info: images.jpeg  used on input line 234.
-(pdftex.def)             Requested size: 91.77448pt x 42.6793pt.
-[2] (EstatisticaGeral2_aula17e18_topicos.aux)
-Package rerunfilecheck Info: File `EstatisticaGeral2_aula17e18_topicos.out' has
+ <./LogoIME.png> <./images.jpeg>] (EstatisticaGeral2_aula19e20_topicos.aux)
+Package rerunfilecheck Info: File `EstatisticaGeral2_aula19e20_topicos.out' has
  not changed.
-(rerunfilecheck)             Checksum: 995AB7551FB529DAC517D7FB4235D850;2940.
+(rerunfilecheck)             Checksum: 28BB362CED3B73BE1EFF000A6D463E17;1785.
  ) 
 Here is how much of TeX's memory you used:
- 12341 strings out of 480202
- 184007 string characters out of 2887011
- 505567 words of memory out of 3000000
- 28659 multiletter control sequences out of 15000+200000
- 590548 words of font info for 84 fonts, out of 3000000 for 9000
+ 12318 strings out of 480202
+ 183571 string characters out of 2887011
+ 502237 words of memory out of 3000000
+ 28643 multiletter control sequences out of 15000+200000
+ 580280 words of font info for 81 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,14n,66p,590b,345s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 60i,14n,66p,590b,341s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/M
-iKTeX 2.9/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Program Files/MiKTeX 2.9/fonts/e
-nc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy
-.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program 
-Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.enc}<C:/Program Files/MiKTeX 2.9/fon
-ts/type1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/l
-m/lmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbxi10.pfb><C:
-/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmex10.pfb><C:/Program Files/Mi
-KTeX 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/public/lm/lmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr1
-0.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Program 
-Files/MiKTeX 2.9/fonts/type1/public/lm/lmr17.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/public/lm/lmr5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/l
-m/lmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb>
-Output written on EstatisticaGeral2_aula17e18_topicos.pdf (2 pages, 272557 byte
-s).
+iKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fonts/e
+nc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.en
+c}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/lm/lmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/l
+m/lmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/lm/lmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/lm/lmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb
+>
+Output written on EstatisticaGeral2_aula19e20_topicos.pdf (1 page, 211339 bytes
+).
 PDF statistics:
- 133 PDF objects out of 1000 (max. 8388607)
- 15 named destinations out of 1000 (max. 500000)
- 12395 words of extra memory for PDF output out of 14400 (max. 10000000)
+ 90 PDF objects out of 1000 (max. 8388607)
+ 9 named destinations out of 1000 (max. 500000)
+ 12355 words of extra memory for PDF output out of 14400 (max. 10000000)
 

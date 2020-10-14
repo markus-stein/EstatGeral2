@@ -45,14 +45,40 @@ $$ F = \frac{S_1^2}{S_2^2} \sim F{(n_1 - 1, n_2 - 1)}.$$
 
 \vspace{0.5cm}
 
-### Tabela de análise de variância  (Bussab e Morettin - seção 15.2.4)
+## Soma de Quadrados (SQ) 
+Separamos a soma de quadrados no numerados da variância de uma variável $Y$ em duas partes:
 
+* uma representará as distâncias entre as médias dos **grupos** - **SQG**; 
+* a outra as distâncias (ou **resíduos**) entre as observações e a média do seu grupo - **SQR**.
+    + Ambas quantidades são estimadas com base nos dados observados.
+    + (dadas as suposições necessárias) uma estatística do tipo *F* pode ser calculada e interpretada.
+
+\vspace{0.5cm}
+
+### Modelo Estatístico (Bussab e Morettin - seção 15.3)
+
+\vspace{0.5cm}
+
+### Tabela de ANOVA
+* Exemplo de tabela de análise de variância para duas populações  (Bussab e Morettin - seção 15.2.4)
+
+\vspace{0.5cm}
+
+### Percentual de variância explicada (pelo modelo)
+*Coeficiente de explicação* do modelo: $R^2 = \frac{SQG}{SQT}$.
+
+\vspace{0.5cm}
+
+### Comparação ente as médias
+* Usando intervalos de confiança 
+    + Exemplos 15.5 e 15.6 de Bussab e Morettin - seção 15.4.
+
+* no slides usamos o limite de decisão $L_d = 3 \times s_{\overline x}$ ($s_{\overline x}$ é o desvio padrão das médias)
 
 <!-- ## Valor *p* (ou *p* valor) (Bussab e Morettin - seção 12.8) -->
 <!-- "É a probabilidade de observarmos um valor de estatística de teste mais extremo do que o observado na amostra coletada *(conforme as hipóteses definidas)*." -->
 
 <!-- * Região crítica $\times$ valor *p* -->
-
 
 \vspace{1cm}
 
@@ -65,7 +91,7 @@ Página 'Probabilidade e Estatística (EaD)' da UFRGS
 \vspace{1cm}
 
 ***
-### Ler slides das aulas 15 e 16
+### Ler slides das aulas 17 e 18
 ### Continuar exercícios lista 2-3
 ### Fazer avaliação pontual 2 da área 2 - vale nota!!!
 ***
