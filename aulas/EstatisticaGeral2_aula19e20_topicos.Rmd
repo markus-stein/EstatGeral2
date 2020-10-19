@@ -48,7 +48,7 @@ Importante lembrar
 
 * Suposições.
 * Interpretações.
-* Valor *p* para o teste *F*.
+* Valor *p*,  para o teste ANOVA também.
 
 \vspace{1cm}
 
@@ -61,8 +61,8 @@ Página 'Probabilidade e Estatística (EaD)' da UFRGS
 \vspace{1cm}
 
 ***
-### Ler slides das aulas 15 e 16
+### Rever os conteúdos da área 2
 ### Continuar exercícios lista 2-3
-### Fazer avaliação pontual 2 da área 2 - vale nota!!!
+### Fazer avaliação parcial da área 2 - PROVA 2!!!
 ***
 

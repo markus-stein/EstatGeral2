@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.10.6)  14 OCT 2020 12:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.10.6)  19 OCT 2020 10:55
 entering extended mode
 **./EstatisticaGeral2_aula19e20_topicos.tex
 (EstatisticaGeral2_aula19e20_topicos.tex
@@ -540,12 +540,12 @@ This may cause the page layout to be inconsistent, however.
  <./LogoIME.png> <./images.jpeg>] (EstatisticaGeral2_aula19e20_topicos.aux)
 Package rerunfilecheck Info: File `EstatisticaGeral2_aula19e20_topicos.out' has
  not changed.
-(rerunfilecheck)             Checksum: 28BB362CED3B73BE1EFF000A6D463E17;1785.
+(rerunfilecheck)             Checksum: 1D904F50528C63DE922978E7706FB8DB;1765.
  ) 
 Here is how much of TeX's memory you used:
  12318 strings out of 480202
- 183571 string characters out of 2887011
- 502237 words of memory out of 3000000
+ 183573 string characters out of 2887011
+ 502235 words of memory out of 3000000
  28643 multiletter control sequences out of 15000+200000
  580280 words of font info for 81 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -561,7 +561,7 @@ ogram Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/public/lm/lmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
 ublic/lm/lmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb
 >
-Output written on EstatisticaGeral2_aula19e20_topicos.pdf (1 page, 211339 bytes
+Output written on EstatisticaGeral2_aula19e20_topicos.pdf (1 page, 210806 bytes
 ).
 PDF statistics:
  90 PDF objects out of 1000 (max. 8388607)
