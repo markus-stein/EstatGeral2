@@ -1,0 +1,94 @@
+---
+title: "Plano Aula 21 e 22"
+author: "Markus Stein"
+# date: "XX Month 2020"
+output: pdf_document
+    # toc: yes
+header-includes:
+    - \usepackage{fancyhdr}
+always_allow_html: yes
+---
+\addtolength{\headheight}{0.0cm} 
+\pagestyle{fancyplain} 
+\lhead{\includegraphics[height=1.5cm]{LogoIME.png}}
+\rhead{\includegraphics[height=1.5cm]{images.jpeg}}
+\chead{UNIVERSIDADE FEDERAL DO RIO GRANDE DO SUL \\
+INSTITUTO DE MATEMÁTICA E ESTATÍSTICA \\
+DEPARTAMENTO DE ESTATÍSTICA \\
+\vspace{0.3cm}
+MAT02215 - Estatística Geral 2 - 2020/1
+}
+\renewcommand{\headrulewidth}{0pt} 
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Testes de Aderência e Associação (Bussab e Morettin - capítulo 14)
+Nosso interesse agora será em teste para mais de duas proporções (para uma variável de interesse ou duas variáveis). (Bussab e Morettin - seção 14.1) 
+
+* **Exemplo 1**: Suponha que entramos num jogo de dados e queremos saber se um dos dados utilizados é honesto. Utilizando um dados de seis faces esperaíamos que cada face ocorresse em 1/6 das jogadas.
+
+* **Exemplo 2**: Os percentuais de votantes, em cada categoria, na última eleição para reitor na UFRGS representam o sistema 70/15/15 de ponderação das proporções observadas?
+
+
+## Teste de Aderência (Bussab e Morettin - seção 14.2)
+Quando uma variável de interesse categórica possui mais de duas classes, então podemos testar se as proporções observadas se "ajustam" a um modelo teórico (ou suposto sob $H_0$).
+
+* **... cont. exemplo 1**: Um teste estatístico para verificar se um dado é honesto usaria $H_0: \pi_1 = \pi_2 = \pi_3 = \pi_4 = \pi_5 = \pi_6 = 1/6$. Sendo $\pi_i$ a probabilidade de ocorrência da face $i$, $i=1,\ldots,6$.
+
+* **... cont. exemplo 2**: No caso de testar se os percentuais de votantes, em cada categoria, na última eleição para reitor na UFRGS representam o sistema 70/15/15, podemos definir $H_0: \pi_d = 0,7, \pi_t = 0,15, \pi_e = 0,15$, em que $\pi_d$, $\pi_t$ e $\pi_e$ são as proporções (populacionais). 
+
+Como usar proporções observadas para testar as hipóteses acima?
+
+\vspace{0.5cm}
+
+### Estatística qui-quadrado
+* proporções observadas $p_i = n_i / n$ ou $o_i$; 
+* proporções esperadas $\pi_i$ (sob $H_0$) ou $e_i$.  
+  
+Teorema (**Distribuição Qui-Quadrado 2, nossa versão**): Sob certas suposições  
+$$ Q = \sum_{i=1}^k \frac{ \left( o_i - e_i \right)^2 }{e_i} \sim \chi^2_{(k-1)} $$
+
+* Quais as suposições necessárias???
+
+
+\vspace{0.5cm}
+
+## Tabelas de contingência 
+* Tabelas $2 \times 2$
+* Tabelas $I \times J$
+
+
+
+\vspace{0.5cm}
+
+
+
+
+<!-- ## Para a prova 2 -->
+<!-- * Ter o formulário em mãos. -->
+
+<!-- Importante lembrar -->
+
+<!-- * Suposições. -->
+<!-- * Interpretações. -->
+<!-- * Valor *p*,  para o teste ANOVA também. -->
+
+\vspace{1cm}
+
+## REFERÊNCIA EXTRA
+Página 'Probabilidade e Estatística (EaD)' da UFRGS  
+
+* Capítulo 6 - Inferência para dados categóricos 
+    + [Seção - Testando a qualidade do ajuste usando a qui-quadrado](https://www.ufrgs.br/probabilidade-estatistica/livro/cpt6/ch6_inf_cat.html#testando-a-qualidade-do-ajuste-usando-a-qui-quadrado-t%C3%B3pico-especial)
+
+\vspace{1cm}
+
+***
+### Ler slides das aulas 21 e 22
+### Fazer os exercícios da lista 3-1
+<!-- ### Fazer avaliação parcial da área 2 - PROVA 2!!! -->
+***
+
