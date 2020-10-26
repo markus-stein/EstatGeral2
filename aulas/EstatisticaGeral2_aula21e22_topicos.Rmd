@@ -38,15 +38,15 @@ Quando uma variável de interesse categórica possui mais de duas classes, entã
 
 * **... cont. exemplo 1**: Um teste estatístico para verificar se um dado é honesto usaria $H_0: \pi_1 = \pi_2 = \pi_3 = \pi_4 = \pi_5 = \pi_6 = 1/6$. Sendo $\pi_i$ a probabilidade de ocorrência da face $i$, $i=1,\ldots,6$.
 
-* **... cont. exemplo 2**: No caso de testar se os percentuais de votantes, em cada categoria, na última eleição para reitor na UFRGS representam o sistema 70/15/15, podemos definir $H_0: \pi_d = 0,7, \pi_t = 0,15, \pi_e = 0,15$, em que $\pi_d$, $\pi_t$ e $\pi_e$ são as proporções (populacionais). 
+* **... cont. exemplo 2**: No caso de testar se os percentuais de votantes, em cada categoria, na última eleição para reitor na UFRGS representam o sistema 70/15/15, podemos definir $H_0: \pi_d = 0,7, \pi_t = 0,15, \pi_e = 0,15$, em que $\pi_d$, $\pi_t$ e $\pi_e$ são as proporções (populacionais) de docentes, técnicos e estudantes respectivamente. 
 
-Como usar proporções observadas para testar as hipóteses acima?
+Como usar proporções/frequências observadas para testar as hipóteses acima?
 
 \vspace{0.5cm}
 
 ### Estatística qui-quadrado
-* proporções observadas $p_i = n_i / n$ ou $o_i$; 
-* proporções esperadas $\pi_i$ (sob $H_0$) ou $e_i$.  
+* *proporções* **observadas** $p_i = n_i / n$ ou *frequências* observadas $o_i$; 
+* *proporções* **esperadas** $\pi_i$ (sob $H_0$) ou *frequências* esperadas $e_i$.  
   
 Teorema (**Distribuição Qui-Quadrado 2, nossa versão**): Sob certas suposições  
 $$ Q = \sum_{i=1}^k \frac{ \left( o_i - e_i \right)^2 }{e_i} \sim \chi^2_{(k-1)} $$
@@ -59,12 +59,10 @@ $$ Q = \sum_{i=1}^k \frac{ \left( o_i - e_i \right)^2 }{e_i} \sim \chi^2_{(k-1)}
 ## Tabelas de contingência 
 * Tabelas $2 \times 2$
 * Tabelas $I \times J$
-
+    + proporções/**percentuais** (%) do **total**, por **linha** e por **coluna**;
 
 
 \vspace{0.5cm}
-
-
 
 
 <!-- ## Para a prova 2 -->
