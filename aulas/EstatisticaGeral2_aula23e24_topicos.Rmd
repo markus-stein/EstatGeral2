@@ -1,0 +1,148 @@
+---
+title: "Plano Aula 23 e 24"
+author: "Markus Stein"
+# date: "XX Month 2020"
+output: pdf_document
+    # toc: yes
+header-includes:
+    - \usepackage{fancyhdr}
+always_allow_html: yes
+---
+\addtolength{\headheight}{0.0cm} 
+\pagestyle{fancyplain} 
+\lhead{\includegraphics[height=1.5cm]{LogoIME.png}}
+\rhead{\includegraphics[height=1.5cm]{images.jpeg}}
+\chead{UNIVERSIDADE FEDERAL DO RIO GRANDE DO SUL \\
+INSTITUTO DE MATEMÁTICA E ESTATÍSTICA \\
+DEPARTAMENTO DE ESTATÍSTICA \\
+\vspace{0.3cm}
+MAT02215 - Estatística Geral 2 - 2020/1
+}
+\renewcommand{\headrulewidth}{0pt} 
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# (continuação) Testes de Aderência e Associação 
+Nosso interesse agora será em teste para mais de duas proporções para duas variáveis de interesse
+
+* **Exemplo 1**: A quantidade de abstenções na última eleição para reitor na UFRGS está associada a categoria dos votantes?
+
+* **Exemplo 2**: As proporções de votos em cada chapa pode estar associada a categoria dos votantes?
+
+```{r eleicao, echo=FALSE}
+## dados da eleicao
+categoria <- c("docente", "tecnico", "estudante")
+
+# votos nas chapas por categoria
+chapa1 <- c(436, 208, 1216)       # votos para a chapa 1, por categoria
+chapa2 <- c(1454, 516, 2713)      # votos na chapa 2
+chapa3 <- c(679, 1056, 7212)      # votos na chapa 3
+names(chapa1) <- names(chapa2) <- names(chapa3) <- categoria
+
+# votos e abstencoes por categoria
+validos <- c(2576, 1795, 11217)   # votos válidos
+votos <- c(2605, 1828, 11292)
+habilitados <- c(2932, 2545, 40128)
+abstencoes <- habilitados - votos
+names(validos) <- names(votos) <- names(habilitados) <- names(abstencoes) <- categoria
+
+# peso da eleicao
+peso <- c(0.7, 0.15, 0.15)
+```
+
+## Teste Qui Quadrado de Associação/Independência (Bussab e Morettin - seção 14.4)
+Para duas variáveis qualitativas podemos estar interessados em verificar se existe associação (relação) entre elas.  
+* O que significam frequências esperadas nesse caso?
+
+* **... cont. exemplo 1**: Os dados observados de abstenções e total de votos por categorias foram
+
+```{r tabela1, echo=FALSE, warning=FALSE}
+library(knitr)
+tabela1 <- rbind(votos, abstencoes, habilitados)
+tabela1 <- cbind(tabela1, rowSums(tabela1))
+rownames(tabela1) <- c("Votos", "Abstenções", "Total habilitados")
+colnames(tabela1) <- c("Docentes", "Técnicos", "Estudantes", "Total")
+kable(tabela1)
+```
+
+* **... cont. exemplo 2**: Os dados observados de votos em cada chapa por categorias foram
+```{r tabela2, echo=FALSE, warning=FALSE}
+tabela2 <- rbind(chapa1, chapa2, chapa3, votos)
+tabela2 <- cbind(tabela2, rowSums(tabela2))
+rownames(tabela2) <- c("Chapa 1", "Chapa 2", "Chapa 3", "Total votos válidos")
+colnames(tabela2) <- colnames(tabela1)
+kable(tabela2)
+```
+
+\vspace{0.3cm}
+
+Como usar proporções/frequências observadas para testar as hipóteses acima?
+
+\vspace{0.5cm}
+
+*Relembrando sobre independência em probabilidade:*  
+
+* Duas variáveis aleatórias $X$ e $Y$ são ditas *independentes* se e somente se a probabilidade conjunta é igual ao produto das probabilidades marginais
+$$P(X=i, Y=j) = P(X=i) \times P(Y=j),$$
+para todo $i=1, \ldots, k$ e $j=1, \ldots, l$.
+
+* No teste de associação, a hipótese nula é dada por 
+$$H_0: \pi_{ij} = \pi_{i.} \pi_{.j} \text{  ou  } H_0: P(X=i, Y=j) = P(X=i) \times P(Y=j).$$
+
+
+\vspace{0.5cm}
+
+
+### Estatística qui-quadrado
+Seja $n_{ij}$ o número de observações pertencentes a categoria conjunta $(X=i, Y=j)$.  
+
+* *proporções* (frequências relativas) **observadas** $p_{ij} = n_{ij} / n$ ou *frequências* observadas $o_{ij} = n_{ij}$; 
+* *proporções* **esperadas** $\pi_{ij}$ (sob $H_0$) ou *frequências* esperadas $e_{ij} = \frac{n_{i.} n_{.j}}{n}$.
+em que $n_{i.} = \sum_{i=1}^k n_{ij}$ é o número de elementos na categoria $i$ de $X$ e $n_{.j} = \sum_{j=1}^l n_{ij}$ na categoria $j$ de $Y$.
+  
+\vspace{0.5cm}
+
+Teorema (**Distribuição Qui-Quadrado 2, nossa versão 2**): Sob certas suposições  
+$$ Q = \sum_{i,j} \frac{ \left( o_{ij} - e_{ij} \right)^2 }{e_{ij}} \sim \chi^2_{(\nu)} $$
+em que $i=1, \ldots, k$ é o índice da linha e $j=1, \ldots, l$ das colunas e $\nu = (k-1) \times (l-1)$ são os graus de liberdade.
+
+* Quais as suposições necessárias???
+
+
+\vspace{0.5cm}
+
+## Análise dos resíduos 
+O que as diferenças $o_{ij} - e_{ij}$ nos dizem sobre a associação entre $X$ e $Y$?
+
+* Os resíduos podem res vistos como o desvio de uma observação em relação ao seu valor esperado sob $H_0$.
+$$res_{ij} = \frac{o_{ij} - e_{ij}}{\sqrt{e_{ij}}}$$
+
+
+<!-- ## Para a prova 2 -->
+<!-- * Ter o formulário em mãos. -->
+
+<!-- Importante lembrar -->
+
+<!-- * Suposições. -->
+<!-- * Interpretações. -->
+<!-- * Valor *p*,  para o teste ANOVA também. -->
+
+\vspace{1.0cm}
+
+## REFERÊNCIA EXTRA
+Página 'Probabilidade e Estatística (EaD)' da UFRGS  
+
+* Capítulo 6 - Inferência para dados categóricos 
+    + [Seção - Testando a qualidade do ajuste usando a qui-quadrado](https://www.ufrgs.br/probabilidade-estatistica/livro/cpt6/ch6_inf_cat.html#testando-a-qualidade-do-ajuste-usando-a-qui-quadrado-t%C3%B3pico-especial)
+
+\vspace{1cm}
+
+***
+### Ler slides das aulas 23 e 24
+### Continuar os exercícios da lista 3-1 e fazer a lista 3-2
+### Fazer avaliação pontual 1 da área 3
+***
+

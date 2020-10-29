@@ -25,7 +25,8 @@ MAT02215 - Estatística Geral 2 - 2020/1
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-# Testes de Aderência e Associação (Bussab e Morettin - capítulo 14)
+# Teste Qui Quadrado
+## Testes de Aderência e Associação (Bussab e Morettin - capítulo 14)
 Nosso interesse agora será em teste para mais de duas proporções (para uma variável de interesse ou duas variáveis). (Bussab e Morettin - seção 14.1) 
 
 * **Exemplo 1**: Suponha que entramos num jogo de dados e queremos saber se um dos dados utilizados é honesto. Utilizando um dados de seis faces esperaíamos que cada face ocorresse em 1/6 das jogadas.
@@ -61,6 +62,11 @@ $$ Q = \sum_{i=1}^k \frac{ \left( o_i - e_i \right)^2 }{e_i} \sim \chi^2_{(k-1)}
 * Tabelas $I \times J$
     + proporções/**percentuais** (%) do **total**, por **linha** e por **coluna**;
 
+### Revisão de Estatística Geral 1
+* Análise Bidimensional (Bussab e Morettin - capítulo 4)
+    + Variáveis Qualitativas (Bussab e Morettin - seção 4.2)
+    + Associação entre Variáveis Qualitativas (Bussab e Morettin - seção 4.3)
+    + Medidas de associação entre Variáveis Qualitativas (Bussab e Morettin - seção 4.4)
 
 \vspace{0.5cm}
 
