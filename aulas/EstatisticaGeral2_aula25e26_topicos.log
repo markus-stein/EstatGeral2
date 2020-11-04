@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.10.6)  4 NOV 2020 10:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.10.6)  4 NOV 2020 12:41
 entering extended mode
-**./EstatisticaGeral2_aula23e24_topicos.tex
-(EstatisticaGeral2_aula23e24_topicos.tex
+**./EstatisticaGeral2_aula25e26_topicos.tex
+(EstatisticaGeral2_aula25e26_topicos.tex
 LaTeX2e <2020-10-01>
 L3 programming layer <2020-09-24> xparse <2020-03-03> ("C:\Program Files\MiKTeX
  2.9\tex/latex/base\article.cls"
@@ -314,47 +314,7 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layoutvoffset=\dimen160
 \Gm@dimlist=\toks25
 ("C:\Program Files\MiKTeX 2.9\tex/latex/geometry\geometry.cfg")) ("C:\Program F
-iles\MiKTeX 2.9\tex/latex/tools\longtable.sty"
-Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
-\LTleft=\skip54
-\LTright=\skip55
-\LTpre=\skip56
-\LTpost=\skip57
-\LTchunksize=\count276
-\LTcapwidth=\dimen161
-\LT@head=\box49
-\LT@firsthead=\box50
-\LT@foot=\box51
-\LT@lastfoot=\box52
-\LT@cols=\count277
-\LT@rows=\count278
-\c@LT@tables=\count279
-\c@LT@chunks=\count280
-\LT@p@ftn=\toks26
-) (C:\Users\Markus\AppData\Roaming\MiKTeX\2.9\tex/latex/booktabs\booktabs.sty
-Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen162
-\lightrulewidth=\dimen163
-\cmidrulewidth=\dimen164
-\belowrulesep=\dimen165
-\belowbottomsep=\dimen166
-\aboverulesep=\dimen167
-\abovetopsep=\dimen168
-\cmidrulesep=\dimen169
-\cmidrulekern=\dimen170
-\defaultaddspace=\dimen171
-\@cmidla=\count281
-\@cmidlb=\count282
-\@aboverulesep=\dimen172
-\@belowrulesep=\dimen173
-\@thisruleclass=\count283
-\@lastruleclass=\count284
-\@thisrulewidth=\dimen174
-) (C:\Users\Markus\AppData\Roaming\MiKTeX\2.9\tex/latex/mdwtools\footnote.sty
-Package: footnote 1997/01/28 1.13 Save footnotes around boxes
-\fn@notes=\box53
-\fn@width=\dimen175
-) ("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\graphicx.sty"
+iles\MiKTeX 2.9\tex/latex/graphics\graphicx.sty"
 Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
 ("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\graphics.sty"
 Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
@@ -367,8 +327,8 @@ Package graphics Info: Driver file: pdftex.def on input line 105.
 ("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-def\pdftex.def"
 File: pdftex.def 2020/08/26 v1.2 Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen176
-\Gin@req@width=\dimen177
+\Gin@req@height=\dimen161
+\Gin@req@width=\dimen162
 ) (C:\Users\Markus\AppData\Roaming\MiKTeX\2.9\tex/latex/grffile\grffile.sty
 Package: grffile 2019/11/11 v2.1 Extended file name support for graphics (legac
 y)
@@ -378,54 +338,54 @@ line 40.
 Package: parskip 2020-06-15 v2.0f non-zero parskip adjustments
 (C:\Users\Markus\AppData\Roaming\MiKTeX\2.9\tex/latex/etoolbox\etoolbox.sty
 Package: etoolbox 2020/08/24 v2.5j e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count285
+\etb@tempcnta=\count276
 )) (C:\Users\Markus\AppData\Roaming\MiKTeX\2.9\tex/latex/fancyhdr\fancyhdr.sty
 Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
 s
-\f@nch@headwidth=\skip58
-\f@nch@O@elh=\skip59
-\f@nch@O@erh=\skip60
-\f@nch@O@olh=\skip61
-\f@nch@O@orh=\skip62
-\f@nch@O@elf=\skip63
-\f@nch@O@erf=\skip64
-\f@nch@O@olf=\skip65
-\f@nch@O@orf=\skip66
+\f@nch@headwidth=\skip54
+\f@nch@O@elh=\skip55
+\f@nch@O@erh=\skip56
+\f@nch@O@olh=\skip57
+\f@nch@O@orh=\skip58
+\f@nch@O@elf=\skip59
+\f@nch@O@erf=\skip60
+\f@nch@O@olf=\skip61
+\f@nch@O@orf=\skip62
 )
 (C:\Users\Markus\AppData\Roaming\MiKTeX\2.9\tex/latex/l3backend\l3backend-pdfte
 x.def
 File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
-\l__kernel_color_stack_int=\count286
-\l__pdf_internal_box=\box54
-) (EstatisticaGeral2_aula23e24_topicos.aux)
-\openout1 = `EstatisticaGeral2_aula23e24_topicos.aux'.
+\l__kernel_color_stack_int=\count277
+\l__pdf_internal_box=\box49
+) (EstatisticaGeral2_aula25e26_topicos.aux)
+\openout1 = `EstatisticaGeral2_aula25e26_topicos.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Info: Redefining \microtypecontext on input line 76.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Info: Redefining \microtypecontext on input line 73.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using protrusion set `basicmath'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `basictext'.
-LaTeX Info: Redefining \showhyphens on input line 76.
+LaTeX Info: Redefining \showhyphens on input line 73.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -433,7 +393,7 @@ Package microtype Info: No adjustment of character kerning.
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-Package hyperref Info: Link coloring OFF on input line 76.
+Package hyperref Info: Link coloring OFF on input line 73.
 ("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\nameref.sty"
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 (C:\Users\Markus\AppData\Roaming\MiKTeX\2.9\tex/latex/refcount\refcount.sty
@@ -443,15 +403,15 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 string.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count287
+\c@section@level=\count278
 )
-LaTeX Info: Redefining \ref on input line 76.
-LaTeX Info: Redefining \pageref on input line 76.
-LaTeX Info: Redefining \nameref on input line 76.
-(EstatisticaGeral2_aula23e24_topicos.out) (EstatisticaGeral2_aula23e24_topicos.
+LaTeX Info: Redefining \ref on input line 73.
+LaTeX Info: Redefining \pageref on input line 73.
+LaTeX Info: Redefining \nameref on input line 73.
+(EstatisticaGeral2_aula25e26_topicos.out) (EstatisticaGeral2_aula25e26_topicos.
 out)
 \@outlinefile=\write3
-\openout3 = `EstatisticaGeral2_aula23e24_topicos.out'.
+\openout3 = `EstatisticaGeral2_aula25e26_topicos.out'.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -490,17 +450,17 @@ out)
 
 (C:\Users\Markus\AppData\Roaming\MiKTeX\2.9\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count288
-\scratchdimen=\dimen178
-\scratchbox=\box55
-\nofMPsegments=\count289
-\nofMParguments=\count290
-\everyMPshowfont=\toks27
-\MPscratchCnt=\count291
-\MPscratchDim=\dimen179
-\MPnumerator=\count292
-\makeMPintoPDFobject=\count293
-\everyMPtoPDFconversion=\toks28
+\scratchcounter=\count279
+\scratchdimen=\dimen163
+\scratchbox=\box50
+\nofMPsegments=\count280
+\nofMParguments=\count281
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count282
+\MPscratchDim=\dimen164
+\MPnumerator=\count283
+\makeMPintoPDFobject=\count284
+\everyMPtoPDFconversion=\toks27
 )
 (C:\Users\Markus\AppData\Roaming\MiKTeX\2.9\tex/latex/epstopdf-pkg\epstopdf-bas
 e.sty
@@ -509,39 +469,39 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 )
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 7
-8.
+5.
 ("C:\Program Files\MiKTeX 2.9\tex/latex/lm\ot1lmr.fd"
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 7
-8.
+5.
 ("C:\Program Files\MiKTeX 2.9\tex/latex/lm\omllmm.fd"
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-78.
+75.
 ("C:\Program Files\MiKTeX 2.9\tex/latex/lm\omslmsy.fd"
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-78.
+75.
 ("C:\Program Files\MiKTeX 2.9\tex/latex/lm\omxlmex.fd"
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 78.
+(Font)              <12> on input line 75.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 78.
+(Font)              <8> on input line 75.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 78.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 78.
+(Font)              <6> on input line 75.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 75.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (C:\Users\Markus\AppData\Roaming\MiKTeX\2.9\tex/latex/microtype\mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 78.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 75.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -549,25 +509,38 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 9
-7.
+5.
 ("C:\Program Files\MiKTeX 2.9\tex/latex/lm\ts1lmr.fd"
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
+<IDH1.png, id=39, 469.755pt x 236.5638pt>
+File: IDH1.png Graphic file (type png)
+<use IDH1.png>
+Package pdftex.def Info: IDH1.png  used on input line 97.
+(pdftex.def)             Requested size: 281.85518pt x 141.93936pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 160.
+(Font)              <10> on input line 101.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 160.
+(Font)              <7> on input line 101.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 160.
-<LogoIME.png, id=35, 521.95pt x 226.8475pt>
+(Font)              <5> on input line 101.
+<EstatisticaGeral2_aula25e26_topicos_files/figure-latex/college_aid-1.pdf, id=4
+2, 361.35pt x 216.81pt>
+File: EstatisticaGeral2_aula25e26_topicos_files/figure-latex/college_aid-1.pdf 
+Graphic file (type pdf)
+<use EstatisticaGeral2_aula25e26_topicos_files/figure-latex/college_aid-1.pdf>
+Package pdftex.def Info: EstatisticaGeral2_aula25e26_topicos_files/figure-latex
+/college_aid-1.pdf  used on input line 113.
+(pdftex.def)             Requested size: 361.34912pt x 216.80946pt.
+<LogoIME.png, id=43, 521.95pt x 226.8475pt>
 File: LogoIME.png Graphic file (type png)
 <use LogoIME.png>
-Package pdftex.def Info: LogoIME.png  used on input line 166.
+Package pdftex.def Info: LogoIME.png  used on input line 122.
 (pdftex.def)             Requested size: 98.19987pt x 42.67917pt.
-<images.jpeg, id=36, 330.23375pt x 153.57375pt>
+<images.jpeg, id=44, 330.23375pt x 153.57375pt>
 File: images.jpeg Graphic file (type jpg)
 <use images.jpeg>
-Package pdftex.def Info: images.jpeg  used on input line 166.
+Package pdftex.def Info: images.jpeg  used on input line 122.
 (pdftex.def)             Requested size: 91.77448pt x 42.6793pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -577,50 +550,40 @@ This may cause the page layout to be inconsistent, however.
 
 [1{C:/Users/Markus/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
- <./LogoIME.png> <./images.jpeg>]
-Underfull \hbox (badness 10000) in paragraph at lines 193--195
-
- []
-
+ <./LogoIME.png> <./images.jpeg> <./IDH1.png> <./EstatisticaGeral2_aula25e26_to
+picos_files/figure-latex/college_aid-1.pdf>]
 File: LogoIME.png Graphic file (type png)
 <use LogoIME.png>
-Package pdftex.def Info: LogoIME.png  used on input line 254.
+Package pdftex.def Info: LogoIME.png  used on input line 203.
 (pdftex.def)             Requested size: 98.19987pt x 42.67917pt.
 File: images.jpeg Graphic file (type jpg)
 <use images.jpeg>
-Package pdftex.def Info: images.jpeg  used on input line 254.
+Package pdftex.def Info: images.jpeg  used on input line 203.
 (pdftex.def)             Requested size: 91.77448pt x 42.6793pt.
-[2] (EstatisticaGeral2_aula23e24_topicos.aux)
-Package rerunfilecheck Info: File `EstatisticaGeral2_aula23e24_topicos.out' has
+[2] (EstatisticaGeral2_aula25e26_topicos.aux)
+Package rerunfilecheck Info: File `EstatisticaGeral2_aula25e26_topicos.out' has
  not changed.
-(rerunfilecheck)             Checksum: 4996FDD9BA2AF2ACE195F5FA16D523AE;2131.
+(rerunfilecheck)             Checksum: 753EEB1D69204C77F06770A9EDCEF453;2299.
  ) 
 Here is how much of TeX's memory you used:
- 12526 strings out of 480202
- 186530 string characters out of 2887011
- 509902 words of memory out of 3000000
- 28836 multiletter control sequences out of 15000+200000
- 592167 words of font info for 84 fonts, out of 3000000 for 9000
+ 12342 strings out of 480202
+ 184339 string characters out of 2887011
+ 501363 words of memory out of 3000000
+ 28661 multiletter control sequences out of 15000+200000
+ 586277 words of font info for 83 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,15n,66p,590b,427s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Program Fil
-es/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fon
-ts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ma
-thsy.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program 
-Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.enc}<C:/Program Files/MiKTeX 2.9/fon
-ts/type1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/l
-m/lmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmex10.pfb><C:/
-Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Program Files/MiK
-TeX 2.9/fonts/type1/public/lm/lmmi5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
-1/public/lm/lmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr10.
-pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/lm/lmr17.pfb><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/public/lm/lmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/
-lmri10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb>
-Output written on EstatisticaGeral2_aula23e24_topicos.pdf (2 pages, 245100 byte
+ 60i,14n,66p,590b,343s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/M
+iKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.enc}<C:/Program Files/MiKTeX 2.9/fonts/type
+1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx1
+2.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Program 
+Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX 2.9/f
+onts/type1/public/lm/lmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
+lm/lmri10.pfb>
+Output written on EstatisticaGeral2_aula25e26_topicos.pdf (2 pages, 286584 byte
 s).
 PDF statistics:
- 115 PDF objects out of 1000 (max. 8388607)
- 13 named destinations out of 1000 (max. 500000)
- 12363 words of extra memory for PDF output out of 14400 (max. 10000000)
+ 97 PDF objects out of 1000 (max. 8388607)
+ 12 named destinations out of 1000 (max. 500000)
+ 12381 words of extra memory for PDF output out of 14400 (max. 10000000)
 

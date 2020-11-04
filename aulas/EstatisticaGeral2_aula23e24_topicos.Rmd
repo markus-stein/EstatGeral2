@@ -26,7 +26,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 # (continuação) Testes de Aderência e Associação 
-Nosso interesse agora será em teste para mais de duas proporções para duas variáveis de interesse
+Nosso interesse agora será em teste para mais de duas proporções para **duas variáveis categóricas** de interesse.
 
 * **Exemplo 1**: A quantidade de abstenções na última eleição para reitor na UFRGS está associada a categoria dos votantes?
 
@@ -55,6 +55,7 @@ peso <- c(0.7, 0.15, 0.15)
 
 ## Teste Qui Quadrado de Associação/Independência (Bussab e Morettin - seção 14.4)
 Para duas variáveis qualitativas podemos estar interessados em verificar se existe associação (relação) entre elas.  
+
 * O que significam frequências esperadas nesse caso?
 
 * **... cont. exemplo 1**: Os dados observados de abstenções e total de votos por categorias foram
