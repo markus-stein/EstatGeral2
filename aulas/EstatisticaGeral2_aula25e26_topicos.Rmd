@@ -33,7 +33,7 @@ Agora, nosso interesse será analisar o relacionamento entre **duas variáveis n
 
 Artigo de 2012: https://carodinheiro.blogfolha.uol.com.br/2012/12/14/pagamento-de-impostos-no-brasil-e-um-investimento-sem-retorno/
 
-\vspace{0.5cm}
+<!-- \vspace{0.5cm} -->
 
 * **Exemplo 2**: O valor do auxílio estudantil oferecido por uma universidade pode estar relacionado com a renda familiar dos estudantes?
 
@@ -105,15 +105,24 @@ Para duas variáveis quantitativas também podemos estar interessados em verific
 \vspace{0.3cm}
 Como resumir a informação dos gráficos acima em um só número?
 
-\vspace{0.5cm}
+<!-- \vspace{0.5cm} -->
 
 ### Coeficiente de correlação (linear) (de Pearson)
 
-
-
-\vspace{0.5cm}
-
 *Relembrando sobre covariância em probabilidade:*  
+Definição (**covariância**): Sejam $X$ e $Y$ duas v.a. então $Cov(X,Y) = E \left\{ \left[ X - E(X) \right] \left[ Y - E(Y) \right] \right\}$. 
+
+\vspace{0.2cm}
+
+Definição (**covariância amostral**): Dados $n$ pares de valores observados $(x_1, y_1), \ldots, (x_n, y_n)$ (de duas v.a. $X$ e $Y$), chamaremos de covariância amostral antre X e Y a expressão
+$$cov(X,Y) = \frac{ \sum_{i=1}^n (x_i - \overline x) (y_i - \overline y)}{n}$$. 
+
+Assim, "padronizamos" a covariância para obtemos o coeficiente $corr(X,Y) = \frac{ cov(X,Y) }{s_x \cdot s_y}$, $-1 \leq corr(X,Y) \geq 1$.  
+
+Definição (**coeficiente de correlação**): Dados $n$ pares de valores observados $(x_1, y_1), \ldots, (x_n, y_n)$ (de duas v.a. $X$ e $Y$), chamaremos de covariância amostral antre X e Y a expressão
+$$corr(X,Y) = \frac{ 1 }{ n } \sum_{i=1}^n \frac{ (x_i - \overline x)}{s_x} \cdot \frac{ (y_i - \overline y)}{s_y}.$$  
+
+
 
 <!-- * Duas variáveis aleatórias $X$ e $Y$ são ditas *independentes* se e somente se a probabilidade conjunta é igual ao produto das probabilidades marginais -->
 <!-- $$P(X=i, Y=j) = P(X=i) \times P(Y=j),$$ -->
@@ -123,11 +132,11 @@ Como resumir a informação dos gráficos acima em um só número?
 <!-- $$H_0: \pi_{ij} = \pi_{i.} \pi_{.j} \text{  ou  } H_0: P(X=i, Y=j) = P(X=i) \times P(Y=j).$$ -->
 
 
-\vspace{0.5cm}
+\vspace{0.2cm}
 
 Como usar os valores de cada observação para testar se existe correlação (associação)?
 
-\vspace{0.5cm}
+\vspace{0.3cm}
 
 
 
@@ -140,7 +149,7 @@ Como usar os valores de cada observação para testar se existe correlação (as
 <!-- * *proporções* **esperadas** $\pi_{ij}$ (sob $H_0$) ou *frequências* esperadas $e_{ij} = \frac{n_{i.} n_{.j}}{n}$. -->
 <!-- em que $n_{i.} = \sum_{i=1}^k n_{ij}$ é o número de elementos na categoria $i$ de $X$ e $n_{.j} = \sum_{j=1}^l n_{ij}$ na categoria $j$ de $Y$. -->
   
-\vspace{0.5cm}
+<!-- \vspace{0.2cm} -->
 
 <!-- Teorema (**Distribuição Qui-Quadrado 2, nossa versão 2**): Sob certas suposições   -->
 <!-- $$ Q = \sum_{i,j} \frac{ \left( o_{ij} - e_{ij} \right)^2 }{e_{ij}} \sim \chi^2_{(\nu)} $$ -->
@@ -149,7 +158,7 @@ Como usar os valores de cada observação para testar se existe correlação (as
 * Quais as suposições necessárias???
 
 
-\vspace{0.5cm}
+\vspace{0.2cm}
 
 <!-- * o que são resíduos em correlação:::  -->
 <!-- O que as diferenças $o_{ij} - e_{ij}$ nos dizem sobre a associação entre $X$ e $Y$? -->
@@ -158,19 +167,19 @@ Como usar os valores de cada observação para testar se existe correlação (as
 <!-- $$res_{ij} = \frac{o_{ij} - e_{ij}}{\sqrt{e_{ij}}}$$ -->
 
 
-\vspace{0.5cm}
+<!-- \vspace{0.5cm} -->
 
 ### Correlação espúria
 
 
-\vspace{1.0cm}
+\vspace{0.5cm}
 
 ## REFERÊNCIA EXTRA
 Página 'Probabilidade e Estatística (EaD)' da UFRGS  
 
 * [Capítulo 7 - Introdução à Regressão Linear](https://www.ufrgs.br/probabilidade-estatistica/livro/cpt7/ch7_reg_simples.html#pref%C3%A1cio)
 
-\vspace{1cm}
+\vspace{0.5cm}
 
 ***
 ### Ler slides das aulas 25 e 26

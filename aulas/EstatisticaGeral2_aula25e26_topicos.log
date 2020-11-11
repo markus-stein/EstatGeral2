@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.10.6)  4 NOV 2020 12:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.10.6)  11 NOV 2020 15:28
 entering extended mode
 **./EstatisticaGeral2_aula25e26_topicos.tex
 (EstatisticaGeral2_aula25e26_topicos.tex
@@ -530,17 +530,17 @@ File: EstatisticaGeral2_aula25e26_topicos_files/figure-latex/college_aid-1.pdf
 Graphic file (type pdf)
 <use EstatisticaGeral2_aula25e26_topicos_files/figure-latex/college_aid-1.pdf>
 Package pdftex.def Info: EstatisticaGeral2_aula25e26_topicos_files/figure-latex
-/college_aid-1.pdf  used on input line 113.
+/college_aid-1.pdf  used on input line 111.
 (pdftex.def)             Requested size: 361.34912pt x 216.80946pt.
 <LogoIME.png, id=43, 521.95pt x 226.8475pt>
 File: LogoIME.png Graphic file (type png)
 <use LogoIME.png>
-Package pdftex.def Info: LogoIME.png  used on input line 122.
+Package pdftex.def Info: LogoIME.png  used on input line 120.
 (pdftex.def)             Requested size: 98.19987pt x 42.67917pt.
 <images.jpeg, id=44, 330.23375pt x 153.57375pt>
 File: images.jpeg Graphic file (type jpg)
 <use images.jpeg>
-Package pdftex.def Info: images.jpeg  used on input line 122.
+Package pdftex.def Info: images.jpeg  used on input line 120.
 (pdftex.def)             Requested size: 91.77448pt x 42.6793pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -554,11 +554,11 @@ This may cause the page layout to be inconsistent, however.
 picos_files/figure-latex/college_aid-1.pdf>]
 File: LogoIME.png Graphic file (type png)
 <use LogoIME.png>
-Package pdftex.def Info: LogoIME.png  used on input line 203.
+Package pdftex.def Info: LogoIME.png  used on input line 212.
 (pdftex.def)             Requested size: 98.19987pt x 42.67917pt.
 File: images.jpeg Graphic file (type jpg)
 <use images.jpeg>
-Package pdftex.def Info: images.jpeg  used on input line 203.
+Package pdftex.def Info: images.jpeg  used on input line 212.
 (pdftex.def)             Requested size: 91.77448pt x 42.6793pt.
 [2] (EstatisticaGeral2_aula25e26_topicos.aux)
 Package rerunfilecheck Info: File `EstatisticaGeral2_aula25e26_topicos.out' has
@@ -566,24 +566,32 @@ Package rerunfilecheck Info: File `EstatisticaGeral2_aula25e26_topicos.out' has
 (rerunfilecheck)             Checksum: 753EEB1D69204C77F06770A9EDCEF453;2299.
  ) 
 Here is how much of TeX's memory you used:
- 12342 strings out of 480202
- 184339 string characters out of 2887011
- 501363 words of memory out of 3000000
+ 12350 strings out of 480202
+ 184423 string characters out of 2887011
+ 506363 words of memory out of 3000000
  28661 multiletter control sequences out of 15000+200000
- 586277 words of font info for 83 fonts, out of 3000000 for 9000
+ 586609 words of font info for 87 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,14n,66p,590b,343s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/M
-iKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.enc}<C:/Program Files/MiKTeX 2.9/fonts/type
-1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx1
-2.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Program 
-Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/public/lm/lmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
-lm/lmri10.pfb>
-Output written on EstatisticaGeral2_aula25e26_topicos.pdf (2 pages, 286584 byte
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Fil
+es/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fon
+ts/enc/dvips/lm/lm-mathex.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/l
+m-rm.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program 
+Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.enc}<C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/l
+m/lmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmex10.pfb><C:/
+Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Program Files/MiK
+TeX 2.9/fonts/type1/public/lm/lmmi5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
+1/public/lm/lmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr10.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/lm/lmr17.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/lm/lmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/
+lmri10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy7.pfb>
+Output written on EstatisticaGeral2_aula25e26_topicos.pdf (2 pages, 337918 byte
 s).
 PDF statistics:
- 97 PDF objects out of 1000 (max. 8388607)
+ 131 PDF objects out of 1000 (max. 8388607)
  12 named destinations out of 1000 (max. 500000)
  12381 words of extra memory for PDF output out of 14400 (max. 10000000)
 
