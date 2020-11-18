@@ -41,43 +41,43 @@ Artigo de 2012: https://carodinheiro.blogfolha.uol.com.br/2012/12/14/pagamento-d
 
 * **Exemplo 2**: O valor do auxílio estudantil oferecido por uma universidade pode estar relacionado com a renda familiar dos estudantes?
 
-```{r college_aid, message=FALSE, echo=FALSE, warning=FALSE, fig.width=4, fig.height=2}
-# library(ggplot2)
-# library(openintro)
-# data(COL)
-# data(elmhurst)
-# d <- elmhurst
-# 
-# g <- lm(d$gift_aid ~ d$family_income)
-# 
-# 
-# loss <- function(a, b, d) {
-#   p <- a + b * d$family_income
-#   sum(abs(d$gift_aid - p))
-# }
-# a      <- round(g$coef[1], 2) + seq(-0.5, 0.5, 0.001)
-# b      <- round(g$coef[2], 3) + seq(-0.01, 0.01, 0.0001)
-# mins   <- c(a[1], b[1])
-# theMin <- loss(a[1], b[1], d)
-# pb     <- txtProgressBar(1, length(a), style=3)
-# for (i in 1:length(a)) {
-#   for (j in 1:length(b)) {
-#     hold <- loss(a[i], b[j], d)
-#     if (hold < theMin) {
-#       mins <- c(a[i],b[j])
-#       theMin <- hold
-#     }
-#   }
-# }
-# 
-# # elmhurstScatterW2Lines
-# 
-# ggplot(data = d, mapping = aes(family_income, gift_aid)) + 
-#   theme(panel.border = element_rect(colour = "black", fill = NA, size = 1)) + 
-#   geom_point(color = 'skyblue3') + 
-#   labs(x = 'Renda Familiar ($1000s)', y = 'Auxílio da \nuniversidade ($1000s)') #+ 
-#   # geom_abline(slope = mins[2], intercept = mins[1], linetype = 'dashed', size = 1) + 
-#   # geom_smooth(formula = y ~ x, se = FALSE, method = 'lm', color = 'black')
+```{r college_aid, message=FALSE, echo=FALSE, warning=FALSE, fig.width=3, fig.height=2}
+library(ggplot2)
+library(openintro)
+data(COL)
+data(elmhurst)
+d <- elmhurst
+
+g <- lm(d$gift_aid ~ d$family_income)
+
+
+loss <- function(a, b, d) {
+  p <- a + b * d$family_income
+  sum(abs(d$gift_aid - p))
+}
+a      <- round(g$coef[1], 2) + seq(-0.5, 0.5, 0.001)
+b      <- round(g$coef[2], 3) + seq(-0.01, 0.01, 0.0001)
+mins   <- c(a[1], b[1])
+theMin <- loss(a[1], b[1], d)
+pb     <- txtProgressBar(1, length(a), style=3)
+for (i in 1:length(a)) {
+  for (j in 1:length(b)) {
+    hold <- loss(a[i], b[j], d)
+    if (hold < theMin) {
+      mins <- c(a[i],b[j])
+      theMin <- hold
+    }
+  }
+}
+
+# elmhurstScatterW2Lines
+
+ggplot(data = d, mapping = aes(family_income, gift_aid)) +
+  theme(panel.border = element_rect(colour = "black", fill = NA, size = 1)) +
+  geom_point(color = 'skyblue3') +
+  labs(x = 'Renda Familiar ($1000s)', y = 'Auxílio da \nuniversidade ($1000s)') +
+  geom_abline(slope = mins[2], intercept = mins[1], linetype = 'dashed', size = 1) +
+  geom_smooth(formula = y ~ x, se = FALSE, method = 'lm', color = 'black')
 ```
 
 \vspace{0.2cm}
@@ -88,40 +88,60 @@ Artigo de 2012: https://carodinheiro.blogfolha.uol.com.br/2012/12/14/pagamento-d
 ### Modelo populacional
 sejam $X$ e $Y$ duas v.a. queremos estimar a esperança condicional de $Y$ em função de (dado que) $X=x$,
 $$E(Y \vert X=x) = \alpha + \beta \cdot x,$$
-ou seja, os parâmetros $\alpha$ e $\beta$.  
+ou seja, queremos estimar os parâmetros $\alpha$ e $\beta$.  
 
 * Para uma amostra de tamanho $n$ podemos escrever que cada observação $(x_i, y_i)$, para $i = 1, \ldots, n$, segue o modelo
-$$y_i = \alpha + \beta \cdot x_i + e_i$$
-  + chamamos $e_i$ de erro amostral e assumimos que 
-  
+$$y_i = \alpha + \beta \cdot x_i + e_i.$$  
+
+* chamamos $e_i$ de erro amostral e assumimos que:
+    + $E(e_i) = 0$, 
+    + $Var(e_i) = \sigma^2$, para todo $i,j = 1, \ldots, n$,
+    + $Cov(e_i, e_j) = 0$ para $i\neq j$.  
+
+* Assim $E(y_i) = \alpha + \beta \cdot x_i$, $Var(y_i)=\sigma^2$ e $Cov(y_i, y_j)=0$.
+    +  o parâmetro $\sigma^2$ também precisa ser estimado.
+    
+\vspace{0.2cm}
+
 ### Método dos Mínimos Quadrados (Ordinários)
 Para estimar $\alpha$ e $\beta$ podemos pensar em minimizar os erros $e_i$, ou
 $$SQ(\alpha, \beta) = \sum_{i=1}^n e_i^2 = \sum_{i=1}^n \left[ y_i - (\alpha + \beta \cdot x_i) \right]^2$$
 
 * Derivando $SQ(\alpha, \beta)$ em relação a $\alpha$ e $\beta$, igualando a zero e resolvendo o sistema de equações temos
-    + $\widehat \alpha = ???$
-    + $\widehat \beta = ???$
+    + $\widehat \alpha = ???$ e $\widehat \beta = ???$.  
 
 * Reta estimada (modelo ajustado): $\widehat y_i = \widehat \alpha + \widehat \beta \cdot x_i$
     + Interpretação de $\widehat \alpha$ e $\widehat \beta$;
-    + **Predição**, para um dado valor $X=x$, quanto esperamos observar o valor de $Y$?
+    + **Prever**, para um dado valor $X=x$, quanto esperamos observar o valor de $Y$?
 
-### Coeficiente de determinação $R^2$
+\vspace{0.2cm}
 
-
-## Intervalos de Confiança e Testes de hipóteses
-
-### Para $\alpha$ e $\beta$
-
-### Para $E(Y \vert x)$ , **predição**
-
-* suposições???
-
-
-## Correlação espúria
-## Causalidade e correlação
+### Coeficiente de determinação $R^2$ (Bussab e Morettin - seção 16.3)
 
 \vspace{0.5cm}
+
+## Intervalos de Confiança e Testes de hipóteses (Bussab e Morettin - seção 16.4)
+### Para $\alpha$, $\beta$ e $\sigma^2$. (**suposições???**)
+Se adicionalmente assumimos $e_i \sim Normal$, então $y_i \sim Normal(\alpha + \beta \cdot x, \sigma^2)$.
+
+* Também $\widehat \alpha \sim Normal$ e $\widehat \beta \sim Normal$.
+
+### **Previsão** e **predição** (Bussab e Morettin - seção 16.4.4)
+* para o valor esperado $E(Y_i \vert x_i) = y_i$;
+* para uma futura (nova) observação $y_f$.
+
+
+\vspace{0.5cm}
+
+## Correlação espúria
+
+\vspace{0.5cm}
+
+## Causalidade e correlação
+
+\vspace{1.0cm}
+
+\clearpage
 
 ## REFERÊNCIA EXTRA
 Página 'Probabilidade e Estatística (EaD)' da UFRGS
@@ -133,7 +153,7 @@ Página 'Probabilidade e Estatística (EaD)' da UFRGS
 ***
 ### Ler slides das aulas 27 e 28
 ### Continuar exercícios da lista 3-3
-<!-- ### Fazer avaliação pontual 1 da área 3 -->
+### Fazer avaliação pontual 2 da área 3
 ***
 
 <!-- ## Para a prova 2 -->
@@ -145,3 +165,4 @@ Página 'Probabilidade e Estatística (EaD)' da UFRGS
 <!-- * Interpretações. -->
 <!-- * Valor *p*,  para o teste ANOVA também. -->
 
+<!-- An[alise dos res[iduos]] -->
