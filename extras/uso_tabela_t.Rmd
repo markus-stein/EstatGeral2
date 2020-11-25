@@ -3,9 +3,9 @@ title: "Sobre o Uso da tabela da distribuição **t**"
 author: "Markus Stein"
 date: "8 September 2020"
 output:
-  pdf_document: default
   html_document:
     df_print: paged
+  pdf_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -81,6 +81,13 @@ ggplot(data = gg, mapping = aes(x = X, y = Y)) +
 
 * Tente para a distribuição **t** e **qui-quadrado**,... . *(assuma $\nu = 15$ para **t** e **Qui-Quadrado**)*
 
+### Aplicativos na internet  
+
+* (*em inglês*) Apps do livro 'Statistics: The Art and Science of Learning from Data'
+    + https://artofstat.com/web-apps
+    + ver seção 'Distributions: Explore Shapes & Find Probabilities'
+
+<!-- https://www.statsandr.com/blog/ - blog com analises... -->
 
 
 ## Referência

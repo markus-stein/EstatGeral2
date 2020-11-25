@@ -1,5 +1,5 @@
 ---
-title: "Plano Aula 27 e 28"
+title: "Plano Aula 29 e 30"
 author: "Markus Stein"
 # date: "XX Month 2020"
 output: pdf_document
@@ -105,9 +105,15 @@ No `R`, o comando 'lm(y ~ x)' (de *linear model*) ajusta a reta de regressão 'y
 summary(g)
 ```
 
-* Aplicativos na internet
+### Aplicativos na internet  
 
-<!-- https://artofstat.com/web-apps -->
+* (*em inglês*) Apps do livro 'Statistics: The Art and Science of Learning from Data'
+    + https://artofstat.com/web-apps   
+Ver a seção 'Association, Correlation & Regression' 
+
+* (*em inglês*) Blog com diversas análises (https://www.statsandr.com/blog/)  
+Apps para Regressão: [clique aqui](https://www.statsandr.com/blog/a-shiny-app-for-simple-linear-regression-by-hand-and-in-r/)  
+App para Testes e intervalos: [clique aqui](https://www.statsandr.com/blog/a-shiny-app-for-inferential-statistics-by-hand/)
 
 
 
@@ -120,20 +126,10 @@ summary(g)
     + análise de resíduos
 * Decisão/Conclusão dos testes e interpretação de coeficientes.
 * Valor *p*,  para os testes Qui Quadrado de correlação e na regressão também.
-
-\vspace{0.2cm}
-
 * Correlação espúria
-
-\vspace{0.2cm}
-
 * Causalidade e correlação
 
-\vspace{1.0cm}
-
-* Causalidade e correlação
-
-\vspace{1.0cm}
+\vspace{0.5cm}
 
 ## REFERÊNCIA EXTRA
 Página 'Probabilidade e Estatística (EaD)' da UFRGS

@@ -1,0 +1,67 @@
+---
+title: "Plano Aula 31 e 32"
+author: "Markus Stein"
+# date: "XX Month 2020"
+output: pdf_document
+    # toc: yes
+header-includes:
+    - \usepackage{fancyhdr}
+always_allow_html: yes
+---
+\addtolength{\headheight}{0.0cm} 
+\pagestyle{fancyplain} 
+\lhead{\includegraphics[height=1.5cm]{LogoIME.png}}
+\rhead{\includegraphics[height=1.5cm]{images.jpeg}}
+\chead{UNIVERSIDADE FEDERAL DO RIO GRANDE DO SUL \\
+INSTITUTO DE MATEMÁTICA E ESTATÍSTICA \\
+DEPARTAMENTO DE ESTATÍSTICA \\
+\vspace{0.3cm}
+MAT02215 - Estatística Geral 2 - 2020/1
+}
+\renewcommand{\headrulewidth}{0pt} 
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Paríodo para Exame
+
+Para quem ainda não atingiu média ponderada das avaliações (ler plano de ensino) igual ou superior a **seis**.  
+
+* Revisar os principais conteúdos do semestre:
+    + Introdução à Inferência Estatística e definições
+    + Amostragem: principais tipos
+    + Distribuição amostral
+    + Intervalos de confiança
+    + Tamanho amostral
+    + Testes de hipóteses
+    + ANOVA
+    + Testes Qui Quadrado
+    + Análise de Correlação 
+    + Análise de Regressão
+
+
+* Refazer as avaliações.
+
+* Ter os formulários em mãos.
+
+\vspace{0.5cm}
+
+**Importante lembrar**:
+
+* Suposições necessárias para interpretações de intervalos e testes.
+    + análise de resíduos
+* Decisão/Conclusão dos testes e interpretação de coeficientes.
+* Valor *p*,  para os testes Qui Quadrado de correlação e na regressão também.
+* Correlação espúria
+* Causalidade e correlação
+
+\vspace{1.0cm}
+
+***
+<!-- ### Ler slides das aulas 27 e 28 -->
+<!-- ### Continuar exercícios da lista 3-3 -->
+### Boas férias aos já aprovados!
+### Bom exame aos ainda não aprovados!
+***
