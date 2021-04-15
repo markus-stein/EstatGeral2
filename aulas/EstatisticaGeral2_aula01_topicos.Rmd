@@ -56,3 +56,23 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Ler slides Aula 1 e Aula 2.
 ***
+
+
+## Referências e Links interessantes
+
+### Como baixar o livro "Estatística Básica" dos autores **Bussab e Morettin**???
+
+* O acesso é livre através do Sabi+ (https://www.ufrgs.br/bibliotecas/pesquisa/bibliografia-eletronica/). 
+
+* Precisamos somente configurar o Proxy da UFRGS (https://www.ufrgs.br/bibliotecas/pesquisa/proxy/) e logar no Sabi+ para acessar remotamente o livro.
+
+### Do mesmo livro "Estatística Básica", Bussab e Morettin (2017)
+
+* Comandos R para análises estatísticas em https://www.ime.usp.br/~pam/scriptsR.html
+
+
+### Material do site da disciplina "Probabilidade e Estatística EAD"
+
+* Em http://ufrgs.br/probabilidade-estatistica. Nas abas slides, videos e listas vocês encontram o material que vem sendo usado nas turmas EAD da disciplina. 
+
+* Na aba livro e slides do livro temos um material que vem sendo traduzido e fica como referência pelos códigos em R, além de uma linguagem e exemplos talvez mais atualizados.
