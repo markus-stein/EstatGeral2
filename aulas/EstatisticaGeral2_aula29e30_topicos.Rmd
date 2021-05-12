@@ -18,7 +18,7 @@ DEPARTAMENTO DE ESTATÍSTICA \\
 \vspace{0.3cm}
 MAT02215 - Estatística Geral 2 - 2020/1
 }
-\renewcommand{\headrulewidth}{0pt} 
+\renewcommand{\headrulewidth}{1pt} 
 
 
 ```{r setup, include=FALSE}
@@ -131,15 +131,16 @@ App para Testes e intervalos: [clique aqui](https://www.statsandr.com/blog/a-shi
 
 \vspace{0.5cm}
 
+***
+<!-- ### Ler slides das aulas 27 e 28 -->
+<!-- ### Continuar exercícios da lista 3-3 -->
+### Fazer avaliação parcial da ára 3!!!
+***
+
+\vspace{0.5cm}
+
 ## REFERÊNCIA EXTRA
 Página 'Probabilidade e Estatística (EaD)' da UFRGS
 
 * [Capítulo 7 - Introdução à Regressão Linear](https://www.ufrgs.br/probabilidade-estatistica/livro/cpt7/ch7_reg_simples.html#pref%C3%A1cio)
 
-\vspace{0.5cm}
-
-***
-<!-- ### Ler slides das aulas 27 e 28 -->
-<!-- ### Continuar exercícios da lista 3-3 -->
-### Fazer avaliação parcial da ára 3
-***
