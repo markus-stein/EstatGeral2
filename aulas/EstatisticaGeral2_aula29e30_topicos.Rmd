@@ -8,7 +8,7 @@ header-includes:
     - \usepackage{fancyhdr}
 always_allow_html: yes
 ---
-\addtolength{\headheight}{0.0cm} 
+\addtolength{\headheight}{1.0cm} 
 \pagestyle{fancyplain} 
 \lhead{\includegraphics[height=1.5cm]{LogoIME.png}}
 \rhead{\includegraphics[height=1.5cm]{images.jpeg}}
@@ -18,7 +18,7 @@ DEPARTAMENTO DE ESTATÍSTICA \\
 \vspace{0.3cm}
 MAT02215 - Estatística Geral 2 - 2020/1
 }
-\renewcommand{\headrulewidth}{1pt} 
+\renewcommand{\headrulewidth}{0pt} 
 
 
 ```{r setup, include=FALSE}
@@ -116,25 +116,35 @@ Apps para Regressão: [clique aqui](https://www.statsandr.com/blog/a-shiny-app-f
 App para Testes e intervalos: [clique aqui](https://www.statsandr.com/blog/a-shiny-app-for-inferential-statistics-by-hand/)
 
 
-
 # Para a prova 3
 * Ter o formulário em mãos.
 
 **Importante lembrar**:
 
-* Suposições necessárias para os testes Qui Quadrado, decorrelação e regressão.
-    + análise de resíduos
-* Decisão/Conclusão dos testes e interpretação de coeficientes.
-* Valor *p*,  para os testes Qui Quadrado de correlação e na regressão também.
-* Correlação espúria
-* Causalidade e correlação
+* Teste Qui QUadrado: de aderência, de associação, casos especiais, ...
+    + hipóteses e suposições necessárias para os testes;
+    + estatística de teste, valor crítico, Valor *p*;
+    + Decisão e conclusão dos testes;
+    + análise de resíduos.
+
+\vspace{0.5cm}
+
+* Correlação e regressão
+    + coeficiente de correlação, interpretação, teste de hipóteses;
+    + estimação da reta de regressão, coeficientes, interpretações;
+    + estatística de teste, valor crítico, Valor *p*;
+    + Coeficiente determinação, interpretação, ...
+    + ~~ANOVA na regressão~~ (não trabalhamos)
+    + ~~Análise de resíduos~~ (não trabalhamos)
+    + Correlação espúria
+    + Causalidade e correlação
 
 \vspace{0.5cm}
 
 ***
 <!-- ### Ler slides das aulas 27 e 28 -->
 <!-- ### Continuar exercícios da lista 3-3 -->
-### Fazer avaliação parcial da ára 3!!!
+### Fazer a avaliação parcial da ára 3!!!
 ***
 
 \vspace{0.5cm}
