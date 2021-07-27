@@ -1,7 +1,7 @@
 ---
 title: "Plano Aula 01"
 author: "Markus Stein"
-date: "09 March 2020"
+date: "02 August 2021"
 output: pdf_document
     # toc: yes
 header-includes:
@@ -28,6 +28,7 @@ knitr::opts_chunk$set(echo = TRUE)
 # Introdução  
 
 ## Apresentação do professor  
+* Markus Stein
 
 \vspace{0.5cm}
 
@@ -37,19 +38,22 @@ knitr::opts_chunk$set(echo = TRUE)
 \vspace{0.5cm}
 
 ## O que é Estatística Geral 2?  
-* Estatística Geral 2 = Inferência Estatística (Paramétrica) (Clássica)  
-	+ População $\times$ amostra  
-	+ Inferência Estatística - indução $\times$ dedução  
-	+ (Paramétrica)?  
-	+ (Clássica)?  
+* Estatística Geral 2 = Inferência Estatística (Paramétrica) (Clássica)
+	+ População $\times$ amostra
+	+ Inferência Estatística - indução $\times$ dedução
+	+ (Paramétrica)?
+	+ (Clássica)?
 
 \vspace{0.5cm}
 
 ## Apresentação da disciplina  
 * Ler o plano de ensino!!!  
-
-
-\vspace{1.0cm}
+  + Conteúdos e andamento
+  + Participação e avaliações
+  + Dúvidas e monitoria
+  + Bibliografia
+  
+\vspace{0.5cm}
 
 ***
 ## Rever: Variáveis aleatórias (uni. e bidimensionais), distribuições de prob. e parâmetros.
@@ -68,11 +72,11 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ### Do mesmo livro "Estatística Básica", Bussab e Morettin (2017)
 
-* Comandos R para análises estatísticas em https://www.ime.usp.br/~pam/scriptsR.html
+* Comandos `R` para análises estatísticas em https://www.ime.usp.br/~pam/scriptsR.html
 
 
 ### Material do site da disciplina "Probabilidade e Estatística EAD"
 
 * Em http://ufrgs.br/probabilidade-estatistica. Nas abas slides, videos e listas vocês encontram o material que vem sendo usado nas turmas EAD da disciplina. 
 
-* Na aba livro e slides do livro temos um material que vem sendo traduzido e fica como referência pelos códigos em R, além de uma linguagem e exemplos talvez mais atualizados.
+* Na aba livro e slides do livro temos um material que vem sendo traduzido e fica como referência pelos códigos em `R`, além de uma linguagem e exemplos talvez mais atualizados.
