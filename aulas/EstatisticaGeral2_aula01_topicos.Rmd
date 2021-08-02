@@ -1,7 +1,7 @@
 ---
 title: "Plano Aula 01"
 author: "Markus Stein"
-date: "02 August 2021"
+# date: "02 August 2021"
 output: pdf_document
     # toc: yes
 header-includes:
@@ -25,17 +25,15 @@ MAT02215 - Estatística Geral 2 - 2020/1
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-# Introdução  
-
+# Introdução e instruções
 ## Apresentação do professor  
 * Markus Stein
 
-\vspace{0.5cm}
-
+<!-- \vspace{0.5cm} -->
 
 ## O que sabemos de Estatística e Probabilidade até agora?  
 
-\vspace{0.5cm}
+<!-- C\vspace{0.5cm} -->
 
 ## O que é Estatística Geral 2?  
 * Estatística Geral 2 = Inferência Estatística (Paramétrica) (Clássica)
@@ -44,7 +42,7 @@ knitr::opts_chunk$set(echo = TRUE)
 	+ (Paramétrica)?
 	+ (Clássica)?
 
-\vspace{0.5cm}
+<!-- \vspace{0.5cm} -->
 
 ## Apresentação da disciplina  
 * Ler o plano de ensino!!!  
@@ -56,9 +54,12 @@ knitr::opts_chunk$set(echo = TRUE)
 \vspace{0.5cm}
 
 ***
-## Rever: Variáveis aleatórias (uni. e bidimensionais), distribuições de prob. e parâmetros.
-
-## Ler slides Aula 1 e Aula 2.
+## Rever: 
+* Variáveis aleatórias (uni. e bidimensionais), 
+    + distribuições de prob. (marginais e conjuntas) e 
+    + parâmetros (esperança, (co)variância, ...).
+    
+## Ler slides Aula 1.
 ***
 
 

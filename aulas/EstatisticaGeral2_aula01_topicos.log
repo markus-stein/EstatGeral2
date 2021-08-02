@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.7.21)  27 JUL 2021 16:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.7.21)  2 AUG 2021 09:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -530,25 +530,25 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 73.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 9
-6.
+7.
 (c:/Users/Markus/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 119.
+(Font)              <10> on input line 116.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 119.
+(Font)              <7> on input line 116.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 119.
+(Font)              <5> on input line 116.
 <LogoIME.png, id=49, 521.95pt x 226.8475pt>
 File: LogoIME.png Graphic file (type png)
 <use LogoIME.png>
-Package pdftex.def Info: LogoIME.png  used on input line 182.
+Package pdftex.def Info: LogoIME.png  used on input line 188.
 (pdftex.def)             Requested size: 98.19987pt x 42.67917pt.
 <images.jpeg, id=50, 330.23375pt x 153.57375pt>
 File: images.jpeg Graphic file (type jpg)
 <use images.jpeg>
-Package pdftex.def Info: images.jpeg  used on input line 182.
+Package pdftex.def Info: images.jpeg  used on input line 188.
 (pdftex.def)             Requested size: 91.77448pt x 42.6793pt.
 
 Package fancyhdr Warning: \headheight is too small (40.45274pt): 
@@ -562,18 +562,18 @@ Package fancyhdr Warning: \headheight is too small (40.45274pt):
 ftex.map}
 
  <./LogoIME.png> <./images.jpeg>]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
-94.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 2
+00.
 (c:/Users/Markus/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 File: LogoIME.png Graphic file (type png)
 <use LogoIME.png>
-Package pdftex.def Info: LogoIME.png  used on input line 214.
+Package pdftex.def Info: LogoIME.png  used on input line 220.
 (pdftex.def)             Requested size: 98.19987pt x 42.67917pt.
 File: images.jpeg Graphic file (type jpg)
 <use images.jpeg>
-Package pdftex.def Info: images.jpeg  used on input line 214.
+Package pdftex.def Info: images.jpeg  used on input line 220.
 (pdftex.def)             Requested size: 91.77448pt x 42.6793pt.
 
 Package fancyhdr Warning: \headheight is too small (40.45274pt): 
@@ -586,16 +586,16 @@ Package fancyhdr Warning: \headheight is too small (40.45274pt):
 [2] (./EstatisticaGeral2_aula01_topicos.aux)
 Package rerunfilecheck Info: File `EstatisticaGeral2_aula01_topicos.out' has no
 t changed.
-(rerunfilecheck)             Checksum: 4CA0E79A0E7EC1DC79AABE88DC0473D5;3334.
+(rerunfilecheck)             Checksum: 82F39AC2E21AA5F4D9B82892650A136D;2891.
  ) 
 Here is how much of TeX's memory you used:
- 10287 strings out of 480502
- 152721 string characters out of 5897997
- 460741 words of memory out of 5000000
- 27766 multiletter control sequences out of 15000+600000
+ 10288 strings out of 480502
+ 152566 string characters out of 5897997
+ 461646 words of memory out of 5000000
+ 27767 multiletter control sequences out of 15000+600000
  449399 words of font info for 67 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 60i,15n,66p,618b,419s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,15n,66p,533b,419s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/Users/Markus/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.
 enc}{c:/Users/Markus/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-m
 athsy.enc}{c:/Users/Markus/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/l
@@ -607,7 +607,7 @@ st/fonts/type1/public/lm/lmr12.pfb><c:/Users/Markus/AppData/Roaming/TinyTeX/tex
 mf-dist/fonts/type1/public/lm/lmr17.pfb><c:/Users/Markus/AppData/Roaming/TinyTe
 X/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/Users/Markus/AppData/Roaming/
 TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on EstatisticaGeral2_aula01_topicos.pdf (2 pages, 194967 bytes).
+Output written on EstatisticaGeral2_aula01_topicos.pdf (2 pages, 193294 bytes).
 
 PDF statistics:
  128 PDF objects out of 1000 (max. 8388607)

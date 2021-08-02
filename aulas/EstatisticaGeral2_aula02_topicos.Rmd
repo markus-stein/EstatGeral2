@@ -1,14 +1,14 @@
 ---
 title: "Plano Aula 02"
 author: "Markus Stein"
-date: "11 March 2020"
+# date: "04 August 2021"
 output: pdf_document
     # toc: yes
 header-includes:
     - \usepackage{fancyhdr}
 always_allow_html: yes
 ---
-\addtolength{\headheight}{0.0cm} 
+\addtolength{\headheight}{1.0cm} 
 \pagestyle{fancyplain} 
 \lhead{\includegraphics[height=1.5cm]{LogoIME.png}}
 \rhead{\includegraphics[height=1.5cm]{images.jpeg}}
@@ -61,11 +61,12 @@ Definição **A.A.S**: Seja $X_1, X_2, \ldots, X_n$ uma a.a.s. de tamanho $n$ de
 ### Qual o tamanho ideal de amostra?
 Veremos critérios para calcular tamanhos de amostras ao longo da dsiciplina.
 
-<!-- \vspace{0.5cm} -->
+\vspace{2.5cm}
+
 ***
 ### Ler slides da aula 2
-### Exercícios
-<!-- *** -->
+### Fazer exercícios lista 1-1
+***
 
 <!-- ### Distribuição amostral   -->
 <!-- * **Exemplo 3**: Média amostral   -->
