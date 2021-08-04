@@ -43,7 +43,7 @@ Qual a população em estudo?
 
 ## Amostragem - Como obter amostras?  
 ### Principais tipos de amostragem
-* **Probabilística** *versus* **não porbabilística**;  
+* **Probabilística** *versus* **não probabilística**;  
 * Com e sem **reposição**.
 
 ### Amostra aleatória simples (a.a.s.)  $=$ v.a. idependentes e identicamente distribuídas (i.i.d.)   
