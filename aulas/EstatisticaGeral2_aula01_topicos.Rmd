@@ -16,7 +16,7 @@ always_allow_html: yes
 INSTITUTO DE MATEMÁTICA E ESTATÍSTICA \\
 DEPARTAMENTO DE ESTATÍSTICA \\
 \vspace{0.3cm}
-MAT02215 - Estatística Geral 2 - 2020/1
+MAT02215 - Estatística Geral 2 - 2021/1
 }
 \renewcommand{\headrulewidth}{0pt} 
 

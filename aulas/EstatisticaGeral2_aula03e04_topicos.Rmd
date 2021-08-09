@@ -1,14 +1,14 @@
 ---
-title: "Plano Aula 05 e 06"
+title: "Plano Aula 03 e 04"
 author: "Markus Stein"
-date: "XX Month 2020"
+# date: "XX Month 2020"
 output: pdf_document
     # toc: yes
 header-includes:
     - \usepackage{fancyhdr}
 always_allow_html: yes
 ---
-\addtolength{\headheight}{0.0cm} 
+\addtolength{\headheight}{1.0cm} 
 \pagestyle{fancyplain} 
 \lhead{\includegraphics[height=1.5cm]{LogoIME.png}}
 \rhead{\includegraphics[height=1.5cm]{images.jpeg}}
@@ -16,7 +16,7 @@ always_allow_html: yes
 INSTITUTO DE MATEMÁTICA E ESTATÍSTICA \\
 DEPARTAMENTO DE ESTATÍSTICA \\
 \vspace{0.3cm}
-MAT02215 - Estatística Geral 2 - 2020/1
+MAT02215 - Estatística Geral 2 - 2021/1
 }
 \renewcommand{\headrulewidth}{0pt} 
 
@@ -58,14 +58,18 @@ Definição (**Estimativa**): Uma estimativa é um particular valor do estimador
 ### **Viés** e o Erro Quadrático Médio ($EQM$)
 
 ### **Constistência** 
-<!-- * **...cont. Exemplo 1**:  -->
+* **...cont. Exemplo 1**: ...
 
 ### **Eficiência**
-<!-- * **...cont. Exemplo 1**:  -->
+* **...cont. Exemplo 1**: ... 
+
+
+\vspace{0.5cm}
 
 ***
 ### Ler slides das aulas 3 a 4
-### Exercícios
+### Fazer xercícios lista 1-2
+### Fazer avaliação pontual 1 da área 1 - vale nota!!!
 ***
 
 
