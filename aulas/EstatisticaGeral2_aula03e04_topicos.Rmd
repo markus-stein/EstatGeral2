@@ -29,16 +29,18 @@ knitr::opts_chunk$set(echo = TRUE)
 
 * **Exemplo 1**: Média amostral, $\overline x = \frac{1}{n} \sum_{i=1}^n x_i$
 
-* **Exemplo 2**: Proporção amostral $p = \frac{1}{n} \sum_{i=1}^n x_i$ 
+* **Exemplo 2**: Proporção amostral $p = \frac{1}{n} \sum_{i=1}^n x_i$, para $x \in \left\{ 0, 1 \right\}$ .
 
 ### Teorema central do limite (Bussab e Morettin - Seção 10.8)
 
-* **Teorema 10.2** e **Corolário 10.1**  
+**Teorema 10.2** e **Corolário 10.1**  
+
+* **...cont. Exemplo 1**: quando $\overline X \sim Normal \left( \mu, \frac{\sigma^2}{n} \right)$? Suposições?
+* **...cont. Exemplo 2**: quando $p \sim Normal \left( \pi, \frac{ \pi (1-\pi)}{n} \right)$? Suposições?
 
 ## Estmação (pontual) (Bussab e Morettin - Capítulo 11)
 
 * Parâmetro $\times$ Estatísticas
-
 * Estimador e Estimativa
 
 Definição (**Estimador**): Um estimador $T$ do parâmetro $\theta$ é qualquer função das observações da amostra, $T=g(X_1, \ldots, X_n)$.  
@@ -48,14 +50,16 @@ Definição (**Estimativa**): Uma estimativa é um particular valor do estimador
 \vspace{0.5cm}
 
 * **Exemplo 3**: Simulação de distribuições de estimadores (*estatísticas*)
-
-\vspace{0.5cm}
-
+    + outras estatísticas $S^2$, $Md$, ...
+    
 ## Propriedades dos estimadores (Bussab e Morettin - Seção 11.2)
 
-* **...cont. Exemplo 1**: média amostral $\overline X$
+* **...cont. Exemplo 1**: média amostral $\overline X$.
+* **...cont. Exemplo 2**: proporção amostral $p = \frac{1}{n} \sum_{i=1}^n x_i$.
 
 ### **Viés** e o Erro Quadrático Médio ($EQM$)
+
+\vspace{0.5cm}
 
 ### **Constistência** 
 * **...cont. Exemplo 1**: ...

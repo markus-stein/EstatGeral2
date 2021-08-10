@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.7.21)  9 AUG 2021 07:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.7.21)  10 AUG 2021 11:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -543,12 +543,12 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 <LogoIME.png, id=44, 521.95pt x 226.8475pt>
 File: LogoIME.png Graphic file (type png)
 <use LogoIME.png>
-Package pdftex.def Info: LogoIME.png  used on input line 188.
+Package pdftex.def Info: LogoIME.png  used on input line 189.
 (pdftex.def)             Requested size: 98.19987pt x 42.67917pt.
 <images.jpeg, id=45, 330.23375pt x 153.57375pt>
 File: images.jpeg Graphic file (type jpg)
 <use images.jpeg>
-Package pdftex.def Info: images.jpeg  used on input line 188.
+Package pdftex.def Info: images.jpeg  used on input line 189.
 (pdftex.def)             Requested size: 91.77448pt x 42.6793pt.
 
 Package fancyhdr Warning: \headheight is too small (40.45274pt): 
@@ -564,11 +564,11 @@ ftex.map}
  <./LogoIME.png> <./images.jpeg>]
 File: LogoIME.png Graphic file (type png)
 <use LogoIME.png>
-Package pdftex.def Info: LogoIME.png  used on input line 190.
+Package pdftex.def Info: LogoIME.png  used on input line 209.
 (pdftex.def)             Requested size: 98.19987pt x 42.67917pt.
 File: images.jpeg Graphic file (type jpg)
 <use images.jpeg>
-Package pdftex.def Info: images.jpeg  used on input line 190.
+Package pdftex.def Info: images.jpeg  used on input line 209.
 (pdftex.def)             Requested size: 91.77448pt x 42.6793pt.
 
 Package fancyhdr Warning: \headheight is too small (40.45274pt): 
@@ -586,17 +586,17 @@ Package rerunfilecheck Info: File `EstatisticaGeral2_aula03e04_topicos.out' has
 Here is how much of TeX's memory you used:
  10242 strings out of 480502
  151834 string characters out of 5897997
- 463648 words of memory out of 5000000
+ 465648 words of memory out of 5000000
  27726 multiletter control sequences out of 15000+600000
  447346 words of font info for 65 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 60i,15n,66p,456b,416s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,15n,66p,456b,419s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/Users/Markus/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.
 enc}{c:/Users/Markus/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-m
 athsy.enc}{c:/Users/Markus/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/l
-m/lm-mathex.enc}{c:/Users/Markus/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/d
-vips/lm/lm-mathit.enc}{c:/Users/Markus/AppData/Roaming/TinyTeX/texmf-dist/fonts
-/enc/dvips/lm/lm-rm.enc}{c:/Users/Markus/AppData/Roaming/TinyTeX/texmf-dist/fon
+m/lm-rm.enc}{c:/Users/Markus/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips
+/lm/lm-mathex.enc}{c:/Users/Markus/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc
+/dvips/lm/lm-mathit.enc}{c:/Users/Markus/AppData/Roaming/TinyTeX/texmf-dist/fon
 ts/enc/dvips/lm/lm-ts1.enc}<c:/Users/Markus/AppData/Roaming/TinyTeX/texmf-dist/
 fonts/type1/public/lm/lmbx10.pfb><c:/Users/Markus/AppData/Roaming/TinyTeX/texmf
 -dist/fonts/type1/public/lm/lmbx12.pfb><c:/Users/Markus/AppData/Roaming/TinyTeX
@@ -606,15 +606,17 @@ ming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi7.pfb><c:/Users/Markus/AppDat
 a/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/Users/Markus/A
 ppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/Users/Mar
 kus/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/User
-s/Markus/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/
-Users/Markus/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri10.pf
-b><c:/Users/Markus/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lms
-y10.pfb>
-Output written on EstatisticaGeral2_aula03e04_topicos.pdf (2 pages, 222732 byte
+s/Markus/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr5.pfb><c:/
+Users/Markus/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr7.pfb>
+<c:/Users/Markus/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri1
+0.pfb><c:/Users/Markus/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm
+/lmsy10.pfb><c:/Users/Markus/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/pub
+lic/lm/lmsy7.pfb>
+Output written on EstatisticaGeral2_aula03e04_topicos.pdf (2 pages, 250847 byte
 s).
 PDF statistics:
- 143 PDF objects out of 1000 (max. 8388607)
- 110 compressed objects within 2 object streams
+ 153 PDF objects out of 1000 (max. 8388607)
+ 116 compressed objects within 2 object streams
  23 named destinations out of 1000 (max. 500000)
  91 words of extra memory for PDF output out of 10000 (max. 10000000)
 

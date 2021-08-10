@@ -41,12 +41,15 @@ Qual a população em estudo?
 * **Amostra** $\rightarrow$ estatísticas ($\overline X$, $S^2$, $p$, ...)  
   + Toda a estatística é uma v.a.!!!  
 
-## Amostragem - Como obter amostras?  
+## Amostragem - Como obter amostras?   (Seção 10.4, Livro Bussab e Morettin)  
 ### Principais tipos de amostragem
 * **Probabilística** *versus* **não probabilística**;  
 * Com e sem **reposição**.
 
-### Amostra aleatória simples (a.a.s.)  $=$ v.a. idependentes e identicamente distribuídas (i.i.d.)   
+
+### Amostra aleatória simples (Seção 10.5, Livro Bussab e Morettin)
+
+* Amostra aleatória simples (a.a.s.)  $=$ v.a. idependentes e identicamente distribuídas (i.i.d.)   
 
 * **sorteio** aleatório $\times$ **geração** de números (pseudo) aleatórios;  
     + tabela de números aleatórios(?)  

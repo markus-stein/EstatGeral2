@@ -51,15 +51,18 @@ knitr::opts_chunk$set(echo = TRUE)
   + Dúvidas e monitoria
   + Bibliografia
   
-\vspace{0.5cm}
+<!-- \vspace{0.5cm} -->
 
 ***
-## Rever: 
-* Variáveis aleatórias (uni. e bidimensionais), 
+### Rever: 
+* Variáveis aleatórias (uni. e bidimensionais),
     + distribuições de prob. (marginais e conjuntas) e 
     + parâmetros (esperança, (co)variância, ...).
-    
-## Ler slides Aula 1.
+* Para **uma** variável aleatória (v.a.) ver os planos de aula de 'Probabilidade e Estatistica' em: 
+    + **introdução** e v.a.s **discretas** - https://github.com/markus-stein/MAT02219EAD/blob/master/plano-aulas/ProbabilidadeEstatistica_aula11e12_topicos.pdf
+    + v.a.s **contínuas** - https://github.com/markus-stein/MAT02219EAD/blob/master/plano-aulas/ProbabilidadeEstatistica_aula13e14_topicos.pdf
+
+### Ler slides Aula 1.
 ***
 
 
