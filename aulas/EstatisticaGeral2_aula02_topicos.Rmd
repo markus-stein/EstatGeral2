@@ -64,7 +64,7 @@ Definição **A.A.S**: Seja $X_1, X_2, \ldots, X_n$ uma a.a.s. de tamanho $n$ de
 ### Qual o tamanho ideal de amostra?
 Veremos critérios para calcular tamanhos de amostras ao longo da dsiciplina.
 
-\vspace{2.5cm}
+\vspace{1.5cm}
 
 ***
 ### Ler slides da aula 2
