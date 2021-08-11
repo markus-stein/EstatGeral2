@@ -38,9 +38,13 @@ Definição **Estatística**: é qualquer valor obtido em função da amostra. E
 
 Definição **Distribuição Amostral**: é a distribuição de probabilidade de uma estatística.
 
-**Exemplo 1**: Seja $X$ a v.a. que denota o número de livros que a população de monitores do curso 'Probabilidade e Estatística' lêem por semestre. Suponha que no último semestre foram lidos 5, 7, 4. Se não soubéssemos essa informação e decidíssemos observar uma amostra de tamanho $n=2$ para saber a média de livros lidos $\overline X$. 
-    + Quais as possíveis amostras? Cada amostra pode gerar um $\overline x$ diferente;
-    + Os valores de média calculados com cada amostra formam a distribuição amostral de $\overline X$.
+\vspace{0.3cm}
+
+**Exemplo 1**: Seja $X$ a v.a. que denota o número de livros que a população de monitores do curso 'Probabilidade e Estatística' lêem por semestre. Suponha que no último semestre foram lidos 5, 7, 4. Se não soubéssemos essa informação e decidíssemos observar uma amostra de tamanho $n=2$ para saber a média de livros lidos $\overline X$ dessa população.  
+a. Quais as possíveis amostras? (Cada amostra pode gerar um $\overline x$ diferente)  
+b. Os valores de média calculados com cada amostra formam a distribuição amostral de $\overline X$.
+
+<!-- \vspace{0.2cm} -->
 
 ### Lembrando: Amostra aleatória simples (a.a.s.)  $=$ v.a. idependentes e identicamente distribuídas (i.i.d.)   
 Definição **A.A.S**: Seja $X_1, X_2, \ldots, X_n$ uma a.a.s. de tamanho $n$ de $X \sim f(x; \theta)$, então $X_1 \sim f(x; \theta)$, ..., $X_n \sim f(x; \theta)$ e $X_i$ e $X_j$ são independentes para todo $i \neq j$.
@@ -52,9 +56,11 @@ Definição **A.A.S**: Seja $X_1, X_2, \ldots, X_n$ uma a.a.s. de tamanho $n$ de
 Definição **Erro padrão**: é o desvio padrão de uma estatística. Exemplo, erro padrão da *média amostral* é $\sigma_{\overline X} = \sqrt{Var(\overline X)}$.
 
 
-**Exemplo 2**: Proporção amostral $\hat p = \frac{1}{n} \sum_{i=1}^n X_i$, para $X_i \in \left\{ 0, 1 \right\}$. ...
+\vspace{0.3cm}
 
-\vspace{0.5cm}
+**Exemplo 2**: Proporção amostral $P = \frac{1}{n} \sum_{i=1}^n X_i$, para $X_i \in \left\{ 0, 1 \right\}$. ...
+
+<!-- \vspace{0.2cm} -->
 
 ### Teorema central do limite (Bussab e Morettin - Seção 10.8)
 *"Garante que uma média amostral se aproxima do seu valor esperado à medida que o tamanho da amostra aumenta (dadas algumas condições...)"*
@@ -79,21 +85,21 @@ Definição (**Estimativa**): Uma estimativa é um particular valor do estimador
 
 \vspace{0.5cm}
 
-**(cont.) Exemplo 1**: E para a média amostral $\overline X = \frac{1}{n} \sum_{i=1}^n X_i$ se $\sigma^2$ desconhecido?  
+**(cont.) Exemplo 1**: E para a média amostral $\widehat \mu = \overline X = \frac{1}{n} \sum_{i=1}^n X_i$ se $\sigma^2$ desconhecido?  
 
-* quando $\overline X \sim Normal \left( \mu, \frac{\sigma^2}{n} \right)$? Suposições?
+* vale $\overline X \sim Normal \left( \mu, \frac{\sigma^2}{n} \right)$? Suposições?
 
 \vspace{0.5cm}
 
-**(cont.) Exemplo 2**: E para a proporção amostral $\hat p = \frac{1}{n} \sum_{i=1}^n X_i$?  
+**(cont.) Exemplo 2**: E para a proporção amostral $\widehat \pi = P = \frac{1}{n} \sum_{i=1}^n X_i$?  
 
-* quando $p \sim Normal \left( \pi, \frac{ \pi (1-\pi)}{n} \right)$? Suposições?
+* quando $P \sim Normal \left( \pi, \frac{ \pi (1-\pi)}{n} \right)$? Suposições?
 
 \vspace{0.5cm}
 
 **Exemplo 3**: Simulação de distribuições de estimadores (*estatísticas*)  
-* outras estatísticas $S^2$, $Md$, ...  
-* Para a variância amostral $s^2 = \frac{1}{n-1} \sum_{i=1}^n (X_i - E(X))^2$? E para $\widehat \sigma^2 = \frac{1}{n} \sum_{i=1}^n (X_i - E(X))^2$?
+* Para a variância amostral $S^2 = \frac{1}{n-1} \sum_{i=1}^n (X_i - E(X))^2$? E para $\widehat \sigma^2 = \frac{1}{n} \sum_{i=1}^n (X_i - E(X))^2$?
+* e para outras estatísticas como a mediana, $Md$, o máximo, $X_{(n)}$, ou o mínimo, $X_{(1)}$, ...  
 
     
 ### Propriedades dos estimadores (Bussab e Morettin - Seção 11.2)
@@ -114,7 +120,7 @@ Definição (**Estimativa**): Uma estimativa é um particular valor do estimador
 <!-- \vspace{0.5cm} -->
 ***
 ### Ler slides das aulas 3 a 4
-### Fazer xercícios lista 1-2
+### Fazer exercícios lista 1-2
 ### Fazer avaliação pontual 1 da área 1 - vale nota!!!
 ***
 
