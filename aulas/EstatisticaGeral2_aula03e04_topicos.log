@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.7.21)  11 AUG 2021 09:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.7.21)  11 AUG 2021 12:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -561,12 +561,12 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 <LogoIME.png, id=45, 521.95pt x 226.8475pt>
 File: LogoIME.png Graphic file (type png)
 <use LogoIME.png>
-Package pdftex.def Info: LogoIME.png  used on input line 215.
+Package pdftex.def Info: LogoIME.png  used on input line 216.
 (pdftex.def)             Requested size: 98.19987pt x 42.67917pt.
 <images.jpeg, id=46, 330.23375pt x 153.57375pt>
 File: images.jpeg Graphic file (type jpg)
 <use images.jpeg>
-Package pdftex.def Info: images.jpeg  used on input line 215.
+Package pdftex.def Info: images.jpeg  used on input line 216.
 (pdftex.def)             Requested size: 91.77448pt x 42.6793pt.
 
 Package fancyhdr Warning: \headheight is too small (40.45274pt): 
@@ -581,19 +581,19 @@ ftex.map}
 
  <./LogoIME.png> <./images.jpeg>]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 3
-24.
+33.
 (c:/Users/Markus/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 324.
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 333.
 File: LogoIME.png Graphic file (type png)
 <use LogoIME.png>
-Package pdftex.def Info: LogoIME.png  used on input line 334.
+Package pdftex.def Info: LogoIME.png  used on input line 343.
 (pdftex.def)             Requested size: 98.19987pt x 42.67917pt.
 File: images.jpeg Graphic file (type jpg)
 <use images.jpeg>
-Package pdftex.def Info: images.jpeg  used on input line 334.
+Package pdftex.def Info: images.jpeg  used on input line 343.
 (pdftex.def)             Requested size: 91.77448pt x 42.6793pt.
 
 Package fancyhdr Warning: \headheight is too small (40.45274pt): 
@@ -611,7 +611,7 @@ pdf Graphic file (type pdf)
 <use EstatisticaGeral2_aula03e04_topicos_files/figure-latex/unnamed-chunk-1-1.p
 df>
 Package pdftex.def Info: EstatisticaGeral2_aula03e04_topicos_files/figure-latex
-/unnamed-chunk-1-1.pdf  used on input line 346.
+/unnamed-chunk-1-1.pdf  used on input line 357.
 (pdftex.def)             Requested size: 433.63878pt x 144.54623pt.
 <EstatisticaGeral2_aula03e04_topicos_files/figure-latex/unnamed-chunk-2-1.pdf, 
 id=80, 433.62pt x 144.54pt>
@@ -620,15 +620,15 @@ pdf Graphic file (type pdf)
 <use EstatisticaGeral2_aula03e04_topicos_files/figure-latex/unnamed-chunk-2-1.p
 df>
 Package pdftex.def Info: EstatisticaGeral2_aula03e04_topicos_files/figure-latex
-/unnamed-chunk-2-1.pdf  used on input line 363.
+/unnamed-chunk-2-1.pdf  used on input line 375.
 (pdftex.def)             Requested size: 433.63878pt x 144.54623pt.
 File: LogoIME.png Graphic file (type png)
 <use LogoIME.png>
-Package pdftex.def Info: LogoIME.png  used on input line 365.
+Package pdftex.def Info: LogoIME.png  used on input line 377.
 (pdftex.def)             Requested size: 98.19987pt x 42.67917pt.
 File: images.jpeg Graphic file (type jpg)
 <use images.jpeg>
-Package pdftex.def Info: images.jpeg  used on input line 365.
+Package pdftex.def Info: images.jpeg  used on input line 377.
 (pdftex.def)             Requested size: 91.77448pt x 42.6793pt.
 
 Package fancyhdr Warning: \headheight is too small (40.45274pt): 
@@ -643,12 +643,12 @@ pdf> <./EstatisticaGeral2_aula03e04_topicos_files/figure-latex/unnamed-chunk-2-
 1.pdf>] (./EstatisticaGeral2_aula03e04_topicos.aux)
 Package rerunfilecheck Info: File `EstatisticaGeral2_aula03e04_topicos.out' has
  not changed.
-(rerunfilecheck)             Checksum: 8F6F1F62A958D541B6BE276B2728FA37;3186.
+(rerunfilecheck)             Checksum: 220AB4A9C8643DF807279962F4066EE7;3222.
  ) 
 Here is how much of TeX's memory you used:
  10788 strings out of 480502
- 161585 string characters out of 5897997
- 473723 words of memory out of 5000000
+ 161597 string characters out of 5897997
+ 473729 words of memory out of 5000000
  28254 multiletter control sequences out of 15000+600000
  454299 words of font info for 70 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -677,7 +677,7 @@ lic/lm/lmsy7.pfb><c:/Users/Markus/AppData/Roaming/TinyTeX/texmf-dist/fonts/type
 1/public/lm/lmtk10.pfb><c:/Users/Markus/AppData/Roaming/TinyTeX/texmf-dist/font
 s/type1/public/lm/lmtt10.pfb><c:/Users/Markus/AppData/Roaming/TinyTeX/texmf-dis
 t/fonts/type1/public/lm/lmtti10.pfb>
-Output written on EstatisticaGeral2_aula03e04_topicos.pdf (3 pages, 339441 byte
+Output written on EstatisticaGeral2_aula03e04_topicos.pdf (3 pages, 340622 byte
 s).
 PDF statistics:
  187 PDF objects out of 1000 (max. 8388607)
