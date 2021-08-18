@@ -35,6 +35,8 @@ knitr::opts_chunk$set(echo = TRUE)
     + 'qnorm($\alpha$)' para distribuição **Normal Padrão**,  
     + 'qt($\alpha, \nu$)' para distribuição **t de Student**,    
     + 'qchisq($\alpha, \nu$)' para a distribuição **Qui-QUadrado**.  
+
+
 em que $\nu$ são os graus de liberdade da distribuição.  
 
 \clearpage
@@ -73,7 +75,7 @@ ggplot(data = gg, mapping = aes(x = X, y = Y)) +
            label = "0.975 (97.5%)") + 
     annotate("text", x = m + 3*s, 
            y = max(Y)/2,    #Y[which(grepl(m - s, X))], 
-           label = "0.125 (12.5%)") + 
+           label = "0.025 (2.5%)") + 
   scale_x_continuous(breaks = seq(m - 3*s, m + 3*s, s*1.5)) +
   theme(panel.border = element_rect(colour = "black", fill=NA, size=1))
 ```

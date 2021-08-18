@@ -80,15 +80,16 @@ Definição (**Erro padrão estimado**): $ep(T) = \widehat{EP}(T) = \sqrt{\wideh
 * **...cont. Exemplo 1**: Média amostral $\overline X$. Calcular $ep(\overline X)$.  
 * **...cont. Exemplo 3**: Proporção amostral $\hat p$. $ep(\hat p)$?
 
+\vspace{0.5cm}
 
 ## $IC$ para uma média populacional $\mu$ (supondo $\sigma^2$ conhecido ou $n>30$)
 Iniciaremos com o IC para uma média populacional $\mu$;
 
 * Resultado importante na construção de $IC$ para uma média populacional:
     + No **Exemplo 1**, supondo $\sigma^2$ conhecido (ou $n>30$), então
-$$ \overline X \sim Normal(\mu, \sigma^2 / n)$$
+$$\overline X \sim Normal(\mu, \sigma^2 / n)$$
 se $X \sim Normal(\mu, \sigma^2)$. Também
-$$ Z = \frac{\overline X - \mu}{\sigma/\sqrt{n}} \sim Normal(0,1).$$
+$$Z = \frac{\overline X - \mu}{\sigma/\sqrt{n}} \sim Normal(0,1).$$
 
 * Como usar a distribuição de $Z$ para construir um IC para $\mu$? 
 * Quais as suposições necessárias? 
@@ -103,4 +104,40 @@ $$ Z = \frac{\overline X - \mu}{\sigma/\sqrt{n}} \sim Normal(0,1).$$
 ***
 
 
-<!-- propriedades dos estimadores -->
+### Quantis da distribuição Normal
+Queremos calcular $P(Y < y) = 0,025$: o valor que "deixa área acumulada (à esquerda)" igual a 0,025:
+
+* Como encontrar valores da distribuição normal padrão?
+    + Usar **tabelas**(???)
+    + Nas **planilhas eletrônicas**, do *Google* por exemplo, digitar `=INV.NORMP(0,025)` e o valor retornado será `-1,9599639861202`. Na versão inglês da planilha *OpenOffice Calc* a função é `=NORMSINV(0,025)`.
+    + No software *R* usando a função `qnorm(0.025)` corresponde na figura abaixo a $y=`r qnorm(0.025)`$  
+
+```{r pressure, echo=FALSE}
+library(ggplot2)
+set.seed(1)
+m <- 0#178
+s <- 1#8.38
+X <- m + s * seq(-4, 4, 0.01)
+Y <- dnorm(X, m, s)
+
+gg   <- data.frame(X,Y)
+
+ggplot(data = gg, mapping = aes(x = X, y = Y)) + 
+  geom_linerange(data = gg[gg$X < qnorm(p = 0.025, mean = m, sd = s),], 
+                 aes(X, ymin = 0, ymax = Y), colour="#E6205F") + 
+  geom_path(size = 1) +
+  labs(x = NULL, y = NULL) + 
+  theme(axis.text.y = element_blank(), axis.ticks.y = element_blank(), 
+        axis.line.y = element_blank()) + 
+  geom_vline(xintercept = qnorm(p = 0.025, mean = m, sd = s), 
+             linetype = "dashed") + 
+  geom_hline(yintercept = 0) + 
+  annotate("text", x = m - 2*s, 
+           y = max(Y)/2,    #Y[which(grepl(m - s, X))], 
+           label = "0.025 (2.5%)") + 
+    annotate("text", x = m + 3*s, 
+           y = max(Y)/2,    #Y[which(grepl(m - s, X))], 
+           label = "0.975 (97.5%)") + 
+  scale_x_continuous(breaks = seq(m - 3*s, m + 3*s, s*1.5)) +
+  theme(panel.border = element_rect(colour = "black", fill=NA, size=1))
+```
