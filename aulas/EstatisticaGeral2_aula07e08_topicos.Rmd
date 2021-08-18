@@ -73,3 +73,6 @@ em que $t_{(n-1)}$ denota a distribuição de probabilidade $t$-Student com $n-1
 ### Fazer exercícios lista 1-3
 ### Fazer avaliação pontual 2 da área 1 - vale nota!!!
 ***
+
+<!-- ### Referência para o da tabela da distribuição t -->
+<!-- Material extra no repositório... -->

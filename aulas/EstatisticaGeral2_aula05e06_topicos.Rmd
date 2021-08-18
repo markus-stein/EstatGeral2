@@ -112,7 +112,7 @@ Queremos calcular $P(Y < y) = 0,025$: o valor que "deixa área acumulada (à esq
     + Nas **planilhas eletrônicas**, do *Google* por exemplo, digitar `=INV.NORMP(0,025)` e o valor retornado será `-1,9599639861202`. Na versão inglês da planilha *OpenOffice Calc* a função é `=NORMSINV(0,025)`.
     + No software *R* usando a função `qnorm(0.025)` corresponde na figura abaixo a $y=`r qnorm(0.025)`$  
 
-```{r pressure, echo=FALSE}
+```{r pressure, echo=FALSE, fig.height=3, fig.width=4, fig.align='center'}
 library(ggplot2)
 set.seed(1)
 m <- 0#178
