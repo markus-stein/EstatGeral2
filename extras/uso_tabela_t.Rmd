@@ -3,9 +3,9 @@ title: "Sobre o Uso da tabela da distribuição **t**"
 author: "Markus Stein"
 date: "8 September 2020"
 output:
-  pdf_document: default
   html_document:
     df_print: paged
+  pdf_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -94,7 +94,8 @@ ggplot(data = gg, mapping = aes(x = X, y = Y)) +
 
 ## Referência
 
-Livro online da plataforma ['Probabilidade e Estatística (EAD)'](https://www.ufrgs.br/probabilidade-estatistica/livro/index.html)  
+Livro online da plataforma ['Probabilidade e Estatística (EAD)'](https://www.ufrgs.br/probabilidade-estatistica/livro/index.html)
+https://www.ufrgs.br/probabilidade-estatistica/livro/index.html
 
 * No 'Capítulo 3 - Distribuições de Variáveis Aleatórias' ver Seções   
     + 1.1.3 Tabela de probabilidade normal   
