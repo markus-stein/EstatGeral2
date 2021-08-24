@@ -74,5 +74,5 @@ em que $t_{(n-1)}$ denota a distribuição de probabilidade $t$-Student com $n-1
 ### Fazer avaliação pontual 2 da área 1 - vale nota!!!
 ***
 
-<!-- ### Referência para o da tabela da distribuição t -->
-<!-- Material extra no repositório... -->
+### Leitura - 'Sobre o uso da tabela da distribuição *t*'
+* Material extra no repositório - https://github.com/markus-stein/EstatGeral2/blob/master/extras/uso_tabela_t.pdf
