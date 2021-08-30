@@ -107,9 +107,9 @@ Como calcular o tamanho mínimo de uma amostra para uma confiança $1-\alpha$ es
 ### Rever para a prova 1
 
 * Introdução e definições; amostagem.
-* Estimação pontual; parâmetros e estimadores. erro padrão.
-* Propriedades dos estimadores; viés, eficiência e consistência; EQM. 
+* Estimação pontual; parâmetros e estimadores; erro padrão.
 * Distribuições amostrais; TCL.
+* Propriedades dos estimadores; viés, eficiência e consistência; EQM. 
 * Intervalos de confiança: para uma e duas médias, uma variância e uma proporção.
 * Interpretação e suposições para intervalors de confiança.
 * Erro de estimação e tamanho de amostra.
