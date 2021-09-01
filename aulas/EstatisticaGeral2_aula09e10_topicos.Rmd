@@ -33,8 +33,7 @@ Já vimos até aqui
     + supondo $\sigma^2$ desconhecido (e $n<30$) e  
 * IC para diferença de médias $\mu_1 - \mu_2$.
 
-
-\vspace{0.5cm}
+\vspace{0.3cm}
 
 ## Intervalo de confiança para a Variância
 * Suponha que agora queremos estimar uma variância populacional $\sigma^2$.
@@ -48,7 +47,7 @@ Já vimos até aqui
 
 * Nesse caso $S^2$ é uma variável aleatória (v.a.). (Sabemos qual a distribuição amostral de $S^2$?)
 
-\vspace{0.5cm}
+\vspace{0.3cm}
 
 ### Distribuição (de probabilidade) $Qui-Quadrado$ (Bussab e Morettin - pág. 358)
 
@@ -60,9 +59,9 @@ em que $\chi^2_{(n-1)}$ denota a distribuição de probabilidade Qui-Quadrado co
 
 * Como usar a distribuição de $Q$ para construir um IC para $\sigma^2$? **Quais as suposições necessárias**? **Como interpretar os resultados**?
 
-\vspace{0.5cm}
+\vspace{0.3cm}
 
-\clearpage
+<!-- \clearpage -->
 ## Intervalo para uma proporção (populacional)
 * Suponha que agora queremos estimar uma proporção populacional $\pi$.
 
@@ -70,24 +69,28 @@ em que $\chi^2_{(n-1)}$ denota a distribuição de probabilidade Qui-Quadrado co
     + Qual o estimador pontual "natural" para o problema? E como calcular um IC para $\pi$?  
 * **Quais as suposições necessárias**? **Como interpretar os resultados**?
 
-\vspace{0.5cm}
+\vspace{0.3cm}
 ### Usando o teorema central do limite
 * $\frac{\overline X - \mu}{\sigma / \sqrt{n}} \sim Normal(0,1)$ se $X \sim Normal(\mu, \sigma^2)$, para $\sigma^2$ conhecido, ou 
 * $\frac{\overline X - \mu}{S / \sqrt{n}} \sim Normal(0,1)$ se o tamanho amostral for grande, $n >> 30$. 
 
 **No caso da proporção amostral $X$ não será normal**
 
-Para uma  amostra aleatória $X_1, \ldots, X_n$ da v.a. $X \sim Bernoulli(\pi)$ temos que $\sum_{i=1}^n X_i \sim Binomial(n, \pi)$. Das propriedades da distribuição binomial sabemos que $E(\sum_{i=1}^n X_i) = np$ e $V(\sum_{i=1}^n X_i) = np(1-p)$.
+Para uma  amostra aleatória $X_1, \ldots, X_n$ da v.a. $X \sim Bernoulli(\pi)$ temos que $\sum_{i=1}^n X_i \sim Binomial(n, \pi)$. Das propriedades da distribuição binomial sabemos que $E(\sum_{i=1}^n X_i) = n \pi$ e $V(\sum_{i=1}^n X_i) = n \pi (1-\pi)$.
+
+* Porém desconhecemos $\pi$?!
+    + então usamos seu estimador, a proporção amostral $p$.
 
 Assim, para um tamanho de amostra suficientemente grande ($n >> 30$)
 $$Z =  \frac{(\sum_{i=1}^n X_i) - np}{\sqrt{np(1-p)}} \sim Normal(0,1)$$
 ou ainda usando $p = \sum_{i=1}^n X_i / n$
 $$Z =  \frac{(\sum_{i=1}^n X_i/n) - p}{\sqrt{\frac{p(1-p)}{n}}} \sim Normal(0,1)$$
 
-\vspace{0.5cm}
+\vspace{0.3cm}
 
 ## Dimensionamento de amostra
 Chamamos de erro de estimação a metade da amplitude do intervalo,
+
 * no caso de IC para $\mu$ com $\sigma^2$ conhecido, $E = z_{\alpha/2} \times \sigma / \sqrt{n}$,  
 * no caso de IC para $\mu$ com $\sigma^2$ desconhecido e $n$ pequeno, $E = t_{(n-1); \alpha/2} \times s / \sqrt{n}$,  
 * e no caso de IC para $\pi$, $E = z_{\alpha/2} * \sqrt{p(1-p)/n}$.
@@ -113,3 +116,17 @@ Como calcular o tamanho mínimo de uma amostra para uma confiança $1-\alpha$ es
 * Intervalos de confiança: para uma e duas médias, uma variância e uma proporção.
 * Interpretação e suposições para intervalors de confiança.
 * Erro de estimação e tamanho de amostra.
+
+
+
+
+
+<!-- Bom dia turma! -->
+
+<!-- Hoje iniciamos nossa última semana da área 1. O plano de aulas da semana, slides e vídeo estão disponíveis. A lista de exercícios seguem como continuaçãpo das semanas anteriores. Também se inicia o período para realização da nossa primeira avliação pontual (prova 1). Até o final do dia disponibilizarei o questionário. Na próxima quarta-feira teremos o encontro para dúvidas.  -->
+<!-- Para lembrar quem ainda não realizou a avaliação aprcial 2 da área 1, o prazo se encerra hoje.   -->
+
+<!-- Foi muito bom ver que na avaliação pontual 1 tivemos a participação de mais de 87% de vocês e a nota média foi 7,99, parabéns! -->
+
+<!-- Se cuidem e bons estudos! -->
+<!-- Abs. -->
