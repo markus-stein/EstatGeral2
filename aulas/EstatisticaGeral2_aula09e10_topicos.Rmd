@@ -78,14 +78,14 @@ em que $\chi^2_{(n-1)}$ denota a distribuição de probabilidade Qui-Quadrado co
 
 Para uma  amostra aleatória $X_1, \ldots, X_n$ da v.a. $X \sim Bernoulli(\pi)$ temos que $\sum_{i=1}^n X_i \sim Binomial(n, \pi)$. Das propriedades da distribuição binomial sabemos que $E(\sum_{i=1}^n X_i) = n \pi$ e $V(\sum_{i=1}^n X_i) = n \pi (1-\pi)$.
 
-* Porém desconhecemos $\pi$?!
-    + então usamos seu estimador, a proporção amostral $p$.
-
 Assim, para um tamanho de amostra suficientemente grande ($n >> 30$)
-$$Z =  \frac{(\sum_{i=1}^n X_i) - np}{\sqrt{np(1-p)}} \sim Normal(0,1)$$
+$$Z =  \frac{(\sum_{i=1}^n X_i) - n\pi}{\sqrt{n \pi (1-\pi)}} \sim Normal(0,1)$$
 ou ainda usando $p = \sum_{i=1}^n X_i / n$
-$$Z =  \frac{(\sum_{i=1}^n X_i/n) - p}{\sqrt{\frac{p(1-p)}{n}}} \sim Normal(0,1)$$
+$$Z =  \frac{(\sum_{i=1}^n X_i/n) - \pi}{\sqrt{\frac{\pi(1-\pi)}{n}}} \sim Normal(0,1)$$
 
+* Porém desconhecemos $\pi$ no erro padrão $EP(p) = \sqrt{\frac{\pi(1-\pi)}{n}}$!
+    + então, ao invés de usar $\pi$, usamos seu estimador, a proporção amostral $p$, e temos $ep(p) = \sqrt{\frac{p(1-p)}{n}}$.
+    
 \vspace{0.3cm}
 
 ## Dimensionamento de amostra
@@ -116,17 +116,3 @@ Como calcular o tamanho mínimo de uma amostra para uma confiança $1-\alpha$ es
 * Intervalos de confiança: para uma e duas médias, uma variância e uma proporção.
 * Interpretação e suposições para intervalors de confiança.
 * Erro de estimação e tamanho de amostra.
-
-
-
-
-
-<!-- Bom dia turma! -->
-
-<!-- Hoje iniciamos nossa última semana da área 1. O plano de aulas da semana, slides e vídeo estão disponíveis. A lista de exercícios seguem como continuaçãpo das semanas anteriores. Também se inicia o período para realização da nossa primeira avliação pontual (prova 1). Até o final do dia disponibilizarei o questionário. Na próxima quarta-feira teremos o encontro para dúvidas.  -->
-<!-- Para lembrar quem ainda não realizou a avaliação aprcial 2 da área 1, o prazo se encerra hoje.   -->
-
-<!-- Foi muito bom ver que na avaliação pontual 1 tivemos a participação de mais de 87% de vocês e a nota média foi 7,99, parabéns! -->
-
-<!-- Se cuidem e bons estudos! -->
-<!-- Abs. -->
