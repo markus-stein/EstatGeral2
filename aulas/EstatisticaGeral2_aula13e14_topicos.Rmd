@@ -8,7 +8,7 @@ header-includes:
     - \usepackage{fancyhdr}
 always_allow_html: yes
 ---
-\addtolength{\headheight}{0.0cm} 
+\addtolength{\headheight}{1.0cm} 
 \pagestyle{fancyplain} 
 \lhead{\includegraphics[height=1.5cm]{LogoIME.png}}
 \rhead{\includegraphics[height=1.5cm]{images.jpeg}}
@@ -16,7 +16,7 @@ always_allow_html: yes
 INSTITUTO DE MATEMÁTICA E ESTATÍSTICA \\
 DEPARTAMENTO DE ESTATÍSTICA \\
 \vspace{0.3cm}
-MAT02215 - Estatística Geral 2 - 2020/1
+MAT02215 - Estatística Geral 2 - 2021/1
 }
 \renewcommand{\headrulewidth}{0pt} 
 
@@ -42,7 +42,7 @@ $RC = \left\{ \overline X > \overline x_{crítico} \right\}$,  | $RC = \left\{ Z
 para $\overline x_{crítico} = 2 + z_{tab} \cdot \frac{1}{\sqrt n}$  | para $Z_{calc} = \frac{\overline X - 2}{\frac{1}{\sqrt n}}$  
 
 
-```{r rc, echo=FALSE, fig.show="hold", out.width = '45%', fig.align='center'}
+```{r rc, echo=FALSE, fig.show="hold", out.width = '35%', fig.align='center'}
 library(ggplot2)
 set.seed(1)
 m <- 2
@@ -146,14 +146,98 @@ ggplot(data = gg, mapping = aes(x = Z, y = YZ)) +
 <!--   scale_x_continuous(breaks = seq(-3, 3, 1.5)) + -->
 <!--   theme(panel.border = element_rect(colour = "black", fill=NA, size=1)) -->
 <!-- ``` -->
-<!-- * **(cont.) Exemplo**: Suponha que $\overline x = 2,3$ para uma amostra observada, nesse caso não rejeitamos $H_0$, porque $\overline x < \overline x_{crítico}$ -->
-
 
 ## Valor *p* (ou *p* valor) (Bussab e Morettin - seção 12.8)
 "É a probabilidade de observarmos um valor de estatística de teste mais extremo do que o observado na amostra coletada *(conforme as hipóteses definidas)*."
 
-* Região crítica $\times$ valor *p*
+### Região crítica $\times$ valor *p*
 
+```{r sample, echo=FALSE}
+set.seed(1)
+m <- 2
+s <- 1
+
+# test and sample
+n <- 25
+x <- rnorm(n, m + 0.2, s)
+sxbarra <- s / sqrt(n)
+xbarra <- mean(x)
+zcalc <- (xbarra - m) / sxbarra
+
+alpha <- 0.05
+xtab <- round(qnorm(p = 1-alpha, mean = m, sd = sxbarra), digits = 2)
+ztab <- qnorm(p = 1-alpha)
+```
+
+* **(cont.) Exemplo**: Suponha que $\overline x = `r round(mean(x),3)`$ para uma amostra observada, nesse caso rejeitamos $H_0$, porque $\overline x = `r xbarra` > `r xtab` = \overline x_{crítico}$; ou $z_{calc} = `r zcalc` > `r ztab` = z_{crítico}$.
+    + E qual o valor *p*?
+
+$P (\overline X > `r xbarra`) = P(Z > `r zcalc`) = ???$
+
+```{r pvalue, echo=FALSE, fig.show="hold", out.width = '35%', fig.align='center'}
+# library(ggplot2)
+# set.seed(1)
+# m <- 2
+# s <- 1
+# 
+# # test and sample
+# n <- 25
+# x <- rnorm(n, m + 0.2, s)
+# sxbarra <- s / sqrt(n)
+
+Z <- seq(-4, 4, 0.01)
+YZ <- dnorm(Z)
+X <- m + sxbarra * Z
+YX <- dnorm(X, m, sxbarra)
+
+gg   <- data.frame(Z,X,YZ,YX)#, xbarra, Yxbarra, zcalc, Yzcalc)
+ggplot(data = gg, mapping = aes(x = X, y = YX)) +
+  geom_linerange(data = gg[gg$X > xtab,],
+                 aes(X, ymin = 0, ymax = YX), colour="#E6205F") +
+  geom_linerange(data = gg[gg$X > xbarra,],
+                 aes(X, ymin = 0, ymax = YX), colour="yellow") +
+  geom_path(size = 1) +
+  labs(x = NULL, y = NULL) +
+  theme(axis.text.y = element_blank(), axis.ticks.y = element_blank(),
+        axis.line.y = element_blank()) +
+  geom_vline(xintercept = xtab, linetype = "dashed") +
+  # geom_vline(xintercept = xbarra, linetype = "solid", colour = "red") +
+  geom_hline(yintercept = 0) +
+  annotate("text", x = m - 3*sxbarra,
+           y = max(YX)/2,    #Y[which(grepl(m - s, X))],
+           label = paste(1-alpha, " (", (1-alpha)*100, "%) \n Área de 'aceitação'", sep="")) +
+    # annotate("text", x = m , y = max(YX)/2, label = text(paste( 
+    #   expression(bar(x) [crítico]), "=", xtab)) +
+    annotate("text", x = m + 3*sxbarra,
+           y = max(YX)/2,    #Y[which(grepl(m - s, X))],
+           label = paste(alpha, " (", alpha*100, "%) \n Área de rejeição", sep="")) +
+    annotate("text", x = m + 3*sxbarra,
+           y = max(YX)/4,    #Y[which(grepl(m - s, X))],
+           label = paste("valor *p* = ", round( pnorm(xbarra, m, sxbarra, lower.tail = FALSE),4))) +
+  scale_x_continuous(breaks = seq(m - 3*sxbarra, m + 3*sxbarra, sxbarra*1.5)) +
+  theme(panel.border = element_rect(colour = "black", fill=NA, size=1))
+
+# figure 2
+ggplot(data = gg, mapping = aes(x = Z, y = YZ)) +
+  geom_linerange(data = gg[gg$Z > ztab,],
+                 aes(Z, ymin = 0, ymax = YZ), colour="#E6205F") +
+    geom_linerange(data = gg[gg$Z > zcalc,],
+                 aes(Z, ymin = 0, ymax = YZ), colour="yellow") +
+  geom_path(size = 1) +
+  labs(x = NULL, y = NULL) +
+  theme(axis.text.y = element_blank(), axis.ticks.y = element_blank(),
+        axis.line.y = element_blank()) +
+  geom_vline(xintercept = ztab, linetype = "dashed") +
+  geom_hline(yintercept = 0) +
+  annotate("text", x = -3, y = max(YZ)/2,    #Y[which(grepl(m - s, X))],
+           label = paste(1-alpha, " (", (1-alpha)*100, "%) \n Área de 'aceitação'", sep="")) +
+    annotate("text", x = 3, y = max(YZ)/2,    #Y[which(grepl(m - s, X))],
+           label = paste(alpha, " (", alpha*100, "%) \n Área de rejeição", sep="")) +
+    annotate("text", x = 3, y = max(YZ)/4,    #Y[which(grepl(m - s, X))],
+           label = paste("valor *p* = ", round( pnorm(zcalc, lower.tail = FALSE),4))) +
+  scale_x_continuous(breaks = seq(-3, 3, 1.5)) +
+  theme(panel.border = element_rect(colour = "black", fill=NA, size=1))
+```
 
 
 
@@ -169,10 +253,10 @@ ggplot(data = gg, mapping = aes(x = Z, y = YZ)) +
 \vspace{1cm}
 
 ## REFERÊNCIAS EXTRAS
-* Página 'Probabilidade e Estatística (EaD)' da UFRGS
+* **Página 'Probabilidade e Estatística (EaD)', da UFRGS**
   + [Capítulo 5 - Inferência para dados numéricos](https://www.ufrgs.br/probabilidade-estatistica/livro/cpt5/ch5_inf_num.html#diferen%C3%A7a-entre-duas-m%C3%A9dias)   
 
-* **Excelente página com teoria, exemplos e diversos recursos, exercícios resolvidos, atividades, sobre testes da UFMG**
+* **Excelente página com teoria, exemplos e diversos recursos, exercícios resolvidos, atividades, sobre testes, da UFMG**
   + https://pmg-dest-ufmg-exatas.shinyapps.io/teste_de_hipoteses/
 
 \vspace{0.5cm}
