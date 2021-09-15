@@ -169,10 +169,10 @@ xtab <- round(qnorm(p = 1-alpha, mean = m, sd = sxbarra), digits = 2)
 ztab <- round(qnorm(p = 1-alpha), 2)
 ```
 
-* **(cont.) Exemplo**: Suponha que $\overline x = `r xbarra`$ para uma amostra observada, nesse caso rejeitamos $H_0$, porque $\overline x = `r xbarra` > `r xtab` = \overline x_{crítico}$; ou $z_{calc} = `r zcalc` > `r ztab` = z_{crítico}$.
+* **(cont.) Exemplo**: Suponha que $\overline x = `r xbarra`$ para uma amostra observada de tamanho $n=`r n`$, nesse caso rejeitamos $H_0$, porque $\overline x = `r xbarra` > `r xtab` = \overline x_{crítico}$; ou $z_{calc} = `r zcalc` > `r ztab` = z_{crítico}$.
     + E qual o valor *p*?
-
-$P (\overline X > `r xbarra`) = P(Z > `r zcalc`) = ???$
+    + $P (\overline X > `r xbarra`) = P(Z > `r zcalc`) = ???$
+    + Qual a decisão e conclusão do teste?
 
 ```{r pvalue, echo=FALSE, fig.show="hold", out.width = '35%', fig.align='center'}
 # library(ggplot2)

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.8.31)  13 SEP 2021 10:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.8.31)  15 SEP 2021 08:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -639,7 +639,7 @@ File: EstatisticaGeral2_aula13e14_topicos_files/figure-latex/pvalue-1.pdf Graph
 ic file (type pdf)
 <use EstatisticaGeral2_aula13e14_topicos_files/figure-latex/pvalue-1.pdf>
 Package pdftex.def Info: EstatisticaGeral2_aula13e14_topicos_files/figure-latex
-/pvalue-1.pdf  used on input line 175.
+/pvalue-1.pdf  used on input line 177.
 (pdftex.def)             Requested size: 164.41672pt x 113.82695pt.
 <EstatisticaGeral2_aula13e14_topicos_files/figure-latex/pvalue-2.pdf, id=47, 46
 9.755pt x 325.215pt>
@@ -647,17 +647,17 @@ File: EstatisticaGeral2_aula13e14_topicos_files/figure-latex/pvalue-2.pdf Graph
 ic file (type pdf)
 <use EstatisticaGeral2_aula13e14_topicos_files/figure-latex/pvalue-2.pdf>
 Package pdftex.def Info: EstatisticaGeral2_aula13e14_topicos_files/figure-latex
-/pvalue-2.pdf  used on input line 175.
+/pvalue-2.pdf  used on input line 177.
 (pdftex.def)             Requested size: 164.41672pt x 113.82695pt.
 <LogoIME.png, id=48, 521.95pt x 226.8475pt>
 File: LogoIME.png Graphic file (type png)
 <use LogoIME.png>
-Package pdftex.def Info: LogoIME.png  used on input line 175.
+Package pdftex.def Info: LogoIME.png  used on input line 177.
 (pdftex.def)             Requested size: 98.19987pt x 42.67917pt.
 <images.jpeg, id=49, 330.23375pt x 153.57375pt>
 File: images.jpeg Graphic file (type jpg)
 <use images.jpeg>
-Package pdftex.def Info: images.jpeg  used on input line 175.
+Package pdftex.def Info: images.jpeg  used on input line 177.
 (pdftex.def)             Requested size: 91.77448pt x 42.6793pt.
 
 Package fancyhdr Warning: \headheight is too small (40.45274pt): 
@@ -675,11 +675,11 @@ igure-latex/rc-1.pdf> <./EstatisticaGeral2_aula13e14_topicos_files/figure-latex
 /rc-2.pdf>]
 File: LogoIME.png Graphic file (type png)
 <use LogoIME.png>
-Package pdftex.def Info: LogoIME.png  used on input line 235.
+Package pdftex.def Info: LogoIME.png  used on input line 237.
 (pdftex.def)             Requested size: 98.19987pt x 42.67917pt.
 File: images.jpeg Graphic file (type jpg)
 <use images.jpeg>
-Package pdftex.def Info: images.jpeg  used on input line 235.
+Package pdftex.def Info: images.jpeg  used on input line 237.
 (pdftex.def)             Requested size: 91.77448pt x 42.6793pt.
 
 Package fancyhdr Warning: \headheight is too small (40.45274pt): 
@@ -699,7 +699,7 @@ Package rerunfilecheck Info: File `EstatisticaGeral2_aula13e14_topicos.out' has
 Here is how much of TeX's memory you used:
  10937 strings out of 480559
  163019 string characters out of 5901528
- 476532 words of memory out of 5000000
+ 477532 words of memory out of 5000000
  28334 multiletter control sequences out of 15000+600000
  455888 words of font info for 67 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -728,7 +728,7 @@ c:/Users/marku/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.
 pfb><c:/Users/marku/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lm
 sy5.pfb><c:/Users/marku/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/l
 m/lmsy7.pfb>
-Output written on EstatisticaGeral2_aula13e14_topicos.pdf (2 pages, 320925 byte
+Output written on EstatisticaGeral2_aula13e14_topicos.pdf (2 pages, 321454 byte
 s).
 PDF statistics:
  195 PDF objects out of 1000 (max. 8388607)
