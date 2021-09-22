@@ -256,8 +256,8 @@ ggplot(data = gg, mapping = aes(x = Z, y = YZ)) +
 * **Página 'Probabilidade e Estatística (EaD)', da UFRGS**
   + [Capítulo 5 - Inferência para dados numéricos](https://www.ufrgs.br/probabilidade-estatistica/livro/cpt5/ch5_inf_num.html#diferen%C3%A7a-entre-duas-m%C3%A9dias)   
 
-* **Excelente página com teoria, exemplos e diversos recursos, exercícios resolvidos, atividades, sobre testes, da UFMG**
-  + https://pmg-dest-ufmg-exatas.shinyapps.io/teste_de_hipoteses/
+* **Página com teoria, exemplos e diversos recursos, exercícios resolvidos, atividades, sobre testes, da UFMG**
+  + https://pmg-dest-ufmg-exatas.shinyapps.io/Shiny_TH/
 
 \vspace{0.5cm}
 

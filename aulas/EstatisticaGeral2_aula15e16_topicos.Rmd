@@ -27,7 +27,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Testes de Hipóteses para variância 
 
-* **Exemplo**: Estudar a variabilidade do retorno de uma ação durante um dia de operações. Será que a variância do retono foi muito alta?
+* **Exemplo**: Estudar a variabilidade do retorno de uma ação durante um dia de operações. Será que a variância do retorno foi muito alta?
 
 * **Exemplo 2**: E se quisermos comparar se um tipo de ação apresenta variabilidade do retorno maior ou menor do que outro tipo?
 
@@ -85,8 +85,8 @@ $$ F = \frac{S_1^2}{S_2^2} \sim F{(n_1 - 1, n_2 - 1)}.$$
 * Página 'Probabilidade e Estatística (EaD)' da UFRGS
   + [Capítulo 5 - Inferência para dados numéricos](https://www.ufrgs.br/probabilidade-estatistica/livro/cpt5/ch5_inf_num.html#diferen%C3%A7a-entre-duas-m%C3%A9dias)
 
-* **Excelente página com teoria, exemplos e diversos recursos, exercícios resolvidos, atividades, sobre testes da UFMG**
-  + https://pmg-dest-ufmg-exatas.shinyapps.io/teste_de_hipoteses/
+* **Página com teoria, exemplos e diversos recursos, exercícios resolvidos, atividades, sobre testes da UFMG**
+  + https://pmg-dest-ufmg-exatas.shinyapps.io/Shiny_TH/
 
 \vspace{0.5cm}
 
