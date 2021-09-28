@@ -46,7 +46,7 @@ $$ F = \frac{S_1^2}{S_2^2} \sim F{(n_1 - 1, n_2 - 1)}.$$
 \vspace{0.5cm}
 
 ## Soma de Quadrados (SQ) 
-Separamos a soma de quadrados no numerados da variância de uma variável $Y$ em duas partes:
+Separamos a soma de quadrados (o numerador da variância) de uma variável $Y$ em duas partes:
 
 * uma representará as distâncias entre as médias dos **grupos** - **SQG**; 
 * a outra as distâncias (ou **resíduos**) entre as observações e a média do seu grupo - **SQR**.
@@ -69,18 +69,30 @@ Separamos a soma de quadrados no numerados da variância de uma variável $Y$ em
 
 \vspace{0.5cm}
 
-### Comparação ente as médias
+### Comparação ente as médias (quando rejeitamos $H_0$)
 * Usando intervalos de confiança 
     + Exemplos 15.5 e 15.6 de Bussab e Morettin - seção 15.4.
 
-* no slides usamos o limite de decisão $L_d = 3 \times s_{\overline x}$ ($s_{\overline x}$ é o desvio padrão das médias)
+* no slides da semana usamos o limite de decisão $L_d = 3 \times s_{\overline x}$ ($s_{\overline x}$ é o desvio padrão das médias)
 
 <!-- ## Valor *p* (ou *p* valor) (Bussab e Morettin - seção 12.8) -->
 <!-- "É a probabilidade de observarmos um valor de estatística de teste mais extremo do que o observado na amostra coletada *(conforme as hipóteses definidas)*." -->
 
 <!-- * Região crítica $\times$ valor *p* -->
 
+### Outras Comparações múltiplas
+* Correção de Bonferroni - Problemas e Complementos 19 de Bussab e Morettin - seção 15.4. 
+
+* Teste de Tukey e SNK
+
 \vspace{1cm}
+
+
+***
+### Ler slides das aulas 17 e 18
+### Continuar exercícios lista 2-3
+### Fazer avaliação pontual 2 da área 2 - vale nota!!!
+***
 
 ## REFERÊNCIA EXTRA
 Página 'Probabilidade e Estatística (EaD)' da UFRGS  
@@ -89,10 +101,3 @@ Página 'Probabilidade e Estatística (EaD)' da UFRGS
     + [Seção - Comparando muitas médias com ANOVA](https://www.ufrgs.br/probabilidade-estatistica/livro/cpt5/ch5_inf_num.html#comparando-muitas-m%C3%A9dias-com-anova-t%C3%B3pico-especial)
 
 \vspace{1cm}
-
-***
-### Ler slides das aulas 17 e 18
-### Continuar exercícios lista 2-3
-### Fazer avaliação pontual 2 da área 2 - vale nota!!!
-***
-
