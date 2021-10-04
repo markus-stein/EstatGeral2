@@ -8,7 +8,7 @@ header-includes:
     - \usepackage{fancyhdr}
 always_allow_html: yes
 ---
-\addtolength{\headheight}{0.0cm} 
+\addtolength{\headheight}{1.0cm} 
 \pagestyle{fancyplain} 
 \lhead{\includegraphics[height=1.5cm]{LogoIME.png}}
 \rhead{\includegraphics[height=1.5cm]{images.jpeg}}
@@ -16,7 +16,7 @@ always_allow_html: yes
 INSTITUTO DE MATEMÁTICA E ESTATÍSTICA \\
 DEPARTAMENTO DE ESTATÍSTICA \\
 \vspace{0.3cm}
-MAT02215 - Estatística Geral 2 - 2020/1
+MAT02215 - Estatística Geral 2 - 2021/1
 }
 \renewcommand{\headrulewidth}{0pt} 
 
@@ -26,7 +26,8 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ## (...continuação) Análise de Variância - ANOVA
-Os slides da semana passada cobriram todo o conteúdo de ANOVA. 
+* Os slides da semana passada cobriram todo o conteúdo de ANOVA. 
+    + Especial atenção para o teste de comparações múltiplas. 
 * Seguem aqui alguns pontos a serem pensados para a prova 2.
 
 
@@ -38,27 +39,31 @@ $$H_0: \sigma^2_1 = \sigma^2_1 = \ldots = \sigma^2_k$$
  
 \vspace{0.5cm}
 
-
-
-
 ## Para a prova 2
-* Ter o formulário em mãos.
+Relembrar:
 
-Importante lembrar
+* Testes de hipóteses
+    + definições e conceitos básicos, hipóteses;
+    + tipos de erro, probabilidade de erros;
+    + estatistica de teste, região crítica, valor *p*;
+* Testes para uma e duas médias populacionais;
+* Testes para uma e duas proporções e variâncias;
 
-* Suposições.
-* Interpretações.
-* Valor *p*,  para o teste ANOVA também.
+**Importante lembrar**:
 
-\vspace{1cm}
+* Suposições necessárias para os testes de hipóteses (*e de ANOVA*).
+* Decisão/Conclusão dos testes e interpretação dos resultados.
+* Cálculo do valor *p* para todos os testes e interpretação.
 
-## REFERÊNCIA EXTRA
-Página 'Probabilidade e Estatística (EaD)' da UFRGS  
+\vspace{0.5cm}
 
-* Capítulo 5 - Inferência para dados numéricos 
-    + [Seção - Comparando muitas médias com ANOVA](https://www.ufrgs.br/probabilidade-estatistica/livro/cpt5/ch5_inf_num.html#comparando-muitas-m%C3%A9dias-com-anova-t%C3%B3pico-especial)
+Usar o **formulário** para resolução das questões. *ANOVA não está no formulário.*
 
-\vspace{1cm}
+\vspace{0.5cm}
+
+**Boa avaliação!!!**
+
+\vspace{0.5cm}
 
 ***
 ### Rever os conteúdos da área 2
@@ -66,3 +71,12 @@ Página 'Probabilidade e Estatística (EaD)' da UFRGS
 ### Fazer avaliação parcial da área 2 - PROVA 2!!!
 ***
 
+
+\vspace{1cm}
+
+
+## REFERÊNCIA EXTRA
+Página 'Probabilidade e Estatística (EaD)' da UFRGS  
+
+* Capítulo 5 - Inferência para dados numéricos 
+    + [Seção - Comparando muitas médias com ANOVA](https://www.ufrgs.br/probabilidade-estatistica/livro/cpt5/ch5_inf_num.html#comparando-muitas-m%C3%A9dias-com-anova-t%C3%B3pico-especial)
