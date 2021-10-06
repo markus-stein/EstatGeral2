@@ -35,7 +35,7 @@ knitr::opts_chunk$set(echo = TRUE)
 * Uma das suposições da ANOVA é de que as variâncias dentro de cada grupo sejam iguais;
 * Na prática podemos realizar um teste de hipoteses para igualdade de variâncias com 
 $$H_0: \sigma^2_1 = \sigma^2_1 = \ldots = \sigma^2_k$$
-    + Se as variâncias não são iguais (ou se rejeitamos $H_0$ acima) os erros podemos se muito maiores do que desejado.
+    + Se as variâncias não são iguais (ou se rejeitamos $H_0$ acima) os erros podem ser muito maiores do que desejado.
  
 \vspace{0.5cm}
 
@@ -48,6 +48,7 @@ Relembrar:
     + estatistica de teste, região crítica, valor *p*;
 * Testes para uma e duas médias populacionais;
 * Testes para uma e duas proporções e variâncias;
+* Análise de variância - ANOVA
 
 **Importante lembrar**:
 

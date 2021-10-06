@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.10.2)  4 OCT 2021 08:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.10.2)  6 OCT 2021 10:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -535,12 +535,12 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 <LogoIME.png, id=32, 521.95pt x 226.8475pt>
 File: LogoIME.png Graphic file (type png)
 <use LogoIME.png>
-Package pdftex.def Info: LogoIME.png  used on input line 191.
+Package pdftex.def Info: LogoIME.png  used on input line 193.
 (pdftex.def)             Requested size: 98.19987pt x 42.67917pt.
 <images.jpeg, id=33, 330.23375pt x 153.57375pt>
 File: images.jpeg Graphic file (type jpg)
 <use images.jpeg>
-Package pdftex.def Info: images.jpeg  used on input line 191.
+Package pdftex.def Info: images.jpeg  used on input line 193.
 (pdftex.def)             Requested size: 91.77448pt x 42.6793pt.
 
 Package fancyhdr Warning: \headheight is too small (40.45274pt): 
@@ -556,11 +556,11 @@ tex.map}
  <./LogoIME.png> <./images.jpeg>]
 File: LogoIME.png Graphic file (type png)
 <use LogoIME.png>
-Package pdftex.def Info: LogoIME.png  used on input line 213.
+Package pdftex.def Info: LogoIME.png  used on input line 215.
 (pdftex.def)             Requested size: 98.19987pt x 42.67917pt.
 File: images.jpeg Graphic file (type jpg)
 <use images.jpeg>
-Package pdftex.def Info: images.jpeg  used on input line 213.
+Package pdftex.def Info: images.jpeg  used on input line 215.
 (pdftex.def)             Requested size: 91.77448pt x 42.6793pt.
 
 Package fancyhdr Warning: \headheight is too small (40.45274pt): 
@@ -578,7 +578,7 @@ Package rerunfilecheck Info: File `EstatisticaGeral2_aula19e20_topicos.out' has
 Here is how much of TeX's memory you used:
  10232 strings out of 480559
  151459 string characters out of 5901528
- 461286 words of memory out of 5000000
+ 462286 words of memory out of 5000000
  27663 multiletter control sequences out of 15000+600000
  447346 words of font info for 65 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -597,7 +597,7 @@ t/fonts/type1/public/lm/lmr10.pfb><c:/Users/marku/AppData/Roaming/TinyTeX/texmf
 exmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/Users/marku/AppData/Roaming/TinyT
 eX/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/Users/marku/AppData/Roaming/Ti
 nyTeX/texmf-dist/fonts/type1/public/lm/lmri10.pfb>
-Output written on EstatisticaGeral2_aula19e20_topicos.pdf (2 pages, 218699 byte
+Output written on EstatisticaGeral2_aula19e20_topicos.pdf (2 pages, 218704 byte
 s).
 PDF statistics:
  115 PDF objects out of 1000 (max. 8388607)
