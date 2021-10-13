@@ -29,7 +29,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ## Testes de Aderência e Associação (Bussab e Morettin - capítulo 14)
 Nosso interesse agora será em teste para mais de duas proporções (para uma variável de interesse ou duas variáveis). (Bussab e Morettin - seção 14.1) 
 
-* **Exemplo 1**: Suponha que entramos num jogo de dados e queremos saber se um dos dados utilizados é honesto. Utilizando um dados de seis faces esperaíamos que cada face ocorresse em 1/6 das jogadas.
+* **Exemplo 1**: Suponha que entramos num jogo de dados e queremos saber se um dos dados utilizados é honesto. Utilizando um dado de seis faces esperaríamos que cada face ocorresse em 1/6 das jogadas.
 
 * **Exemplo 2**: Os percentuais de votantes, em cada categoria, na última eleição para reitor na UFRGS representam o sistema 70/15/15 de ponderação das proporções observadas?
 
