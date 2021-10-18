@@ -8,7 +8,7 @@ header-includes:
     - \usepackage{fancyhdr}
 always_allow_html: yes
 ---
-\addtolength{\headheight}{0.0cm} 
+\addtolength{\headheight}{1.0cm} 
 \pagestyle{fancyplain} 
 \lhead{\includegraphics[height=1.5cm]{LogoIME.png}}
 \rhead{\includegraphics[height=1.5cm]{images.jpeg}}
@@ -16,7 +16,7 @@ always_allow_html: yes
 INSTITUTO DE MATEMÁTICA E ESTATÍSTICA \\
 DEPARTAMENTO DE ESTATÍSTICA \\
 \vspace{0.3cm}
-MAT02215 - Estatística Geral 2 - 2020/1
+MAT02215 - Estatística Geral 2 - 2021/1
 }
 \renewcommand{\headrulewidth}{0pt} 
 
@@ -133,13 +133,6 @@ $$res_{ij} = \frac{o_{ij} - e_{ij}}{\sqrt{e_{ij}}}$$
 
 \vspace{1.0cm}
 
-## REFERÊNCIA EXTRA
-Página 'Probabilidade e Estatística (EaD)' da UFRGS  
-
-* Capítulo 6 - Inferência para dados categóricos 
-    + [Seção - Testando a qualidade do ajuste usando a qui-quadrado](https://www.ufrgs.br/probabilidade-estatistica/livro/cpt6/ch6_inf_cat.html#testando-a-qualidade-do-ajuste-usando-a-qui-quadrado-t%C3%B3pico-especial)
-
-\vspace{1cm}
 
 ***
 ### Ler slides das aulas 23 e 24
@@ -147,3 +140,10 @@ Página 'Probabilidade e Estatística (EaD)' da UFRGS
 ### Fazer avaliação pontual 1 da área 3
 ***
 
+\vspace{1cm}
+
+## REFERÊNCIA EXTRA
+Página 'Probabilidade e Estatística (EaD)' da UFRGS  
+
+* Capítulo 6 - Inferência para dados categóricos 
+    + [Seção - Testando a qualidade do ajuste usando a qui-quadrado](https://www.ufrgs.br/probabilidade-estatistica/livro/cpt6/ch6_inf_cat.html#testando-a-qualidade-do-ajuste-usando-a-qui-quadrado-t%C3%B3pico-especial)
