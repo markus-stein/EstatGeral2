@@ -111,7 +111,7 @@ $$ Q = \sum_{i,j} \frac{ \left( o_{ij} - e_{ij} \right)^2 }{e_{ij}} \sim \chi^2_
 em que $i=1, \ldots, k$ é o índice da linha e $j=1, \ldots, l$ das colunas e $\nu = (k-1) \times (l-1)$ são os graus de liberdade.
 
 * Quais as suposições necessárias???
-
+* Para tabelas $2 \times 2$ devemos usar a correção (de continuidade) de Yates!
 
 \vspace{0.5cm}
 
