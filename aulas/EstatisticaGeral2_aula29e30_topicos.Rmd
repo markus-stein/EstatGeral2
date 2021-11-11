@@ -71,7 +71,7 @@ ggplot(data = d, mapping = aes(family_income, gift_aid)) +
   theme(panel.border = element_rect(colour = "black", fill = NA, size = 1)) +
   geom_point(color = 'skyblue3') +
   labs(x = 'Renda Familiar ($1000s)', y = 'Auxílio da \nuniversidade ($1000s)') +
-  # geom_abline(slope = mins[2], intercept = mins[1], linetype = 'dashed', size = 1) #+
+  # geom_abline(slope = mins[2], intercept = mins[1], linetype = 'dashed', size = 1) +
   geom_smooth(formula = y ~ x, se = FALSE, method = 'lm', color = 'black')
 ```
 
