@@ -71,7 +71,7 @@ ggplot(data = d, mapping = aes(family_income, gift_aid)) +
   theme(panel.border = element_rect(colour = "black", fill = NA, size = 1)) +
   geom_point(color = 'skyblue3') +
   labs(x = 'Renda Familiar ($1000s)', y = 'Auxílio da \nuniversidade ($1000s)') +
-  geom_abline(slope = mins[2], intercept = mins[1], linetype = 'dashed', size = 1) +
+  # geom_abline(slope = mins[2], intercept = mins[1], linetype = 'dashed', size = 1) #+
   geom_smooth(formula = y ~ x, se = FALSE, method = 'lm', color = 'black')
 ```
 
@@ -91,7 +91,7 @@ $e_i = y_i - \widehat y_i$ nos informa os desvios de $y_i$ que não são explica
 
 ### Modelos especiais
 * Modelos não lineares (Bussab e Morettin - seção 16.6.2)
-    + transformaçções nas variáveis para linearização.
+    + transformações nas variáveis para linearização.
 
 ### Uso de software?
 * planilhas: cálculos manuais *versus* funções prontas. 
