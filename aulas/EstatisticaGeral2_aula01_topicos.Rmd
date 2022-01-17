@@ -16,7 +16,7 @@ always_allow_html: yes
 INSTITUTO DE MATEMÁTICA E ESTATÍSTICA \\
 DEPARTAMENTO DE ESTATÍSTICA \\
 \vspace{0.3cm}
-MAT02215 - Estatística Geral 2 - 2021/1
+MAT02215 - Estatística Geral 2 - 2021/2
 }
 \renewcommand{\headrulewidth}{0pt} 
 
@@ -55,11 +55,11 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ***
 ### Rever: 
-* Variáveis aleatórias (uni. e bidimensionais),
-    + distribuições de prob. (marginais e conjuntas) e 
-    + parâmetros (esperança, (co)variância, ...).
-* Para **uma** variável aleatória (v.a.) ver os planos de aula de 'Probabilidade e Estatistica' em: 
-    + **introdução** e v.a.s **discretas** - https://github.com/markus-stein/MAT02219EAD/blob/master/plano-aulas/ProbabilidadeEstatistica_aula11e12_topicos.pdf
+* Variáveis aleatórias (uni. e bidimensionais),  
+    + distribuições de prob. (marginais e conjuntas) e   
+    + parâmetros (esperança, (co)variância, ...).  
+* Para **uma** variável aleatória (v.a.) ver os planos de aula de 'Probabilidade e Estatistica' em:  
+    + **introdução** e v.a.s **discretas** - https://github.com/markus-stein/MAT02219EAD/blob/master/plano-aulas/ProbabilidadeEstatistica_aula11e12_topicos.pdf  
     + v.a.s **contínuas** - https://github.com/markus-stein/MAT02219EAD/blob/master/plano-aulas/ProbabilidadeEstatistica_aula13e14_topicos.pdf
 
 ### Ler slides Aula 1.
