@@ -16,7 +16,7 @@ always_allow_html: yes
 INSTITUTO DE MATEMÁTICA E ESTATÍSTICA \\
 DEPARTAMENTO DE ESTATÍSTICA \\
 \vspace{0.3cm}
-MAT02215 - Estatística Geral 2 - 2021/1
+MAT02215 - Estatística Geral 2 - 2021/2
 }
 \renewcommand{\headrulewidth}{0pt} 
 
@@ -58,7 +58,7 @@ Definição **Erro padrão**: é o desvio padrão de uma estatística. Exemplo, 
 
 \vspace{0.3cm}
 
-**Exemplo 2**: Proporção amostral $P = \frac{1}{n} \sum_{i=1}^n X_i$, para $X_i \in \left\{ 0, 1 \right\}$. ...
+**Exemplo 2**: Proporção amostral $p = \frac{1}{n} \sum_{i=1}^n X_i$, para $X_i \in \left\{ 0, 1 \right\}$. ...
 
 <!-- \vspace{0.2cm} -->
 
