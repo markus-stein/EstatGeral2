@@ -8,7 +8,7 @@ header-includes:
     - \usepackage{fancyhdr}
 always_allow_html: yes
 ---
-\addtolength{\headheight}{0.0cm} 
+\addtolength{\headheight}{1.0cm} 
 \pagestyle{fancyplain} 
 \lhead{\includegraphics[height=1.5cm]{LogoIME.png}}
 \rhead{\includegraphics[height=1.5cm]{images.jpeg}}
@@ -16,7 +16,7 @@ always_allow_html: yes
 INSTITUTO DE MATEMÁTICA E ESTATÍSTICA \\
 DEPARTAMENTO DE ESTATÍSTICA \\
 \vspace{0.3cm}
-MAT02215 - Estatística Geral 2 - 2021/1
+MAT02215 - Estatística Geral 2 - 2021/2
 }
 \renewcommand{\headrulewidth}{0pt} 
 
@@ -50,7 +50,7 @@ Teorema (**Distribuição $t$-Student, nossa versão**): Seja $X_1, \ldots, X_n$
 $$ T = \frac{\overline X - \mu}{S/\sqrt{n}} \sim t_{(n-1)}.$$
 em que $t_{(n-1)}$ denota a distribuição de probabilidade $t$-Student com $n-1$ graus de liberdade (g.l.).
 
-* A distribuição $t$ de Student também possui **valores tabelados**, como a distribuição **normal padrão**. Qual a relação entra essas distribuições?
+* A distribuição $t$ de Student também possui **valores tabelados**, como a distribuição **normal padrão**. Qual a relação entre essas distribuições?
 
 * Como usar a distribuição $t$ de Student para construir um IC para $\mu$? Quais as suposições necessárias? Como interpretar os resultados?
 
