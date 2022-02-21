@@ -16,7 +16,7 @@ always_allow_html: yes
 INSTITUTO DE MATEMÁTICA E ESTATÍSTICA \\
 DEPARTAMENTO DE ESTATÍSTICA \\
 \vspace{0.3cm}
-MAT02215 - Estatística Geral 2 - 2021/1
+MAT02215 - Estatística Geral 2 - 2021/2
 }
 \renewcommand{\headrulewidth}{0pt} 
 
@@ -90,9 +90,9 @@ $$Z_{calc} =  \frac{\overline X - \mu_0}{\sqrt{\frac{\sigma^2}{n}}} \sim Normal(
 Sob $H_0$, supomos que $X_1, \ldots, X_n$ são uma amostra aleatória de $X \sim Normal(\mu_0, \sigma^2)$ com $\sigma^2$ desconhecida, então
 $$T_{calc} =  \frac{\overline X - \mu_0}{\sqrt{\frac{S^2}{n}}} \sim t(n-1)$$
 
-<!-- \vspace{1.0cm} -->
+\vspace{1.0cm}
 
-\clearpage
+<!-- \clearpage -->
 
 ***
 ### Ler slides das aulas 11 e 12
