@@ -16,7 +16,7 @@ always_allow_html: yes
 INSTITUTO DE MATEMÁTICA E ESTATÍSTICA \\
 DEPARTAMENTO DE ESTATÍSTICA \\
 \vspace{0.3cm}
-MAT02215 - Estatística Geral 2 - 2021/1
+MAT02215 - Estatística Geral 2 - 2021/2
 }
 \renewcommand{\headrulewidth}{0pt} 
 
@@ -25,9 +25,9 @@ MAT02215 - Estatística Geral 2 - 2021/1
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-# Teste Qui Quadrado
-## Testes de Aderência e Associação (Bussab e Morettin - capítulo 14)
-Nosso interesse agora será em teste para mais de duas proporções (para uma variável de interesse ou duas variáveis). (Bussab e Morettin - seção 14.1) 
+# Testes Qui Quadrado
+## Teste de Aderência e Associação (Bussab e Morettin - capítulo 14)
+Nosso interesse agora será em testes para mais de duas proporções (para uma variável de interesse ou duas variáveis). (Bussab e Morettin - seção 14.1) 
 
 * **Exemplo 1**: Suponha que entramos num jogo de dados e queremos saber se um dos dados utilizados é honesto. Utilizando um dado de seis faces esperaríamos que cada face ocorresse em 1/6 das jogadas.
 
