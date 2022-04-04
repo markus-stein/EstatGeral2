@@ -16,7 +16,7 @@ always_allow_html: yes
 INSTITUTO DE MATEMÁTICA E ESTATÍSTICA \\
 DEPARTAMENTO DE ESTATÍSTICA \\
 \vspace{0.3cm}
-MAT02215 - Estatística Geral 2 - 2021/1
+MAT02215 - Estatística Geral 2 - 2021/2
 }
 \renewcommand{\headrulewidth}{0pt} 
 
@@ -28,9 +28,9 @@ knitr::opts_chunk$set(echo = TRUE)
 # (continuação) Testes de Aderência e Associação 
 Nosso interesse agora será em teste para mais de duas proporções para **duas variáveis categóricas** de interesse.
 
-* **Exemplo 1**: A quantidade de abstenções na última eleição para reitor na UFRGS está associada a categoria dos votantes?
+* **Exemplo 1**: A quantidade de abstenções na última eleição para reitor na UFRGS está associada à categoria dos votantes?
 
-* **Exemplo 2**: As proporções de votos em cada chapa pode estar associada a categoria dos votantes?
+* **Exemplo 2**: As proporções de votos em cada chapa pode estar associada à categoria dos votantes?
 
 ```{r eleicao, echo=FALSE}
 ## dados da eleicao
