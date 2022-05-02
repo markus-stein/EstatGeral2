@@ -16,7 +16,7 @@ always_allow_html: yes
 INSTITUTO DE MATEMÁTICA E ESTATÍSTICA \\
 DEPARTAMENTO DE ESTATÍSTICA \\
 \vspace{0.3cm}
-MAT02215 - Estatística Geral 2 - 2021/1
+MAT02215 - Estatística Geral 2 - 2021/2
 }
 \renewcommand{\headrulewidth}{0pt} 
 
@@ -32,7 +32,8 @@ Para quem ainda não atingiu média ponderada das avaliações (ler plano de ens
 * Revisar os principais conteúdos do semestre:
     + Introdução à Inferência Estatística e definições
     + Amostragem: principais tipos
-    + Distribuição amostral
+    + Distribuição amostral, teorema central do limite
+    + Estimação pontual: viés, consistência e eficiência
     + Intervalos de confiança
     + Tamanho amostral
     + Testes de hipóteses
