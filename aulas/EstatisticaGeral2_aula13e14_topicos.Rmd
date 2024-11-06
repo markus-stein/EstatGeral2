@@ -11,12 +11,12 @@ always_allow_html: yes
 \addtolength{\headheight}{1.0cm} 
 \pagestyle{fancyplain} 
 \lhead{\includegraphics[height=1.5cm]{LogoIME.png}}
-\rhead{\includegraphics[height=1.5cm]{images.jpeg}}
+\rhead{\includegraphics[height=1.5cm]{image_geral2.jpg}}
 \chead{UNIVERSIDADE FEDERAL DO RIO GRANDE DO SUL \\
 INSTITUTO DE MATEMÁTICA E ESTATÍSTICA \\
 DEPARTAMENTO DE ESTATÍSTICA \\
 \vspace{0.3cm}
-MAT02215 - Estatística Geral 2 - 2021/2
+MAT02215 - Estatística Geral 2 - 2024/2
 }
 \renewcommand{\headrulewidth}{0pt} 
 
@@ -42,7 +42,7 @@ $RC = \left\{ \overline X > \overline x_{crítico} \right\}$,  | $RC = \left\{ Z
 para $\overline x_{crítico} = 2 + z_{tab} \cdot \frac{1}{\sqrt n}$  | para $Z_{calc} = \frac{\overline X - 2}{\frac{1}{\sqrt n}}$  
 
 
-```{r rc, echo=FALSE, fig.show="hold", out.width = '35%', fig.align='center'}
+```{r rc, warning=FALSE, echo=FALSE, fig.show="hold", out.width = '35%', fig.align='center'}
 library(ggplot2)
 set.seed(1)
 m <- 2
