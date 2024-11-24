@@ -11,7 +11,7 @@ always_allow_html: yes
 \addtolength{\headheight}{1.0cm} 
 \pagestyle{fancyplain} 
 \lhead{\includegraphics[height=1.5cm]{LogoIME.png}}
-\rhead{\includegraphics[height=1.5cm]{images.jpeg}}
+\rhead{\includegraphics[height=1.5cm]{image_geral2.jpg}}
 \chead{UNIVERSIDADE FEDERAL DO RIO GRANDE DO SUL \\
 INSTITUTO DE MATEMÁTICA E ESTATÍSTICA \\
 DEPARTAMENTO DE ESTATÍSTICA \\
